@@ -8,6 +8,7 @@
 $dark: #2e4e6b;
 $blue: #20b9f1;
 $gray: #6c7173;
+$green: #0b8c41;
 
 body {
 	padding: 0;
@@ -20,6 +21,32 @@ body {
 	@include outer-container(1200px);
 	
 }
+
+.button-container {
+	text-align: center;
+}
+
+.button.big {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 500;
+	font-size: em(30);
+	line-height: 64px;
+	height: 64px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.button.green {
+	color: #fff;
+	background: $green;
+	&:hover {
+		background: darken($green,5%);
+	}
+}
+
+
 
 header {
 	
