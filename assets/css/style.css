@@ -326,6 +326,26 @@ body {
     display: table;
     clear: both; }
 
+.button-container {
+  text-align: center; }
+
+.button.big {
+  text-transform: uppercase;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+  line-height: 64px;
+  height: 64px;
+  padding: 0 1em;
+  display: inline-block;
+  border-radius: 5px; }
+
+.button.green {
+  color: #fff;
+  background: #0b8c41; }
+  .button.green:hover {
+    background: #097436; }
+
 header {
   height: 600px;
   background: #2e4e6b url(../top.png) repeat center center;
