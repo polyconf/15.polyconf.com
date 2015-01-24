@@ -26,6 +26,31 @@ body {
 	text-align: center;
 }
 
+.small.button {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 600;
+	font-size: em(18);
+	line-height: 36px;
+	height: 36px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+
+.medium.button {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 500;
+	font-size: em(24);
+	line-height: 48px;
+	height: 48px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 5px;
+}
+
 .button.big {
 	text-transform: uppercase;
 	font-family: $header-font-family;
@@ -47,6 +72,18 @@ body {
 }
 
 
+.button.white {
+	color: $gray;
+	background: white;
+	&:hover {
+		background: darken(white,5%);
+	}
+}
+
+
+#wrapper {
+	margin-top: 50px;
+}
 
 header {
 	
@@ -75,6 +112,7 @@ header {
 		top: 50%;
 		width: 250px;
 		transform: translate(-50%, -50%);		
+		-webkit-transform: translate(-50%, -50%);		
 		display: block;
 		img {
 			width: 100%;
@@ -90,6 +128,7 @@ header {
 		left: 50%;
 		top: 50%;
 		width: 1200px;
+		-webkit-transform: translate(-50%, -50%);		
 		transform: translate(-50%, -50%);		
 		display: block;
 		
@@ -115,6 +154,37 @@ header {
 	
 }
 
+nav#main {
+	
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 50px;
+	background: darken($dark,5%);
+	z-index: 999999999;
+	
+	ul {
+		margin: 0;
+		padding: 0;
+		@include clearfix();
+		text-align: center;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				line-height: 50px;
+				height: 50px;
+				padding: 0 20px;
+				font-size: $header-font-family;
+				text-transform: uppercase;
+				color: #fff;
+			}
+		}
+		
+	}
+	
+}
 
 #the-bar {
 	background: darken($dark,10%);
@@ -150,7 +220,7 @@ header {
 				line-height: 30px;
 				padding: 0;
 				background: $blue;
-				color: $dark;
+				color: white;
 				text-transform: uppercase;
 				font-size: em(18);
 				font-weight: 600;
@@ -186,6 +256,46 @@ section#about {
 	}
 
 	
+}
+
+section#quote-bar {
+	background: $gray;
+	padding: 50px 0;
+	
+	.container {
+		position: relative;
+		
+		.avatar {
+			width: 100px;
+			height: 100px;
+			float: left;
+			background: darken($gray,20%);
+			border-radius: 100%;
+			
+		}
+		
+		p {
+			margin: 0;
+			font-size: em(24);
+			line-height: 1.2em;
+			font-weight: 500;
+			font-family: $header-font-family;
+			color: #fff;
+			position: absolute;
+			left: 140px;
+			right: 240px;
+			top: 50%;
+			@include transform(translateY(-50%));
+			
+		}
+		
+		#more-quotes {
+			float: right;
+			margin: 30px 0 0;
+		}
+	
+	}
+		
 }
 
 section.intro {
@@ -357,7 +467,9 @@ section.content {
 				&:nth-child(3n) {
 					width: 34% !important;
 				}
+				
 				background-size: cover;
+				background-repeat: no-repeat;
 				overflow: hidden;
 				height: 300px;
 			}
@@ -370,6 +482,128 @@ section.content {
 			width: 100%;
 			height: 500px;
 		}
+	}
+	
+}
+
+#quotes {
+	
+	.content {
+		
+		.quotes {
+			
+			@include row();
+			
+			.quote {
+				
+				@include span-columns(6);
+				@include omega(2n);
+				
+				> div {
+					
+					padding: 40px;
+					position: relative;
+					@include row();
+														
+					.text {
+						margin-left: 40px;
+						padding: 20px 30px;
+						background: #e6e6e6;
+						position: relative;
+						font-size: em(18);
+						border-radius: 5px;
+						border-bottom-left-radius: 0px;
+						margin-bottom: 50px;
+						
+						&:after {
+							width: 30px;
+							height: 30px;
+							background: url(../quote.svg) no-repeat left top;
+							background-size: 100%;
+							position: absolute;
+							bottom: -30px;
+							left: 0;
+							content: "";
+						}
+						
+					}
+					
+					.person {
+						
+						.avatar {
+					    background: #ccc;
+					    border-radius: 100%;
+					    width: 80px;
+					    height: 80px;
+					    float: left;
+							margin: 0;
+							vertical-align: middle;
+						}
+						
+						.name {
+							margin: 0;
+							vertical-align: middle;
+							margin-left: 30px;
+							float: left;
+							vertical-align: middle;
+							line-height: 80px;
+							font-size: em(20);
+							color: $gray;
+						}
+						
+					}
+
+					
+				}
+				
+			}			
+			
+		}
+		
+	}
+	
+}
+
+#codestarter {
+		
+	.columns {
+		 
+		@include row();
+		
+		.column {
+			
+			@include span-columns(6);
+			
+			h2 {
+				margin-bottom: 1em;
+			}
+			
+			h3 {
+				margin-bottom: 1em;
+			}
+						
+		}
+		margin-bottom: 60px;
+		
+	}
+	
+	.photos {
+		@include clearfix();
+		
+		figure {
+			float: left;
+			width: 25%;
+			margin: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			span {
+				display: block;
+				width: 100%;
+				padding-top: 66%;
+				position: relative;
+			}
+		}
+		
 	}
 	
 }
