@@ -269,8 +269,11 @@ section#quote-bar {
 			width: 100px;
 			height: 100px;
 			float: left;
-			background: darken($gray,20%);
+			background-color: darken($gray,20%);
 			border-radius: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
 			
 		}
 		
@@ -531,13 +534,16 @@ section.content {
 					.person {
 						
 						.avatar {
-					    background: #ccc;
+					    background-color: #ccc;
 					    border-radius: 100%;
 					    width: 80px;
 					    height: 80px;
 					    float: left;
 							margin: 0;
 							vertical-align: middle;
+							background-size: cover;
+							background-position: center center;
+							background-repeat: no-repeat;
 						}
 						
 						.name {
