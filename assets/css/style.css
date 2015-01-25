@@ -514,8 +514,11 @@ section#quote-bar {
       width: 100px;
       height: 100px;
       float: left;
-      background: #3b3d3e;
-      border-radius: 100%; }
+      background-color: #3b3d3e;
+      border-radius: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
     section#quote-bar .container p {
       margin: 0;
       font-size: 1.5em;
@@ -725,13 +728,16 @@ section.content {
           left: 0;
           content: ""; }
       #quotes .content .quotes .quote > div .person .avatar {
-        background: #ccc;
+        background-color: #ccc;
         border-radius: 100%;
         width: 80px;
         height: 80px;
         float: left;
         margin: 0;
-        vertical-align: middle; }
+        vertical-align: middle;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; }
       #quotes .content .quotes .quote > div .person .name {
         margin: 0;
         vertical-align: middle;
