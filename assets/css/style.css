@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/**
- * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
- *
- * @type Bool
- */
-/* Neat 1.7.0.pre
- * http://neat.bourbon.io
- * Copyright 2012–2014 thoughtbot, inc.
- * MIT License */
-/**
- * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
- *
- * @type Bool
- */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,73 +9,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/**
- * Makes an element a outer container by centring it in the viewport, clearing its floats, and setting its `max-width`.
- *
- * Although optional, using `outer-container` is recommended. The mixin can be called on more than one element per page, as long as they are not nested.
- *
- * @param {Number} $local-max-width ($max-width) - Max width to be applied to the element. Can be a percentage or a measure.
- *
- * @example scss
- *  .element {
- *    @include outer-container(100%);
- *  }
- *
- * @example css
- *  .element {
- *    *zoom: 1;
- *    max-width: 100%;
- *    margin-left: auto;
- *    margin-right: auto;
- *  }
- *
- *  .element:before, .element:after {
- *    content: " ";
- *    display: table;
- *  }
- *
- *  .element:after {
- *    clear: both;
- *  }
- */
-/**
- * Changes the display property used by other mixins called in the code block argument.
- *
- * @param {String} $display (block) - Display value to be used within the block. Can be `table` or `block`.
- *
- * @example scss
- *   @include display(table) {
- *    .display-table {
- *      @include span-columns(6);
- *     }
- *   }
- *
- * @example css
- *   // CSS
- *   .display-table {
- *      display: table-cell;
- *      ...
- *   }
- */
-/**
- * Changes the direction property used by other mixins called in the code block argument.
- *
- * @param {String} $direction (left-to-right) - Layout direction to be used within the block. Can be `left-to-right` or `right-to-left`.
- *
- * @example scss
- *   @include direction(right-to-left) {
- *    .right-to-left-block {
- *      @include span-columns(6);
- *     }
- *   }
- *
- * @example css
- *   // CSS
- *   .right-to-left-block {
- *     float: right;
- *      ...
- *   }
- */
 /* Bitters 0.10.0
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
@@ -119,7 +38,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
   color: #333;
-  font-family: "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -129,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -202,7 +121,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em; }
 
 label {
@@ -226,7 +145,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
@@ -321,17 +240,20 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  .container:after {
+  .container::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 .button-container {
   text-align: center; }
 
+.button {
+  cursor: pointer; }
+
 .small.button {
   text-transform: uppercase;
-  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 600;
   font-size: 1.125em;
   line-height: 36px;
@@ -342,7 +264,7 @@ body {
 
 .medium.button {
   text-transform: uppercase;
-  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
   line-height: 48px;
@@ -353,7 +275,7 @@ body {
 
 .button.big {
   text-transform: uppercase;
-  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 1.875em;
   line-height: 64px;
@@ -361,6 +283,12 @@ body {
   padding: 0 1em;
   display: inline-block;
   border-radius: 5px; }
+
+.button.blue {
+  color: #fff;
+  background: #20b9f1; }
+  .button.blue:hover {
+    background: #0faee9; }
 
 .button.green {
   color: #fff;
@@ -435,10 +363,10 @@ nav#main {
     margin: 0;
     padding: 0;
     text-align: center; }
-    nav#main ul:after {
+    nav#main ul::after {
+      clear: both;
       content: "";
-      display: table;
-      clear: both; }
+      display: table; }
     nav#main ul li {
       display: inline-block; }
       nav#main ul li a {
@@ -446,7 +374,7 @@ nav#main {
         line-height: 50px;
         height: 50px;
         padding: 0 20px;
-        font-size: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-size: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
         text-transform: uppercase;
         color: #fff; }
 
@@ -454,6 +382,8 @@ nav#main {
   background: #1f3447;
   text-align: center;
   padding: 20px 0; }
+  #the-bar .inline-block {
+    display: inline-block; }
   #the-bar span {
     font-size: 1.25em;
     color: #fff;
@@ -516,15 +446,15 @@ section#quote-bar {
       float: left;
       background-color: #3b3d3e;
       border-radius: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat; }
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important; }
     section#quote-bar .container p {
       margin: 0;
       font-size: 1.5em;
       line-height: 1.2em;
       font-weight: 500;
-      font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       color: #fff;
       position: absolute;
       left: 140px;
@@ -559,10 +489,10 @@ section.content {
 
 #speakers .content .speaker-list {
   display: block; }
-  #speakers .content .speaker-list:after {
+  #speakers .content .speaker-list::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #speakers .content .speaker-list .speaker {
     float: left;
     display: block;
@@ -578,10 +508,10 @@ section.content {
       padding: 20px;
       position: relative;
       display: block; }
-      #speakers .content .speaker-list .speaker > div:after {
+      #speakers .content .speaker-list .speaker > div::after {
+        clear: both;
         content: "";
-        display: table;
-        clear: both; }
+        display: table; }
       #speakers .content .speaker-list .speaker > div .img {
         float: left;
         display: block;
@@ -657,10 +587,10 @@ section.content {
   padding: 0; }
   #venue .content #venue-photos {
     display: block; }
-    #venue .content #venue-photos:after {
+    #venue .content #venue-photos::after {
+      clear: both;
       content: "";
-      display: table;
-      clear: both; }
+      display: table; }
     #venue .content #venue-photos li {
       float: left;
       display: block;
@@ -686,10 +616,10 @@ section.content {
 
 #quotes .content .quotes {
   display: block; }
-  #quotes .content .quotes:after {
+  #quotes .content .quotes::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #quotes .content .quotes .quote {
     float: left;
     display: block;
@@ -705,10 +635,10 @@ section.content {
       padding: 40px;
       position: relative;
       display: block; }
-      #quotes .content .quotes .quote > div:after {
+      #quotes .content .quotes .quote > div::after {
+        clear: both;
         content: "";
-        display: table;
-        clear: both; }
+        display: table; }
       #quotes .content .quotes .quote > div .text {
         margin-left: 40px;
         padding: 20px 30px;
@@ -751,10 +681,10 @@ section.content {
 #codestarter .columns {
   display: block;
   margin-bottom: 60px; }
-  #codestarter .columns:after {
+  #codestarter .columns::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #codestarter .columns .column {
     float: left;
     display: block;
@@ -766,10 +696,10 @@ section.content {
       margin-bottom: 1em; }
     #codestarter .columns .column h3 {
       margin-bottom: 1em; }
-#codestarter .photos:after {
+#codestarter .photos::after {
+  clear: both;
   content: "";
-  display: table;
-  clear: both; }
+  display: table; }
 #codestarter .photos figure {
   float: left;
   width: 25%;
