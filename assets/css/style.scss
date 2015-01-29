@@ -26,6 +26,10 @@ body {
 	text-align: center;
 }
 
+.button {
+	cursor: pointer
+}
+
 .small.button {
 	text-transform: uppercase;
 	font-family: $header-font-family;
@@ -62,6 +66,15 @@ body {
 	display: inline-block;
 	border-radius: 5px;
 }
+
+.button.blue {
+	color: #fff;
+	background: $blue;
+	&:hover {
+		background: darken($blue,5%);
+	}
+}
+
 
 .button.green {
 	color: #fff;
@@ -190,6 +203,11 @@ nav#main {
 	background: darken($dark,10%);
 	text-align: center;
 	padding: 20px 0;
+	
+	.inline-block {
+		display: inline-block;
+	}
+	
 	span {
 		font-size: em(20);
 		color: #fff;
@@ -271,9 +289,9 @@ section#quote-bar {
 			float: left;
 			background-color: darken($gray,20%);
 			border-radius: 100%;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
+			background-size: cover !important;
+			background-position: center center !important;
+			background-repeat: no-repeat !important;
 			
 		}
 		
