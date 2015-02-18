@@ -420,6 +420,31 @@ nav#main {
         margin-left: -137px;
         width: 120px; }
 
+.fixed > section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2e4e6b;
+  z-index: 1000; }
+  .fixed > section.skrollable-before, .fixed > section.skrollable-after {
+    display: none; }
+  .fixed > section > .container {
+    position: absolute;
+    width: 1000px;
+    margin-top: -500px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.static {
+  position: relative;
+  z-index: 4000; }
+
 section#about {
   text-align: center;
   padding: 150px 0; }

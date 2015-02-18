@@ -253,6 +253,41 @@ nav#main {
 	
 }
 
+
+.fixed {
+
+	> section {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: $dark;
+		z-index: 1000;
+
+		&.skrollable-before, &.skrollable-after {
+			display: none;
+		}
+
+		> .container {
+			
+			position: absolute;
+			width: 1000px;
+			margin-top: -500px;
+			left: 50%;
+			top: 50%;
+			@include transform(translateY(-50%));
+			
+		}
+
+	}
+
+}
+
+.static {
+	position: relative;
+	z-index: 4000;
+}
+
 section#about {
 	
 	text-align: center;
