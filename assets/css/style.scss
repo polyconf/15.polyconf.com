@@ -1,0 +1,1289 @@
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
+
+$dark: #2e4e6b;
+$blue: #20b9f1;
+$gray: #6c7173;
+$green: #0b8c41;
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+.fixed {
+
+	color: #fff;
+	text-align: center;
+	
+	@include media($mobile) {
+		background: $dark;
+	}
+
+	> section {
+		
+		padding: 100px 0;
+
+		@include media($tablet) {
+			min-height: auto !important;	
+		}		
+
+		@include media($portrait) {
+			min-height: auto !important;	
+		}		
+
+		@include media($mobile) {
+			min-height: auto !important;	
+		}		
+		
+		@include media($desktop) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 0;			
+		}
+		
+		background: $dark;
+		z-index: 1000;
+		
+		&.skrollable-before, &.skrollable-after {
+			@include media($desktop) {
+				display: none;			
+			}
+		}
+
+		> .text {
+			
+			padding: 0 5%;
+			
+			@include media($desktop) {
+				position: absolute;
+				width: 1000px;
+				margin-left: -500px;
+				left: 50%;
+				top: 50%;
+				@include transform(translateY(-50%));
+				padding: 0;
+			}
+						
+			h2 {
+				@include media($desktop) {
+					font-weight: 400;
+					font-size: em(40);
+					text-transform: uppercase;
+					margin-bottom: 1em;					
+				}
+				
+				@include media($tablet) {
+					font-weight: 400;
+					font-size: em(36);
+					text-transform: uppercase;
+					margin-bottom: 1em;					
+				}
+			
+				@include media($portrait) {
+					font-weight: 400;
+					font-size: em(36);
+					text-transform: uppercase;
+					margin-bottom: 1em;					
+				}
+				
+				@include media($mobile) {
+					font-weight: 400;
+					font-size: em(30);
+					text-transform: uppercase;
+					margin-bottom: 1em;					
+				}
+				
+			}
+			
+			p {
+				font-weight: 400;
+				font-size: em(24);
+				
+				@include media($mobile) {
+					font-size: em(20);
+				}
+
+			}
+			
+		}
+
+	}
+
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button {
+	cursor: pointer
+}
+
+.small.button {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 600;
+	font-size: em(18);
+	line-height: 36px;
+	height: 36px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+
+.medium.button {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 500;
+	font-size: em(24);
+	line-height: 48px;
+	height: 48px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.button.big {
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	font-weight: 500;
+	font-size: em(30);
+	line-height: 64px;
+	height: 64px;
+	padding: 0 1em;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.button.blue {
+	color: #fff;
+	background: $blue;
+	&:hover {
+		background: darken($blue,5%);
+	}
+}
+
+
+.button.green {
+	color: #fff;
+	background: $green;
+	&:hover {
+		background: darken($green,5%);
+	}
+}
+
+
+.button.white {
+	color: $gray;
+	background: white;
+	&:hover {
+		background: darken(white,5%);
+	}
+}
+
+
+#header {
+
+	.content {
+		@include media($mobile) {
+			padding: 50px 0;
+		}		
+		@include media($tablet) {
+			padding: 100px 0;
+			height: 800px
+		}		
+		@include media($portrait) {
+			padding: 100px 0;
+			height: 1000px
+		}		
+
+
+	}
+	
+	nav {
+		
+		display: none;
+		
+		@include media($desktop) {
+			display: block;
+		}
+		
+		position: absolute;
+		top: 20px;
+		left: 0;
+		right: 0;
+		height: 50px;
+		z-index: 999999999;
+		margin: 0;
+		padding: 0;
+		@include clearfix();
+		text-align: center;
+
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				line-height: 50px;
+				height: 50px;
+				padding: 0 20px;
+//				font-family: $header-font-family;
+				font-size: em(20);			
+				text-transform: uppercase;
+				color: #fff;
+			}
+		}
+				
+	}
+	
+	.last {
+		background: url(../previous.svg) no-repeat right center;
+		background-size: auto 40px;
+		height: 40px;
+		padding-right: 50px;
+		top: 40px;
+		right: 40px;
+		line-height: 40px;
+		color: #fff;
+		font-size: em(24);
+		position: absolute;
+	}
+
+	#logo {
+		
+		@include media($desktop) {
+			margin: 0;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 200px;
+			transform: translate(-50%, -50%);		
+			-webkit-transform: translate(-50%, -50%);		
+			display: block;			
+		}
+
+		@include media($tablet) {
+			margin: 0;
+			position: absolute;
+			left: 50%;
+			top: 45%;
+			width: 200px;
+			transform: translate(-50%, -50%);		
+			-webkit-transform: translate(-50%, -50%);		
+			display: block;			
+		}
+
+		@include media($portrait) {
+			margin: 0;
+			position: absolute;
+			left: 50%;
+			top: 45%;
+			width: 250px;
+			transform: translate(-50%, -50%);		
+			-webkit-transform: translate(-50%, -50%);		
+			display: block;			
+		}
+		
+		@include media($mobile) {
+			display: block;
+			width: 180px;
+			margin: 20px auto 40px;	
+		}
+		
+		
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	} 
+	
+	#date-place {
+		
+		margin: 0;
+		position: absolute;
+		display: block;
+		
+		@include media($desktop) {
+			-webkit-transform: translate(-50%, -50%);		
+			transform: translate(-50%, -50%);		
+			left: 50%;
+			top: 50%;
+			width: 1200px;			
+		}
+		
+		@include media($tablet) {
+			width: auto;
+			left: 5%;
+			right: 5%;
+			top: 45%;
+		}
+
+		@include media($portrait ) {
+			width: auto;
+			left: 5%;
+			right: 5%;
+			top: 45%;
+		}
+		
+		@include media($mobile) {
+			position: relative;
+			left: auto;
+			top: 0;
+			
+		}	
+		
+		> div {
+			
+			font-family: "proxima-nova-soft";
+			color: $blue;
+			font-size: em(32);
+		
+			&#conf-place {
+				float: left;
+			}
+			
+			&#conf-date {
+				float: right;
+			}
+		
+			@include media($mobile) {
+				float: none !important;
+				color: white;
+				font-size: em(20);
+			}
+			
+		}
+		
+	}
+
+	#the-bar {
+
+		text-align: center;
+
+		@include media($desktop) {
+				padding: 20px 0;
+				width: 1200px;
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				transform: translateX(-50%);		
+				-webkit-transform: translateX(-50%);		
+			
+		}
+
+		@include media($tablet) {
+				padding: 20px 0;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+				right: 0;
+		}
+
+		@include media($portrait) {
+				padding: 20px 0;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+				right: 0;
+		}
+
+
+		@include media($mobile) {
+			margin-top: 100px;
+		}
+
+		
+		.inline-block {
+			display: inline-block;
+		}
+		
+		.become-a-sponsor {
+			@include media($mobile) {
+				margin-right: 0em !important;
+				margin-bottom: 20px;
+			}
+		}
+		
+		span {
+			font-size: em(20);
+			color: #fff;
+			vertical-align: middle;
+			display: inline-block;
+					height: 36px;
+					line-height: 36px;
+		}
+		form {
+			display: inline-block;
+			> div {
+				display: inline-block;
+				input.text {
+					width: 400px;
+					border: 0;
+					display: inline-block;
+					margin: 0 1ex;
+					height: 36px;
+					line-height: 36px;
+					font-size: em(20);
+					font-weight: 600;
+					vertical-align: middle;
+					padding-right: 180px;
+
+					@include media($mobile) {
+						width: 90% !important;
+						margin: 0 auto;
+						padding-right: 0;
+						margin-bottom: 5px;
+					}
+
+				}
+				input.submit {
+					display: inline-block;
+					height: 30px;
+					line-height: 30px;
+					padding: 0;
+					background: $blue;
+					color: white;
+					text-transform: uppercase;
+					font-size: em(18);
+					font-weight: 600;
+					vertical-align: middle;
+					margin-left: -137px;
+					width: 120px;
+					
+					@include media($mobile) {
+						margin: 0px;
+					}
+					
+				}
+				
+			}
+		}
+		
+	}
+	
+
+	
+}
+
+.static {
+	position: relative;
+	z-index: 4000;
+	background: white;
+	padding: 100px 0;
+	
+	> .container {
+		@include media($desktop) {
+			@include outer-container(1200px);		
+		}
+	
+		@include media($tablet) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+	
+		@include media($portrait) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+		
+		@include media($mobile) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+	
+	}
+	
+	h2 {
+		font-weight: 400;
+		font-size: em(40);
+		text-transform: uppercase;
+		margin-bottom: 1em;
+	}
+
+	p.intro {
+		font-weight: 400;
+		font-size: em(24);		
+	}
+
+	
+}
+
+#about {
+	
+	@include media($desktop) {
+		padding-bottom: 300px;
+	}
+	
+	
+	.row {
+		@include row();
+		
+		@include media($desktop) {
+			padding: 0;
+		}
+		
+		.column {
+			text-align: center;
+			@include span-columns(2);
+			
+			@include media($mobile) {
+				@include fill-parent();
+			}
+			
+			&:first-child {
+				@include media($desktop) {
+					@include shift(1);	
+				}
+			}
+			
+			figure {
+				margin: 80px auto 40px;
+				width: 90%;
+				position: relative;
+				
+				@include media($mobile) {
+					width: 150px;
+					margin: 40px auto 0px;
+				}
+				
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+			
+			span {
+				display: block;
+		
+				&.big {
+					font-size: em(40);
+					line-height: 1.1em;
+				}
+			
+				&.small {
+					font-size: em(20);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	#submit-proposal {
+		text-align: center;
+		margin-top: 100px;
+		p {
+			font-size: em(24);
+			color: $gray;
+			margin-top: 1em;
+		}
+	}
+	
+	section#quote-bar {
+		
+		@include media($desktop) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;			
+		}
+		
+		@include media($mobile) {
+			display: none;
+		}
+	
+	background: $gray;
+	padding: 50px 0;
+	
+	.container {
+		position: relative;
+		
+		@include media($desktop) {
+			@include outer-container(1200px);		
+		}
+	
+		@include media($tablet) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+	
+		@include media($portrait) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+		
+		@include media($mobile) {
+			width: 100%;
+			padding: 0 5%;			
+		}
+
+		
+		.avatar {
+			width: 100px;
+			height: 100px;
+			float: left;
+			background-color: darken($gray,20%);
+			border-radius: 100%;
+			background-size: cover !important;
+			background-position: center center !important;
+			background-repeat: no-repeat !important;
+			
+		}
+		
+		p {
+			margin: 0;
+			font-size: em(24);
+			line-height: 1.2em;
+			font-weight: 500;
+			font-family: $header-font-family;
+			color: #fff;
+			position: absolute;
+			left: 140px;
+			right: 240px;
+			top: 50%;
+			@include transform(translateY(-50%));
+			
+		}
+		
+		#more-quotes {
+			float: right;
+			margin: 30px 0 0;
+		}
+	
+	}
+		
+}
+
+
+}
+
+#speakers {
+		
+		.speaker-list {
+			
+			@include row();
+			
+			.speaker {
+				
+				@include span-columns(6);
+				@include omega(2n);
+				margin-bottom: 50px;
+				
+				@include media($mobile) {
+					@include fill-parent();
+				}
+				
+				> div {
+					
+					padding: 20px;
+					position: relative;
+					@include row();
+
+					@include media($mobile) {
+						padding: 0;
+					}
+									
+					.img {
+						@include span-columns(2 of 6);
+						
+						@include media($mobile) {
+							float: none;
+							width: 160px;
+							height: 160px;
+							margin-bottom: 30px;
+						}
+							
+						
+						figure {
+					    width: 100%;
+					    padding-top: 100%; /* defines aspect ratio */
+					    position: relative;
+					    display: block;
+					    margin: 0;
+						    
+							> a.face {
+						    position: absolute;
+						    top: 0;
+						    left: 0;
+						    right: 0;
+						    bottom: 0;
+						    background-position: center center;
+						    background-repeat: no-repeat;
+						    background-size: cover;
+							}				
+							
+							.links {
+								
+								position: absolute;
+								bottom: -5px;
+								right: 0px;
+								
+								a {
+								
+									width: 32px;
+									height: 32px;
+									display: block;
+									float: left;
+									margin-right: 5px;
+									
+									&.twitter {
+										background: $blue url(../twitter.svg) no-repeat center center;
+										background-size: 100%;
+									}
+									
+									&.website {
+										background: $gray url(../website.svg) no-repeat center center;
+										background-size: 100%;
+									}
+										
+								}
+								
+							}		   
+						    
+						}
+						
+					}
+					
+					.text {
+
+						@include span-columns(4 of 6);
+						
+						@include media($mobile) {
+							@include fill-parent();
+						}
+						
+						h3 {
+							color: $dark;
+							line-height: 1.1em;
+							margin: 0 0 10px;
+						}
+						
+						.title {
+							font-size: em(20);
+							font-weight: 600;
+							margin: 0 0 20px;
+							line-height: 1.1em;
+						}
+					
+						.description {
+							
+							line-height: 1.1em;
+							color: $gray;
+							margin: 0 0 20px;
+							
+						}
+					
+						.tags {
+							
+							li {
+								
+								background: url(../tag.svg) no-repeat right top;
+								background-size: auto 30px;
+								color: #fff;
+								display: inline-block;
+								font-weight: 600;
+								font-size: em(12);
+								line-height: 20px;
+								height: 20px;
+								padding: 0 12px 0 6px;
+								margin-right: 6px;
+								white-space: nowrap;
+								text-transform: uppercase;
+							}
+							
+						}
+						
+					}
+
+					
+				}
+				
+			}			
+			
+		}
+
+}
+
+#venue {
+	
+	padding: 0;
+	
+	#venue-map-container {
+		
+		padding: 0;
+		position: relative;
+		
+		@include media($mobile) {
+			padding: 0;
+		}
+		
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 50%;
+			
+			@include media($mobile) {
+				padding-top: 100%;
+			}
+		
+			
+		}
+
+		#venue-map {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;	
+		}
+		
+	}
+	
+	#venue-gallery {
+		
+		@include row();
+		
+		li {
+			
+			@include span-columns(4, "block-collapse");
+			@include omega(3n);
+			width: 33.33333333333% !important;
+			
+			@include media($mobile) {
+				@include fill-parent();
+				width: 100% !important;
+			}
+			
+			span {
+				width: 100%;
+				display: block;
+				padding-top: 80%;
+				position: relative;
+				
+				figure {
+					margin: 0;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					
+					@include media($mobile) {
+						left: 0;
+						right: 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+#young {
+	
+	padding-bottom: 0;
+	
+	.tba {
+		display: inline-block;
+		background: $gray;
+		font-size: em(24);
+		line-height: 1em;
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 3px
+	}
+	
+	.photos {
+		
+		margin-top: 100px;
+		@include row();
+		
+		li {
+			
+			@include span-columns(4, "block-collapse");
+			@include omega(3n);
+			width: 33.333333333% !important;
+
+			@include media($mobile) {
+				@include fill-parent();
+				width: 100% !important;
+			}
+
+			
+			span {
+				width: 100%;
+				display: block;
+				padding-top: 80%;
+				position: relative;
+				
+				figure {
+					margin: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+#quotes {
+	
+		.quotes {
+			
+			@include row();
+			
+			.quote {
+				
+				@include span-columns(6);
+				@include omega(2n);
+				
+				@include media($mobile) {
+					@include fill-parent();
+				}
+				
+				> div {
+					
+					padding: 40px;
+					position: relative;
+					@include row();
+					
+					@include media($mobile) {
+						padding: 20px 0;
+					}
+														
+					.text {
+						margin-left: 40px;
+						padding: 20px 30px;
+						background: #e6e6e6;
+						position: relative;
+						font-size: em(18);
+						border-radius: 5px;
+						border-bottom-left-radius: 0px;
+						margin-bottom: 50px;
+						
+						&:after {
+							width: 30px;
+							height: 30px;
+							background: url(../quote.svg) no-repeat left top;
+							background-size: 100%;
+							position: absolute;
+							bottom: -30px;
+							left: 0;
+							content: "";
+						}
+						
+					}
+					
+					.person {
+						
+						.avatar {
+					    background-color: #ccc;
+					    border-radius: 100%;
+					    width: 80px;
+					    height: 80px;
+					    float: left;
+							margin: 0;
+							vertical-align: middle;
+							background-size: cover;
+							background-position: center center;
+							background-repeat: no-repeat;
+						}
+						
+						.name {
+							margin: 0;
+							vertical-align: middle;
+							margin-left: 30px;
+							float: left;
+							vertical-align: middle;
+							line-height: 80px;
+							font-size: em(20);
+							color: $gray;
+						}
+						
+					}
+
+					
+				}
+				
+			}			
+			
+		}
+
+
+}
+
+#contact {
+	
+
+		p {
+			font-size: em(20);
+			a {
+				font-size: em(24);
+				display: block; 
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	
+		ul {
+			margin-top: 100px;
+			@include media($mobile) {
+				margin-top: 20px;
+				margin-bottom: 100px;
+			}
+			li {
+				display: inline-block;
+				margin: 10px;					
+				a {
+					background-position: center center;
+					display: block;
+					width: 80px;
+					height: 80px;
+					overflow: hidden;
+					text-align: center;
+					border-radius: 100%;
+					border: 2px solid $dark;
+						@include transition(0.5s all);
+					&:hover {
+						border: 2px solid white;					
+						@include transition(0.5s all);
+					}
+				}
+				img {
+					vertical-align: middle;
+					display: inline-block;
+					width: 80px;
+					height: 80px;
+				}
+			}
+		}
+			
+	#copy, #true {
+		position: absolute;
+		bottom: 50px;
+		color: white;
+		font-size: em(16);
+		font-weight: 400;
+		text-transform: uppercase;
+		a {
+			color: white;
+			text-decoration: underline;
+		}	
+	}
+	
+	#copy {
+		left: 50px;
+
+
+		@include media($portrait) {
+			position: relative;
+			bottom: auto;
+			left: 0;
+			right: auto;
+			text-align: center;
+			margin-top: 100px;
+		}		
+
+		@include media($tablet) {
+			position: relative;
+			bottom: auto;
+			left: 0;
+			right: auto;
+			text-align: center;
+			margin-top: 100px;
+		}		
+
+		@include media($mobile) {
+			position: relative;
+			bottom: auto;
+			left: 0;
+			right: auto;
+			text-align: center;
+			margin-top: 100px;
+		}
+		
+	}
+	
+	#true {
+		right: 50px;
+	}
+
+	
+}
+
+
+// LINK DO MENU
+
+#menu-link {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	
+	@include media($desktop) {
+		top: 50px;
+		right: 50px;
+	}
+
+	@include media($tablet) {
+		top: 40px;
+		right: 40px;
+	}
+
+	@include media($portrait) {
+		top: 30px;
+		right: 30px;
+	}
+	
+	@include media($mobile) {
+		top: 20px;
+		right: 20px;
+	}
+
+	
+	background: $blue url(../img/menu.svg) no-repeat center center;
+	background-size: cover;
+	z-index: 5000;
+	cursor: pointer;
+	border-radius: 100%;
+	@include transition(0.5s all);
+	&:hover {
+		background-color: darken(#5a6268,5%);
+		@include transition(0.5s all);
+	}
+}
+
+// MENU 
+
+nav#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: $blue;
+	z-index: 6000;
+	
+	#close-menu-link {
+		width: 50px;
+		height: 50px;
+		position: fixed;
+	
+		@include media($desktop) {
+			top: 50px;
+			right: 50px;
+		}
+	
+		@include media($tablet) {
+			top: 40px;
+			right: 40px;
+		}
+	
+		@include media($portrait) {
+			top: 30px;
+			right: 30px;
+		}
+		
+		@include media($mobile) {
+			top: 20px;
+			right: 20px;
+		}
+
+
+		background: $blue url(../img/close-menu.svg) no-repeat center center;
+		background-size: cover;
+		z-index: 5000;
+		cursor: pointer;
+		border: 2px solid $blue;
+		border-radius: 100%;
+		@include transition(0.5s all);
+		&:hover {
+			border: 2px solid #fff;
+			@include transition(0.5s all);
+		}
+
+	}
+	
+	.content {
+		margin: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 400px;
+		-webkit-transform: translate(-50%, -50%);		
+		transform: translate(-50%, -50%);		
+		display: block;
+		
+		figure {
+			
+			display: block;
+			text-align: center;
+			margin-bottom: 30px;
+			
+			img {
+				width: 100px;
+				display: inline;
+			}
+			
+		}
+		
+		ul {
+			
+			li {
+				display: block;	
+				text-align: center;		
+				a {
+					display: inline-block;
+					color: #fff;
+					padding: 5px 0;
+					text-transform: uppercase;
+					font-size: em(24);
+					font-weight: 300;
+					text-align: center;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+								
+			}
+			
+			
+		}
+		
+	}
+	
+}
+
