@@ -13,92 +13,183 @@
   <link rel='stylesheet' href='assets/css/style.css'>
   <link href="assets/favicon.ico" rel="shortcut icon">
 
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var mapCanvas = document.getElementById('venue-map');
+      var mapOptions = {
+        center: new google.maps.LatLng(52.4120145,16.9202255),
+        zoom: 16,
+		    panControl: true,
+		    zoomControl: true,
+		    zoomControlOptions: {
+		      style: google.maps.ZoomControlStyle.SMALL,
+					position: google.maps.ControlPosition.RIGHT_BOTTOM
+        },
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+		  var marker = new google.maps.Marker({
+		      position: new google.maps.LatLng(52.4120145,16.9202255),
+		      map: map,
+		      title: 'Hello World!'
+		  });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+
   <title>PolyConf 2015</title>
 </head>
 
 <body>
 
-<nav id="main">
-  <ul>
-    <li><a href="#header">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#speakers">Speakers</a></li>
-    <li><a href="#venue">Venue</a></li>
-    <li><a href="#codestarter">Young People</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="http://sponsor.polyconf.com">Become a Sponsor</a></li>
-  </ul>
-</nav>
 
   <div id="wrapper">
-    <header id="header">
-      <a href="http://14.polyconf.com" class="last">Previous edition</a>
-      <figure id="logo"><img src="assets/logo.svg" alt="Poly Conf 2015" /></figure>
+	  
+    <header id="header" class="fixed">
 
-      <div id="date-place">
-        <div id="conf-place">POZnan*, Poland</div>
-        <div id="conf-date">July 2-4, 2015</div>
-      </div>
+	    <section class="content">
+	
+				<nav id="main">
+				  <ul>
+				    <li><a href="#header">Home</a></li>
+				    <li><a href="#about">About</a></li>
+				    <li><a href="#speakers">Speakers</a></li>
+				    <li><a href="#venue">Venue</a></li>
+				    <li><a href="#codestarter">Young people</a></li>
+				    <li><a href="#testimonials">Testimonials</a></li>
+				    <li><a href="http://sponsors.polyconf.com">Become a Sponsor</a></li>
+				  </ul>
+				</nav>
+
+	
+	      <figure id="logo"><img src="assets/logo.svg" alt="Poly Conf 2015" /></figure>
+
+        <div id="date-place">
+	        <div id="conf-place">POZnan*, Poland</div>
+					<div id="conf-date">July 2-4, 2015</div>
+				</div>
+
+			  <div id="the-bar">
+				  
+				    <div class="become-a-sponsor inline-block" style="margin-right: 2em">
+					    <a href="#" class="medium blue button"><label>Become a sponsor</label></a>
+				    </div>
+				    <div class="newsletter inline-block">
+			        <span>Join our newsletter for updates</span>
+			        <form action="http://polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" data-abide>
+			          <div id="newsletter-form" class="inline-block">
+			            <input type="text" name="EMAIL" placeholder="Enter email" class="text"/>
+			            <input type="submit" href="#" value="Subscribe" class="small button submit"/>
+			          </div>
+			        </form>
+			      </div>
+			      
+			  </div>
+
+
+	    </section>
 
     </header>
-  </div>
 
-  <section id="the-bar">
-    <div class="container">
-      <div class="become-a-sponsor inline-block" style="margin-right: 2em">
-        <a href="http://sponsor.polyconf.com" class="medium blue button"><label>Become a sponsor</label></a>
-      </div>
-      <div class="newsletter inline-block">
-        <span>Join our newsletter for updates</span>
-        <form action="http://polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" data-abide>
-          <div id="newsletter-form" class="inline-block">
-            <input type="text" name="EMAIL" placeholder="Enter email" class="text"/>
-            <input type="submit" href="#" value="Subscribe" class="small button submit"/>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
+	  <article id="about" class="static">
 
-  <section id="about">
-    <div class="container">
-      <h2>Welcome to PolyConf</h2>
-      <p>
-        PolyConf is a three-day, single track, multi-disciplinary conference on advanced technologies<br class="hide-on-mobile" />
-        for programmers interested in polyglot approach to software development.
-      </p>
-      <div class="button-container" style="margin-top: 50px">
-        <a href="http://bit.ly/polyconf15-cfp" class="big green button">Submit your proposal</a>
-        <p><strong>Open until March, 8th</strong></p>
-      </div>
-    </div>
-  </section>
+	    <div class="container">
 
-  <section id="quote-bar">
-    <div class="container">
+	      <h2 class="text-center">Welcome to PolyConf</h2>
+	      <p class="intro text-center"> PolyConf is a three-day, single track, multi-disciplinary conference on advanced technologies<br>
+					for programmers interested in polyglot approach to software development. </p>
+	      
+	      <div class="row">
 
-      <a href="https://twitter.com/asolovyov/status/528334618777624577" class="avatar" style="background-image:url('https://pbs.twimg.com/profile_images/378800000541660208/0b86a9e6a1f5d84ba08064e95a67c7c7_400x400.jpeg')">&nbsp;</a>
-<p>#polyconf was a best conference I've attended for a long, long time. Definitely plan to get back next year. :)<br/><small>@asolovyov</small></p>
-      <a href="#quotes" id="more-quotes" class="small white button">More quotes</a>
+	         <div class="column" id="number-of-days">
+	
+	           <figure><img src="assets/img/calendar.svg" alt="Laptop" /></figure>
+	           <span class="big">3</span>
+	           <span class="small">days</span>
+	
+	         </div>
+	
+	         <div class="column" id="number-of-talks">
+	
+	           <figure><img src="assets/img/talk.svg" alt="Laptop" /></figure>
+	           <span class="big">40</span>
+	           <span class="small">talks</span>
+	
+	         </div>
+	
+	         <div class="column" id="number-of-workshops">
+	
+	           <figure><img src="assets/img/display.svg" alt="Laptop" /></figure>
+	           <span class="big">6</span>
+	           <span class="small">workshops</span>
+	
+	         </div>
+	
+	         <div class="column" id="number-of-attendees">
+	
+	           <figure><img src="assets/img/badge.svg" alt="Badge" /></figure>
+	           <span class="big">400</span>
+	           <span class="small">attendees</span>
+	
+	         </div>
+	
+	         <div class="column" id="number-of-parties">
+	
+	           <figure><img src="assets/img/beer.svg" alt="Party" /></figure>
+	           <span class="big">5</span>
+	           <span class="small">parties</span>
+	
+	         </div>
 
-    </div>
-  </section>
+       </div>
+       
+	      <div class="button-container" id="submit-proposal">
+	        <a href="http://bit.ly/polyconf15-cfp" class="big green button">Submit your proposal</a>
+	        <p>Open until March, 8th</p>
+	      </div>
+	      
+			  <section id="quote-bar">
+			    <div class="container">
+			
+			      <a href="https://twitter.com/asolovyov/status/528334618777624577" class="avatar" style="background-image:url('https://pbs.twimg.com/profile_images/508411634394468352/V3tLNOTf_400x400.png')">&nbsp;</a>
+			<p>#polyconf was a best conference I've attended for a long, long time. Definitely plan to get back next year. :)<br/><small>@asolovyov</small></p>
+			      <a href="#quotes" id="more-quotes" class="small white button">More quotes</a>
+			
+			    </div>
+			  </section>
 
-  <article id="speakers">
-    <section class="intro">
-      <div class="container">
-        <h2>Speakers</h2>
+	    </div>
 
-        <p>
-          PolyConf is not focused on any particular language or area of technology.<br class="hide-on-mobile" />
-          Our mission is to promote polyglot approach to software development<br class="hide-on-mobile" />
-          and foster cross-pollination between various technologies<br class="hide-on-mobile" />
-          and their communities.
-        </p>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
+	  </article>
+
+		<article id="speakers-intro" class="fixed">
+			
+	    <section class="content">
+	
+		    <div class="text">
+		
+	        <h2>Speakers</h2>
+	
+	        <p>
+	          PolyConf is not focused on any particular language or area of technology.<br class="hide-on-mobile" />
+	          Our mission is to promote polyglot approach to software development<br class="hide-on-mobile" />
+	          and foster cross-pollination between various technologies<br class="hide-on-mobile" />
+	          and their communities.
+	        </p>
+	
+		    </div>
+		     
+	    </section>
+			
+		</article>
+		
+		<article id="speakers" class="static">
+			
+		  <div class="container">
+					
         <ul class="speaker-list">
           <li class="speaker">
             <div class="inside">
@@ -266,91 +357,115 @@ In my free time, I do a lot of open source and mobile application development or
             </div>
           </li>
         </ul>
-      </div>
-    </section>
-  </article>
 
-  <article id="venue">
-    <section class="intro">
-      <div class="container">
-        <h2>Venue</h2>
+        					
+			</div>
+				
+			
+		</article>
 
-        <p>
-          PolyConf will happen at The Faculty of Law and Administration<br class="hide-on-mobile" />
-          of Adam Mickiewicz University in the heart of the city of POZnan, Poland. <br class="hide-on-mobile" />
-          The center has an auditiorium that can host 400 and additional workshop rooms.
-        </p>
-      </div>
-    </section>
+		<article id="venue-intro" class="fixed">
+			
+	    <section class="content">
+	
+		    <div class="text">
+		
+	        <h2>Venue</h2>
+	
+	        <p>
+	           PolyConf will happen at The Faculty of Law and Administration<br class="hide-on-mobile" />
+						 of Adam Mickiewicz University in the heart of the city of POZnan, Poland.<br class="hide-on-mobile" />
+						 The center has an auditiorium that can host 400 and additional workshop rooms.
+	        </p>
+	
+		    </div>
+		     
+	    </section>
+			
+		</article>
 
-    <section class="content">
-      <ul id="venue-photos">
-        <li class="photo" style="background-image:url(assets/venue/7.jpg)"><div class="img"></div></li>
-        <li class="photo" style="background-image:url(assets/venue/8.jpg)"><div class="img"></div></li>
-        <li class="photo" style="background-image:url(assets/venue/9.jpg)"><div class="img"></div></li>
-    </ul>
+		<article id="venue" class="static">
+								
+			<div id="venue-map-container"><div id="venue-map"></div></div>						
+			
+			<ul id="venue-gallery">
+				
+				<li class="photo"><span><figure style="background-image:url(assets/venue/7.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/venue/8.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/venue/9.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/venue/1.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/venue/2.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/venue/3.jpg)"></figure></span></li>
+				
+			</ul>
+						
+		</article>
 
-    <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.494112388599!2d16.92514301215121!3d52.41584419853933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x9e03687bbc122844!2sCollegium+Iuridicum+Novum!5e0!3m2!1sen!2ses!4v1421853680926" frameborder="0" style="border:0"></iframe>
-    </div>
+		<article id="young-intro" class="fixed">
+			
+	    <section class="content">
+	
+		    <div class="text">
+		
+	        <h2>Young people</h2>
+	
+	        <p>
+	           We believe that all kids should have the opportunity to create something incredible,<br class="hide-on-mobile" />
+	           to one day become the future of tech. And it all starts with having their own computer.
+	        </p>
+	
+		    </div>
+		     
+	    </section>
+			
+		</article>
 
-  </section>
+		<article id="young" class="static">
+			
+		  <div class="container">
+			
+			<h2 class="text-center">CodeStarter Campaign</h2>
+			<p class="intro text-center">« If a kid is going to learn to code, they need a computer. »</p>
 
-</article>
+			<p class="text-center">% of each ticket will be donated to CodeStarter - they will ship a new laptop to a child waiting to enroll in a programming class. </p>
+				
+			<h2 class="text-center" style="margin-top: 2em">Workshops for youngsters</h2>
+			<p class="text-center"><span class="tba">TBA</span></p>
+			
+		  </div>
 
-  <article id="codestarter">
-    <section class="intro">
-      <div class="container">
-        <h2>Young people</h2>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
+			<ul class="photos">
 
-        <div class="columns">
+				<li class="photo"><span><figure style="background-image:url(assets/codestarter/1.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/codestarter/2.jpg)"></figure></span></li>
+				<li class="photo"><span><figure style="background-image:url(assets/codestarter/3.jpg)"></figure></span></li>
 
-          <div class="column">
+			</ul>
+			
+		</article>
 
-            <h2>CodeStarter Campaign</h2>
-            <h4>« If a kid is going to learn to code, they need a computer. »</h4>
-<p>% of each ticket will be donated to <a href="https://codestarter.org/">CodeStarter</a> - they will ship a new laptop to a child waiting to enroll in a programming class.</p>
+		<article id="quotes-intro" class="fixed">
+			
+	    <section class="content">
+	
+		    <div class="text">
+		
+	        <h2>Testimonials</h2>
+	
+	        <p>
+	           What people say about last edition of Poly Conf.
+	        </p>
+	
+		    </div>
+		     
+	    </section>
+			
+		</article>
 
-          </div>
-
-          <div class="column">
-
-            <h2>Workshops for youngsters</h2>
-            <p>TBA</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </section>
-    <section class="photos">
-      <figure style="background-image:url(assets/codestarter/1.jpg)"><span></span></figure>
-      <figure style="background-image:url(assets/codestarter/2.jpg)"><span></span></figure>
-      <figure style="background-image:url(assets/codestarter/3.jpg)"><span></span></figure>
-      <figure style="background-image:url(assets/codestarter/4.jpg)"><span></span></figure>
-    </section>
-  </article>
-
-
-  <article id="quotes">
-    <section class="intro">
-      <div class="container">
-        <h2>Testimonials</h2>
-
-        <p>
-          What people say about PolyConf
-        </p>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
+		<article id="quotes" class="static">
+			
+		  <div class="container">
+			
         <ul class="quotes">
 
           <li class="quote"><div>
@@ -403,43 +518,68 @@ In my free time, I do a lot of open source and mobile application development or
 
 
         </ul>
-      </div>
-    </section>
-  </article>
 
+			
+		  </div>
+			
+		</article>
+
+
+		<article id="contact" class="fixed">
+			
+	    <section class="content">
+	
+		    <div class="text">
+		
+			      <p>You can contact us at <a href="mailto:hello@polyconf.com">hello@polyconf.com</a></p>
+			
+			      <ul class="social">
+			         <li><a href="http://twitter.com/polyconfhq" class="twitter"><img src="assets/img/twitter.svg" /></a></li>
+			         <li><a href="http://facebook.com/polyconf" class="facebook"><img src="assets/img/facebook.svg" /></a></li>
+			         <li><a href="https://www.youtube.com/user/polyconf" class="youtube"><img src="assets/img/youtube.svg" /></a></li>
+			       </ul>
+			
+			     </div>
+			
+			    <span id="copy" data-anchor-target="#contact" data-200-top="bottom: -50px" data-100-top="bottom: 50px">© Copyright PolyConf, 2015</span>
+					     
+	    </section>
+			
+		</article>
+	  
 </div>
-<footer>
-  <div class="container">
 
-    <div class="about-us">
+<span id="menu-link" data-anchor-target="#about" data-100-top="top: -50px" data-top="top: 50px">&nbsp;</span>
 
-      <h4>About us</h4>
-      <p>Come to Poznan, Poland in July 2015 to meet programmers interested in polyglot approach to software development.</p>
-      <p class="copy">&copy; Copyright PolyConf, 2015</p>
+<nav id="overlay">
 
-    </div>
+  <span id="close-menu-link">&nbsp;</span>
 
-    <div class="learn-more">
-
-      <h4>Learn more</h4>
+  <div class="content">
 
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#speakers">Speakers</a></li>
+		    <li><a href="#header">Home</a></li>
+		    <li><a href="#about">About</a></li>
+		    <li><a href="#speakers">Speakers</a></li>
+		    <li><a href="#venue">Venue</a></li>
+		    <li><a href="#codestarter">Young people</a></li>
+		    <li><a href="#testimonials">Testimonials</a></li>
+		    <li class="become"><a href="sponsors.polyconf.com">Become a Sponsor</a></li>
+		    <li><a href="14.polyconf.com">Previous editions</a></li>
       </ul>
 
-    </div>
-
-    <div class="stay-connected">
-      <h4>Stay connected</h4>
-      <ul>
-        <li><a href="http://twitter.com/polyconfhq" class="twitter">Follow us on Twitter</a></li>
-        <li><a href="http://facebook.com/polyconf" class="facebook">Like us on Facebook</a></li>
-      </ul>
-    </div>
   </div>
 
-</footer>
+</nav>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/main.js"></script>
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-8394595-2']);
