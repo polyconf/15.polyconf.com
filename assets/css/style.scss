@@ -198,17 +198,39 @@ body {
 
 #header {
 
-	.content {
+	background: $dark url(../img/top.png) no-repeat center center !important;
+
+	@include media($tablet) {
+		background-position: center -120px !important;
+	}
+
+	@include media($portrait) {
+		background-position: center -170px !important;
+		background-repeat: repeat !important;
+	}
+
+	@include media($mobile) {
+		background-position: center -200px !important;
+		background-repeat: repeat !important;
+		background-size: 1440px auto !important;
+	}
+
+	.content {	
+		
+		background: none !important;
+		
 		@include media($mobile) {
 			padding: 50px 0;
 		}		
 		@include media($tablet) {
 			padding: 100px 0;
-			height: 800px
+			height: 800px;
+			
+			
 		}		
 		@include media($portrait) {
 			padding: 100px 0;
-			height: 1000px
+			height: 800px
 		}		
 
 
@@ -290,10 +312,10 @@ body {
 			margin: 0;
 			position: absolute;
 			left: 50%;
-			top: 45%;
-			width: 250px;
-			transform: translate(-50%, -50%);		
-			-webkit-transform: translate(-50%, -50%);		
+			top: 130px;
+			width: 200px;
+			transform: translateX(-50%);		
+			-webkit-transform: translateX(-50%);		
 			display: block;			
 		}
 		
@@ -334,9 +356,11 @@ body {
 
 		@include media($portrait ) {
 			width: auto;
-			left: 5%;
-			right: 5%;
-			top: 45%;
+			width: 60%;
+			left: 50%;
+			transform: translateX(-50%);		
+			-webkit-transform: translateX(-50%);		
+			top: 600px;
 		}
 		
 		@include media($mobile) {

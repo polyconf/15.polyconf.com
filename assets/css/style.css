@@ -374,214 +374,232 @@ body {
   .button.white:hover {
     background: #f2f2f2; }
 
-@media screen and (max-width: 40em) {
+#header {
+  background: #2e4e6b url(../img/top.png) no-repeat center center !important; }
+  @media screen and (min-width: 64em) and (max-width: 75em) {
+    #header {
+      background-position: center -120px !important; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #header {
+      background-position: center -170px !important;
+      background-repeat: repeat !important; } }
+  @media screen and (max-width: 40em) {
+    #header {
+      background-position: center -200px !important;
+      background-repeat: repeat !important;
+      background-size: 1440px auto !important; } }
   #header .content {
-    padding: 50px 0; } }
-@media screen and (min-width: 64em) and (max-width: 75em) {
-  #header .content {
-    padding: 100px 0;
-    height: 800px; } }
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  #header .content {
-    padding: 100px 0;
-    height: 1000px; } }
-#header nav {
-  display: none;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 999999999;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
+    background: none !important; }
+    @media screen and (max-width: 40em) {
+      #header .content {
+        padding: 50px 0; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #header .content {
+        padding: 100px 0;
+        height: 800px; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #header .content {
+        padding: 100px 0;
+        height: 800px; } }
+  #header nav {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 999999999;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    @media screen and (min-width: 75em) {
+      #header nav {
+        display: block; } }
+    #header nav::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #header nav li {
+      display: inline-block; }
+      #header nav li a {
+        display: block;
+        line-height: 50px;
+        height: 50px;
+        padding: 0 20px;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        color: #fff; }
+  #header .last {
+    background: url(../previous.svg) no-repeat right center;
+    background-size: auto 40px;
+    height: 40px;
+    padding-right: 50px;
+    top: 40px;
+    right: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute; }
   @media screen and (min-width: 75em) {
-    #header nav {
-      display: block; } }
-  #header nav::after {
-    clear: both;
-    content: "";
-    display: table; }
-  #header nav li {
-    display: inline-block; }
-    #header nav li a {
-      display: block;
-      line-height: 50px;
-      height: 50px;
-      padding: 0 20px;
-      font-size: 1.25em;
-      text-transform: uppercase;
-      color: #fff; }
-#header .last {
-  background: url(../previous.svg) no-repeat right center;
-  background-size: auto 40px;
-  height: 40px;
-  padding-right: 50px;
-  top: 40px;
-  right: 40px;
-  line-height: 40px;
-  color: #fff;
-  font-size: 1.5em;
-  position: absolute; }
-@media screen and (min-width: 75em) {
-  #header #logo {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 200px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    display: block; } }
-@media screen and (min-width: 64em) and (max-width: 75em) {
-  #header #logo {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    width: 200px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    display: block; } }
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  #header #logo {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    width: 250px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    display: block; } }
-@media screen and (max-width: 40em) {
-  #header #logo {
-    display: block;
-    width: 180px;
-    margin: 20px auto 40px; } }
-#header #logo img {
-  width: 100%;
-  height: auto;
-  display: block; }
-#header #date-place {
-  margin: 0;
-  position: absolute;
-  display: block; }
-  @media screen and (min-width: 75em) {
-    #header #date-place {
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+    #header #logo {
+      margin: 0;
+      position: absolute;
       left: 50%;
       top: 50%;
-      width: 1200px; } }
+      width: 200px;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      display: block; } }
   @media screen and (min-width: 64em) and (max-width: 75em) {
-    #header #date-place {
-      width: auto;
-      left: 5%;
-      right: 5%;
-      top: 45%; } }
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #header #date-place {
-      width: auto;
-      left: 5%;
-      right: 5%;
-      top: 45%; } }
-  @media screen and (max-width: 40em) {
-    #header #date-place {
-      position: relative;
-      left: auto;
-      top: 0; } }
-  #header #date-place > div {
-    font-family: "proxima-nova-soft";
-    color: #20b9f1;
-    font-size: 2em; }
-    #header #date-place > div#conf-place {
-      float: left; }
-    #header #date-place > div#conf-date {
-      float: right; }
-    @media screen and (max-width: 40em) {
-      #header #date-place > div {
-        float: none !important;
-        color: white;
-        font-size: 1.25em; } }
-#header #the-bar {
-  text-align: center; }
-  @media screen and (min-width: 75em) {
-    #header #the-bar {
-      padding: 20px 0;
-      width: 1200px;
+    #header #logo {
+      margin: 0;
       position: absolute;
-      bottom: 20px;
       left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%); } }
-  @media screen and (min-width: 64em) and (max-width: 75em) {
-    #header #the-bar {
-      padding: 20px 0;
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0; } }
+      top: 45%;
+      width: 200px;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      display: block; } }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #header #the-bar {
-      padding: 20px 0;
+    #header #logo {
+      margin: 0;
       position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0; } }
+      left: 50%;
+      top: 130px;
+      width: 200px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      display: block; } }
   @media screen and (max-width: 40em) {
-    #header #the-bar {
-      margin-top: 100px; } }
-  #header #the-bar .inline-block {
-    display: inline-block; }
-  @media screen and (max-width: 40em) {
-    #header #the-bar .become-a-sponsor {
-      margin-right: 0em !important;
-      margin-bottom: 20px; } }
-  #header #the-bar span {
-    font-size: 1.25em;
-    color: #fff;
-    vertical-align: middle;
-    display: inline-block;
-    height: 36px;
-    line-height: 36px; }
-  #header #the-bar form {
-    display: inline-block; }
-    #header #the-bar form > div {
+    #header #logo {
+      display: block;
+      width: 180px;
+      margin: 20px auto 40px; } }
+  #header #logo img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  #header #date-place {
+    margin: 0;
+    position: absolute;
+    display: block; }
+    @media screen and (min-width: 75em) {
+      #header #date-place {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        width: 1200px; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #header #date-place {
+        width: auto;
+        left: 5%;
+        right: 5%;
+        top: 45%; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #header #date-place {
+        width: auto;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        top: 600px; } }
+    @media screen and (max-width: 40em) {
+      #header #date-place {
+        position: relative;
+        left: auto;
+        top: 0; } }
+    #header #date-place > div {
+      font-family: "proxima-nova-soft";
+      color: #20b9f1;
+      font-size: 2em; }
+      #header #date-place > div#conf-place {
+        float: left; }
+      #header #date-place > div#conf-date {
+        float: right; }
+      @media screen and (max-width: 40em) {
+        #header #date-place > div {
+          float: none !important;
+          color: white;
+          font-size: 1.25em; } }
+  #header #the-bar {
+    text-align: center; }
+    @media screen and (min-width: 75em) {
+      #header #the-bar {
+        padding: 20px 0;
+        width: 1200px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%); } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #header #the-bar {
+        padding: 20px 0;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #header #the-bar {
+        padding: 20px 0;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0; } }
+    @media screen and (max-width: 40em) {
+      #header #the-bar {
+        margin-top: 100px; } }
+    #header #the-bar .inline-block {
       display: inline-block; }
-      #header #the-bar form > div input.text {
-        width: 400px;
-        border: 0;
-        display: inline-block;
-        margin: 0 1ex;
-        height: 36px;
-        line-height: 36px;
-        font-size: 1.25em;
-        font-weight: 600;
-        vertical-align: middle;
-        padding-right: 180px; }
-        @media screen and (max-width: 40em) {
-          #header #the-bar form > div input.text {
-            width: 90% !important;
-            margin: 0 auto;
-            padding-right: 0;
-            margin-bottom: 5px; } }
-      #header #the-bar form > div input.submit {
-        display: inline-block;
-        height: 30px;
-        line-height: 30px;
-        padding: 0;
-        background: #20b9f1;
-        color: white;
-        text-transform: uppercase;
-        font-size: 1.125em;
-        font-weight: 600;
-        vertical-align: middle;
-        margin-left: -137px;
-        width: 120px; }
-        @media screen and (max-width: 40em) {
-          #header #the-bar form > div input.submit {
-            margin: 0px; } }
+    @media screen and (max-width: 40em) {
+      #header #the-bar .become-a-sponsor {
+        margin-right: 0em !important;
+        margin-bottom: 20px; } }
+    #header #the-bar span {
+      font-size: 1.25em;
+      color: #fff;
+      vertical-align: middle;
+      display: inline-block;
+      height: 36px;
+      line-height: 36px; }
+    #header #the-bar form {
+      display: inline-block; }
+      #header #the-bar form > div {
+        display: inline-block; }
+        #header #the-bar form > div input.text {
+          width: 400px;
+          border: 0;
+          display: inline-block;
+          margin: 0 1ex;
+          height: 36px;
+          line-height: 36px;
+          font-size: 1.25em;
+          font-weight: 600;
+          vertical-align: middle;
+          padding-right: 180px; }
+          @media screen and (max-width: 40em) {
+            #header #the-bar form > div input.text {
+              width: 90% !important;
+              margin: 0 auto;
+              padding-right: 0;
+              margin-bottom: 5px; } }
+        #header #the-bar form > div input.submit {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0;
+          background: #20b9f1;
+          color: white;
+          text-transform: uppercase;
+          font-size: 1.125em;
+          font-weight: 600;
+          vertical-align: middle;
+          margin-left: -137px;
+          width: 120px; }
+          @media screen and (max-width: 40em) {
+            #header #the-bar form > div input.submit {
+              margin: 0px; } }
 
 .static {
   position: relative;
