@@ -1228,3 +1228,36 @@ nav#overlay {
         text-align: center; }
         nav#overlay .content ul li a:hover {
           text-decoration: underline; }
+
+#partners ul.partners::after {
+  clear: both;
+  content: "";
+  display: table; }
+#partners ul.partners .main-partner {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto; }
+  @media screen and (max-width: 40em) {
+    #partners ul.partners .main-partner {
+      float: none;
+      width: 70%;
+      max-width: 240px; } }
+  #partners ul.partners .main-partner img {
+    display: block;
+    width: 100%;
+    height: auto; }
+#partners ul.partners .partner {
+  float: left;
+  width: 20%;
+  padding: 2%; }
+  #partners ul.partners .partner img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 40em) {
+    #partners ul.partners .partner {
+      float: none;
+      width: 60%;
+      max-width: 200px;
+      margin: 0 auto; } }
