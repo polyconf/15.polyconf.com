@@ -1311,3 +1311,55 @@ nav#overlay {
 	
 }
 
+#partners {
+	
+	ul.partners {
+		
+		@include clearfix();
+		
+		.main-partner {
+			display: block;
+			width: 100%;
+			max-width: 360px;
+			margin: 0 auto;
+
+			@include media($mobile) {
+				float: none;
+				width: 70%;
+				max-width: 240px;
+			}
+				
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+				
+			
+		}
+		
+		.partner {
+
+			float: left;		
+			width: 20%;
+			padding: 2%;
+						
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			
+			@include media($mobile) {
+				float: none;
+				width: 60%;
+				max-width: 200px;
+				margin: 0 auto;
+			}
+			
+			
+		}
+		
+	}
+	
+}
