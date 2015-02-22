@@ -1229,35 +1229,152 @@ nav#overlay {
         nav#overlay .content ul li a:hover {
           text-decoration: underline; }
 
-#partners ul.partners::after {
-  clear: both;
-  content: "";
-  display: table; }
-#partners ul.partners .main-partner {
-  display: block;
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto; }
-  @media screen and (max-width: 40em) {
+#partners {
+  padding: 0; }
+  #partners h3.sponsor-header {
+    text-align: center;
+    padding: 20px 0;
+    background: #6c7173;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    line-height: 1em; }
+  #partners div.sponsors {
+    padding: 50px 0; }
+    #partners div.sponsors ul {
+      display: block; }
+      #partners div.sponsors ul::after {
+        clear: both;
+        content: "";
+        display: table; }
+      #partners div.sponsors ul li .logo {
+        width: 100%; }
+        #partners div.sponsors ul li .logo img {
+          width: 100%;
+          display: block; }
+    #partners div.sponsors.platinum .sponsor {
+      display: block; }
+      #partners div.sponsors.platinum .sponsor::after {
+        clear: both;
+        content: "";
+        display: table; }
+      #partners div.sponsors.platinum .sponsor .logo {
+        float: left;
+        display: block;
+        margin-right: 5%;
+        width: 47.5%;
+        vertical-align: middle; }
+        #partners div.sponsors.platinum .sponsor .logo:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 40em) {
+          #partners div.sponsors.platinum .sponsor .logo {
+            width: 100%;
+            margin-bottom: 20px; } }
+      #partners div.sponsors.platinum .sponsor p {
+        float: left;
+        display: block;
+        margin-right: 5%;
+        width: 47.5%;
+        padding: 50px 0 0;
+        text-align: left;
+        vertical-align: middle; }
+        #partners div.sponsors.platinum .sponsor p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 40em) {
+          #partners div.sponsors.platinum .sponsor p {
+            width: 100%;
+            padding: 0;
+            text-align: center; } }
+    #partners div.sponsors.gold .sponsor {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 30%; }
+      #partners div.sponsors.gold .sponsor:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        #partners div.sponsors.gold .sponsor {
+          width: 100%;
+          margin-bottom: 20px; } }
+      #partners div.sponsors.gold .sponsor p {
+        text-align: center; }
+    #partners div.sponsors.silver .sponsor {
+      float: left;
+      display: block;
+      margin-right: 3.9603960396%;
+      width: 16.8316831683%; }
+      #partners div.sponsors.silver .sponsor:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        #partners div.sponsors.silver .sponsor {
+          width: 100%;
+          margin-bottom: 20px; } }
+    #partners div.sponsors.bronze .sponsor {
+      float: left;
+      display: block;
+      margin-right: 3.9603960396%;
+      width: 16.8316831683%;
+      margin-bottom: 20px; }
+      #partners div.sponsors.bronze .sponsor:last-child {
+        margin-right: 0; }
+      #partners div.sponsors.bronze .sponsor:nth-child(5n) {
+        margin-right: 0; }
+      #partners div.sponsors.bronze .sponsor:nth-child(5n+1) {
+        clear: left; }
+      @media screen and (max-width: 40em) {
+        #partners div.sponsors.bronze .sponsor {
+          width: 100%;
+          margin-bottom: 20px; } }
+  #partners div.supporters {
+    padding: 50px 0; }
+    #partners div.supporters ul {
+      display: block; }
+      #partners div.supporters ul::after {
+        clear: both;
+        content: "";
+        display: table; }
+      #partners div.supporters ul li {
+        float: left;
+        display: block;
+        margin-right: 3.2786885246%;
+        width: 13.9344262295%; }
+        #partners div.supporters ul li:last-child {
+          margin-right: 0; }
+        #partners div.supporters ul li:nth-child(6n) {
+          margin-right: 0; }
+        #partners div.supporters ul li:nth-child(6n+1) {
+          clear: left; }
+  #partners ul.partners {
+    padding: 50px 0; }
+    #partners ul.partners::after {
+      clear: both;
+      content: "";
+      display: table; }
     #partners ul.partners .main-partner {
-      float: none;
-      width: 70%;
-      max-width: 240px; } }
-  #partners ul.partners .main-partner img {
-    display: block;
-    width: 100%;
-    height: auto; }
-#partners ul.partners .partner {
-  float: left;
-  width: 20%;
-  padding: 2%; }
-  #partners ul.partners .partner img {
-    display: block;
-    width: 100%;
-    height: auto; }
-  @media screen and (max-width: 40em) {
+      display: block;
+      width: 100%;
+      max-width: 240px;
+      margin: 0 auto; }
+      @media screen and (max-width: 40em) {
+        #partners ul.partners .main-partner {
+          float: none;
+          width: 70%;
+          max-width: 240px; } }
+      #partners ul.partners .main-partner img {
+        display: block;
+        width: 100%;
+        height: auto; }
     #partners ul.partners .partner {
-      float: none;
-      width: 60%;
-      max-width: 200px;
-      margin: 0 auto; } }
+      float: left;
+      width: 20%;
+      padding: 0 4%; }
+      #partners ul.partners .partner img {
+        display: block;
+        width: 100%;
+        height: auto; }
+      @media screen and (max-width: 40em) {
+        #partners ul.partners .partner {
+          float: none;
+          width: 60%;
+          max-width: 200px;
+          margin: 0 auto; } }
