@@ -1313,14 +1313,164 @@ nav#overlay {
 
 #partners {
 	
+	padding: 0;
+	
+	h3.sponsor-header {
+		
+		text-align: center;
+		padding: 20px 0;
+		background: $gray;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: em(20);
+		line-height: 1em;
+	}
+	
+	div.sponsors {
+		
+		padding: 50px 0;
+	
+		ul {
+			
+			@include row();
+			
+			li {
+				
+				.logo {
+					width: 100%;
+					
+					img {
+						width: 100%;
+						display: block;
+					}
+					
+				}				
+				
+			}
+			
+		}
+
+		&.platinum {
+			
+			.sponsor {
+
+				@include row();
+					
+				.logo {
+					@include span-columns(6);			
+					vertical-align: middle;					
+				
+					@include media($mobile) {
+						@include fill-parent();
+						margin-bottom: 20px;
+					}
+				
+				}
+
+				p {
+					@include span-columns(6);	
+					padding: 50px 0 0;		
+					text-align: left;
+					vertical-align: middle;					
+					
+					@include media($mobile) {
+						@include fill-parent();
+						padding: 0;
+						text-align: center;
+					}
+
+					
+				}
+				
+			}
+			
+		}
+
+	
+		&.gold {
+			
+			.sponsor {
+				
+				@include span-columns (4);
+
+				@include media($mobile) {
+					@include fill-parent();
+					margin-bottom: 20px;
+				}
+
+
+				p {
+					text-align: center;					
+				}
+				
+			}
+			
+		}
+
+		&.silver {
+			
+			.sponsor {
+				@include span-columns (3 of 15);
+
+				@include media($mobile) {
+					@include fill-parent();
+					margin-bottom: 20px;
+				}
+
+			}
+			
+		}
+
+		&.bronze {
+			
+			.sponsor {
+				@include span-columns (3 of 15);
+				@include omega(5n);
+				margin-bottom: 20px;
+
+				@include media($mobile) {
+					@include fill-parent();
+					margin-bottom: 20px;
+				}
+
+
+			}
+			
+		}
+		
+		.sponsor {
+			
+			
+		}
+		
+	}
+	
+	div.supporters {
+		
+		padding: 50px 0;
+	
+		ul {
+			
+			@include row();
+			
+			li {
+				@include span-columns (3 of 18);
+				@include omega(6n);
+			}			
+	
+		}
+		
+	}
+	
 	ul.partners {
 		
 		@include clearfix();
+		padding: 50px 0;
 		
 		.main-partner {
 			display: block;
 			width: 100%;
-			max-width: 360px;
+			max-width: 240px;
 			margin: 0 auto;
 
 			@include media($mobile) {
@@ -1342,7 +1492,7 @@ nav#overlay {
 
 			float: left;		
 			width: 20%;
-			padding: 2%;
+			padding: 0 4%;
 						
 			img {
 				display: block;
