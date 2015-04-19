@@ -1316,6 +1316,8 @@ nav#overlay {
       margin-right: 3.9603960396%;
       width: 16.8316831683%;
       margin-bottom: 20px; }
+    #partners div.sponsors.bronze .sponsor.twilio {
+      margin-top: 6.1% }
       #partners div.sponsors.bronze .sponsor:last-child {
         margin-right: 0; }
       #partners div.sponsors.bronze .sponsor:nth-child(5n) {
@@ -1379,6 +1381,10 @@ nav#overlay {
           width: 60%;
           max-width: 200px;
           margin: 0 auto; } }
+      #partners ul.partners .partner.bitspiration {
+        margin-top: 4.7%; }
+      #partners ul.partners .partner.infoq {
+        margin-top: 4%; }
 
 #terms h2 {
   font-size: 1.5em; }
