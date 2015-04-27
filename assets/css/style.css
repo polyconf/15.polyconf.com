@@ -1429,3 +1429,6 @@ nav#overlay {
   @media screen and (max-width: 40em) {
     #terms .row .column {
       width: 100%; } }
+
+.google-map img, .google-map picture {
+    max-width: none; }
