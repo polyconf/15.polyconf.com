@@ -1441,6 +1441,16 @@ nav#overlay {
                 &.squirrel {
                   margin-top: 7%;
                 }
+
+                &.gamesys {
+                  margin-top: 4%;
+
+                  img {
+                    width: initial;
+                    margin: 0 auto;
+                  }
+
+                }
 			}
 			
 		}
@@ -1579,4 +1589,12 @@ nav#overlay {
     
   }
   
+}
+
+.google-map {
+
+  img, picture {
+    max-width: none;
+  }
+
 }
