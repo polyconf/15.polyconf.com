@@ -27,7 +27,7 @@
         panControl: true,
         zoomControl: true,
         zoomControlOptions: {
-          style: google.maps.ZoomControlStyle.SMALL,
+          style: google.maps.ZoomControlStyle.LARGE,
           position: google.maps.ControlPosition.RIGHT_BOTTOM
         },
         scrollwheel: false,
@@ -37,7 +37,7 @@
       var marker = new google.maps.Marker({
           position: new google.maps.LatLng(coordinates.lat,coordinates.lng),
           map: map,
-          title: 'Hello World!'
+          title: 'PolyConf 2015'
       });
     }
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -882,7 +882,7 @@ Leah is currently a software engineer at Google. She spent the Spring of 2013 at
 
     <article id="venue" class="static">
 
-      <div id="venue-map-container"><div id="venue-map"></div></div>
+      <div id="venue-map-container"><div id="venue-map" class="google-map"></div></div>
 
       <ul id="venue-gallery">
 
@@ -1029,6 +1029,9 @@ Leah is currently a software engineer at Google. She spent the Spring of 2013 at
 						<li class="bronze sponsor squirrel">
 							<div class="logo"><a href="http://squirrel.me/"><img src="assets/sponsors/squirrel.png" /></a></div>
 						</li>
+                        <li class="bronze sponsor gamesys">
+                            <div class="logo"><a href="http://www.gamesyscorporate.com/"><img src="assets/sponsors/gamesys_logo.png" /></a></div>
+                        </li>
 					</ul>
 
 				</div>
