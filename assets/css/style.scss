@@ -47,21 +47,25 @@ body {
 		}		
 		
 		@include media($desktop) {
+
 			position: fixed;
 			top: 0;
 			left: 0;
 			right: 0;
 			padding: 0;			
+
 		}
 		
 		background: $dark;
 		z-index: 1000;
 		
+
 		&.skrollable-before, &.skrollable-after {
 			@include media($desktop) {
 				display: none;			
 			}
 		}
+
 
 		> .text {
 			
@@ -1598,3 +1602,144 @@ nav#overlay {
   }
 
 }
+
+#tickets {
+
+  .clearfix {
+    
+    @include row();
+    
+    .batches {
+      
+      @include span-columns(8);
+      
+      .batch {
+        
+        @include span-columns(4 of 8);
+        
+        .inside {
+          
+          width: 100%;
+          padding-top: 150%;
+          position: relative;
+          border: rgba($gray,0.25) 4px solid;
+          
+          h4 {
+            
+            background: $dark;
+            color: #fff;
+            top: 50px;
+            font-size: em(20);
+            font-weight: 600;
+            text-align: center;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            
+            left: 50%;
+            -webkit-transform:translateX(-50%);
+            @include transform(translateX(-50%));
+            
+            
+          }
+          
+          .price {
+            font-size: em(150);
+            line-height: 1em;
+            font-family: $header-font-family;
+            position: absolute;
+            top: 140px;
+            left: 50%;
+            -webkit-transform:translateX(-50%);
+            @include transform(translateX(-50%));
+
+            small {
+              position: absolute;
+              bottom: -20px;
+              font-size: 0.15em;
+              line-height: 1em;
+              right: 0;
+              font-weight: 600;
+            }
+          }
+          
+          .dates {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            margin-top: 100px;
+            font-size: em(20);
+          }
+          
+          .buy-a-ticket {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            .button {
+              background: $blue;
+              white-space: nowrap;
+              color: #fff;
+              font-size: em(36);
+              line-height: 1em;
+              font-family: $header-font-family;
+              padding: 10px 20px;
+              font-weight: bold;
+              display: inline-block;
+            }
+          }
+          
+          > * {
+            position: absolute;
+            text-align: center;
+            
+            
+          }
+        
+        }
+        
+
+        
+        &.past, &.future {
+          
+          * {
+            
+            background: none !important;
+            color: rgba($gray,0.25) !important;
+            
+          }
+          
+        }
+        
+      }
+      
+      
+    }
+    
+    .remarks {
+      
+      @include span-columns(4);
+      
+      h3 {
+        
+        color: $blue;
+        font-size: em(18);
+        text-transform: uppercase;
+        margin: 1em 0;
+        
+      }
+      
+      ul, p{
+        
+        margin: 1em 0;
+        
+      }
+      
+    }
+    
+    
+  }
+  
+}
+
