@@ -209,7 +209,7 @@ font-family: $header-font-family;
 #header {
 
   height: 100%;
-	background: $dark url(../img/top.png) no-repeat center center !important;
+	background: $dark;
 
 	@include media($tablet) {
 		background-position: center -120px !important;
@@ -466,7 +466,7 @@ font-family: $header-font-family;
 			> div {
 				display: inline-block;
 				input.text {
-					width: 400px;
+					width: 300px;
 					border: 0;
 					display: inline-block;
 					margin: 0 1ex;
@@ -475,7 +475,7 @@ font-family: $header-font-family;
 					font-size: em(20);
 					font-weight: 600;
 					vertical-align: middle;
-					padding-right: 180px;
+					padding-right: 130px;
 
 					@include media($mobile) {
 						width: 90% !important;
@@ -1082,7 +1082,7 @@ font-family: $header-font-family;
 }
 
 #contact {
-	
+	position: relative;
 
 		p {
 			font-size: em(20);
@@ -1183,9 +1183,20 @@ font-family: $header-font-family;
 
 // LINK DO MENU
 
+#menu-name {
+  position: absolute;
+  right: 140px;
+  line-height: 64px;
+  top: 50px;
+  font-size: em(24);
+	font-family: $header-font-family;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 #menu-link {
-	width: 50px;
-	height: 50px;
+	width: 64px;
+	height: 64px;
 	position: fixed;
 	
 	@include media($desktop) {
