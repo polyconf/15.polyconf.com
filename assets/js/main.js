@@ -11,8 +11,12 @@ $(document).ready(function(){
 		$("nav#overlay").fadeOut();
 	})  
 
+	$("header").css("min-height",$(window).height());
+
+
 	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
+/*
 		$(".fixed").each(function(i,e){
 			
 			$(this).css("min-height",$(window).height());
@@ -40,10 +44,16 @@ $(document).ready(function(){
 //			$(this).css("min-height",$(window).height());
 		})
 
+
+*/
+
 	  var s = skrollr.init({
 			forceHeight: false
 		});
 
 	}
+
+
+  $(".agenda .event .long").hide();
 	
 });
