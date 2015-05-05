@@ -250,8 +250,26 @@ body {
       background: #2e4e6b; } }
   .fixed > section {
     padding: 100px 0;
+    /*
+    		@include media($desktop) {
+    
+    			position: fixed;
+    			top: 0;
+    			left: 0;
+    			right: 0;
+    			padding: 0;			
+    
+    		}
+    */
     background: #2e4e6b;
-    z-index: 1000; }
+    z-index: 1000;
+    /*
+    		&.skrollable-before, &.skrollable-after {
+    			@include media($desktop) {
+    				display: none;			
+    			}
+    		}
+    */ }
     @media screen and (min-width: 64em) and (max-width: 75em) {
       .fixed > section {
         min-height: auto !important; } }
@@ -261,31 +279,19 @@ body {
     @media screen and (max-width: 40em) {
       .fixed > section {
         min-height: auto !important; } }
-    @media screen and (min-width: 75em) {
-      .fixed > section {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 0; } }
-    @media screen and (min-width: 75em) {
-      .fixed > section.skrollable-before, .fixed > section.skrollable-after {
-        display: none; } }
     .fixed > section > .text {
-      padding: 0 5%; }
-      @media screen and (min-width: 75em) {
-        .fixed > section > .text {
-          position: absolute;
-          width: 1000px;
-          margin-left: -500px;
-          left: 50%;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-          padding: 0; } }
+      padding: 0 5%;
+      /*
+      			@include media($desktop) {
+      				position: absolute;
+      				width: 1000px;
+      				margin-left: -500px;
+      				left: 50%;
+      				top: 50%;
+      				@include transform(translateY(-50%));
+      				padding: 0;
+      			}
+      */ }
       @media screen and (min-width: 75em) {
         .fixed > section > .text h2 {
           font-weight: 400;
@@ -375,6 +381,7 @@ body {
     background: #f2f2f2; }
 
 #header {
+  height: 100%;
   background: #2e4e6b url(../img/top.png) no-repeat center center !important; }
   @media screen and (min-width: 64em) and (max-width: 75em) {
     #header {
@@ -1316,15 +1323,6 @@ nav#overlay {
       margin-right: 3.9603960396%;
       width: 16.8316831683%;
       margin-bottom: 20px; }
-    #partners div.sponsors.bronze .sponsor.twilio {
-      margin-top: 6.1%; }
-    #partners div.sponsors.bronze .sponsor.squirrel {
-      margin-top: 7%; }
-    #partners div.sponsors.bronze .sponsor.gamesys {
-      margin-top: 4%; }
-    #partners div.sponsors.bronze .sponsor.gamesys img {
-      width: initial;
-      margin: 0 auto; }
       #partners div.sponsors.bronze .sponsor:last-child {
         margin-right: 0; }
       #partners div.sponsors.bronze .sponsor:nth-child(5n) {
@@ -1335,6 +1333,15 @@ nav#overlay {
         #partners div.sponsors.bronze .sponsor {
           width: 100%;
           margin-bottom: 20px; } }
+      #partners div.sponsors.bronze .sponsor.twilio {
+        margin-top: 6.1%; }
+      #partners div.sponsors.bronze .sponsor.squirrel {
+        margin-top: 7%; }
+      #partners div.sponsors.bronze .sponsor.gamesys {
+        margin-top: 4%; }
+        #partners div.sponsors.bronze .sponsor.gamesys img {
+          width: initial;
+          margin: 0 auto; }
   #partners div.supporters {
     padding: 50px 0; }
     #partners div.supporters ul {
@@ -1436,72 +1443,109 @@ nav#overlay {
       width: 100%; } }
 
 .google-map img, .google-map picture {
-    max-width: none; }
+  max-width: none; }
 
-#hotels .row {
-    max-width: 73.75em;
-    margin-left: auto;
-    margin-right: auto; }
-#hotels .row:after {
+#tickets .clearfix {
+  display: block; }
+  #tickets .clearfix::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
-#hotels .row .hotel {
-    margin: 50px 0; }
-@media screen and (min-width: 77.5em) {
-    #hotels .row .hotel {
-        float: left;
-        display: block;
-        margin-right: 1.0101010101%;
-        width: 29.2929292929%; }
-    #hotels .row .hotel:last-child {
+    display: table; }
+  #tickets .clearfix .batches {
+    float: left;
+    display: block;
+    margin-right: 5%;
+    width: 65%; }
+    #tickets .clearfix .batches:last-child {
+      margin-right: 0; }
+    #tickets .clearfix .batches .batch {
+      float: left;
+      display: block;
+      margin-right: 7.6923076923%;
+      width: 46.1538461538%; }
+      #tickets .clearfix .batches .batch:last-child {
         margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n+1) {
-        clear: left; }
-    #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
-        margin-left: 5.0505050505%; } }
-@media screen and (min-width: 64em) and (max-width: 77.5em) {
-    #hotels .row .hotel {
-        float: left;
-        display: block;
-        margin-right: 1.6949152542%;
-        width: 32.2033898305%; }
-    #hotels .row .hotel:last-child {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n+1) {
-        clear: left; } }
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #hotels .row .hotel {
-        float: left;
-        display: block;
-        margin-right: 1.6949152542%;
-        width: 49.1525423729%; }
-    #hotels .row .hotel:last-child {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(2n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(2n+1) {
-        clear: left; } }
-/*@media screen and (min-width: 40em) and (max-width: 63.9375em) {*/
-    /*#hotels .row .hotel {*/
-        /*width: 100%; } }*/
-#hotels .row .hotel h4 {
-    font-size: 1rem;
-    margin: 1em 0 0; }
-#hotels .row .hotel table {
-    font-size: 0.875em; }
-#hotels .row .hotel table td {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; }
-#hotels .row .hotel table td.price {
-    text-align: right; }
-#hotels .row .hotel ul li {
-    display: inline-block;
-    margin-right: 1ex; }
-#hotels .row .hotel ul li a {
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: underline; }
+      #tickets .clearfix .batches .batch .inside {
+        width: 100%;
+        padding-top: 150%;
+        position: relative;
+        border: rgba(108, 113, 115, 0.25) 4px solid; }
+        #tickets .clearfix .batches .batch .inside h4 {
+          background: #2e4e6b;
+          color: #fff;
+          top: 50px;
+          font-size: 1.25em;
+          font-weight: 600;
+          text-align: center;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%); }
+        #tickets .clearfix .batches .batch .inside .price {
+          font-size: 9.375em;
+          line-height: 1em;
+          font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+          position: absolute;
+          top: 140px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%); }
+          #tickets .clearfix .batches .batch .inside .price small {
+            position: absolute;
+            bottom: -20px;
+            font-size: 0.15em;
+            line-height: 1em;
+            right: 0;
+            font-weight: 600; }
+        #tickets .clearfix .batches .batch .inside .dates {
+          position: absolute;
+          left: 0;
+          right: 0;
+          text-align: center;
+          top: 50%;
+          margin-top: 100px;
+          font-size: 1.25em; }
+        #tickets .clearfix .batches .batch .inside .buy-a-ticket {
+          position: absolute;
+          bottom: 50px;
+          left: 0;
+          right: 0; }
+          #tickets .clearfix .batches .batch .inside .buy-a-ticket .button {
+            background: #20b9f1;
+            white-space: nowrap;
+            color: #fff;
+            font-size: 2.25em;
+            line-height: 1em;
+            font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+            padding: 10px 20px;
+            font-weight: bold;
+            display: inline-block; }
+        #tickets .clearfix .batches .batch .inside > * {
+          position: absolute;
+          text-align: center; }
+      #tickets .clearfix .batches .batch.past *, #tickets .clearfix .batches .batch.future * {
+        background: none !important;
+        color: rgba(108, 113, 115, 0.25) !important; }
+  #tickets .clearfix .remarks {
+    float: left;
+    display: block;
+    margin-right: 5%;
+    width: 30%; }
+    #tickets .clearfix .remarks:last-child {
+      margin-right: 0; }
+    #tickets .clearfix .remarks h3 {
+      color: #20b9f1;
+      font-size: 1.125em;
+      text-transform: uppercase;
+      margin: 1em 0; }
+    #tickets .clearfix .remarks ul, #tickets .clearfix .remarks p {
+      margin: 1em 0; }
