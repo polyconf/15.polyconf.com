@@ -44,12 +44,16 @@ $(document).ready(function(){
 //			$(this).css("min-height",$(window).height());
 		})
 
+
+*/
+
 	  var s = skrollr.init({
 			forceHeight: false
 		});
 
-*/
-
 	}
+
+
+  $(".agenda .event .long").hide();
 	
 });
