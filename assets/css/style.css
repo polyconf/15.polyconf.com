@@ -382,7 +382,7 @@ body {
 
 #header {
   height: 100%;
-  background: #2e4e6b url(../img/top.png) no-repeat center center !important; }
+  background: #2e4e6b; }
   @media screen and (min-width: 64em) and (max-width: 75em) {
     #header {
       background-position: center -120px !important; } }
@@ -575,7 +575,7 @@ body {
       #header #the-bar form > div {
         display: inline-block; }
         #header #the-bar form > div input.text {
-          width: 400px;
+          width: 300px;
           border: 0;
           display: inline-block;
           margin: 0 1ex;
@@ -584,7 +584,7 @@ body {
           font-size: 1.25em;
           font-weight: 600;
           vertical-align: middle;
-          padding-right: 180px; }
+          padding-right: 130px; }
           @media screen and (max-width: 40em) {
             #header #the-bar form > div input.text {
               width: 90% !important;
@@ -1053,86 +1053,98 @@ body {
         font-size: 1.25em;
         color: #6c7173; }
 
-#contact p {
-  font-size: 1.25em; }
-  #contact p a {
-    font-size: 1.5em;
-    display: block;
-    color: #fff;
-    text-decoration: underline; }
-#contact ul {
-  margin-top: 100px; }
-  @media screen and (max-width: 40em) {
-    #contact ul {
-      margin-top: 20px;
-      margin-bottom: 100px; } }
-  #contact ul li {
-    display: inline-block;
-    margin: 10px; }
-    #contact ul li a {
-      background-position: center center;
+#contact {
+  position: relative; }
+  #contact p {
+    font-size: 1.25em; }
+    #contact p a {
+      font-size: 1.5em;
       display: block;
-      width: 80px;
-      height: 80px;
-      overflow: hidden;
-      text-align: center;
-      border-radius: 100%;
-      border: 2px solid #2e4e6b;
-      -webkit-transition: 0.5s all;
-      -moz-transition: 0.5s all;
-      transition: 0.5s all; }
-      #contact ul li a:hover {
-        border: 2px solid white;
+      color: #fff;
+      text-decoration: underline; }
+  #contact ul {
+    margin-top: 100px; }
+    @media screen and (max-width: 40em) {
+      #contact ul {
+        margin-top: 20px;
+        margin-bottom: 100px; } }
+    #contact ul li {
+      display: inline-block;
+      margin: 10px; }
+      #contact ul li a {
+        background-position: center center;
+        display: block;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 100%;
+        border: 2px solid #2e4e6b;
         -webkit-transition: 0.5s all;
         -moz-transition: 0.5s all;
         transition: 0.5s all; }
-    #contact ul li img {
-      vertical-align: middle;
-      display: inline-block;
-      width: 80px;
-      height: 80px; }
-#contact #copy, #contact #true {
-  position: absolute;
-  bottom: 50px;
-  color: white;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase; }
-  #contact #copy a, #contact #true a {
+        #contact ul li a:hover {
+          border: 2px solid white;
+          -webkit-transition: 0.5s all;
+          -moz-transition: 0.5s all;
+          transition: 0.5s all; }
+      #contact ul li img {
+        vertical-align: middle;
+        display: inline-block;
+        width: 80px;
+        height: 80px; }
+  #contact #copy, #contact #true {
+    position: absolute;
+    bottom: 50px;
     color: white;
-    text-decoration: underline; }
-#contact #copy {
-  left: 50px; }
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #contact #copy {
-      position: relative;
-      bottom: auto;
-      left: 0;
-      right: auto;
-      text-align: center;
-      margin-top: 100px; } }
-  @media screen and (min-width: 64em) and (max-width: 75em) {
-    #contact #copy {
-      position: relative;
-      bottom: auto;
-      left: 0;
-      right: auto;
-      text-align: center;
-      margin-top: 100px; } }
-  @media screen and (max-width: 40em) {
-    #contact #copy {
-      position: relative;
-      bottom: auto;
-      left: 0;
-      right: auto;
-      text-align: center;
-      margin-top: 100px; } }
-#contact #true {
-  right: 50px; }
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase; }
+    #contact #copy a, #contact #true a {
+      color: white;
+      text-decoration: underline; }
+  #contact #copy {
+    left: 50px; }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #contact #copy {
+        position: relative;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        text-align: center;
+        margin-top: 100px; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #contact #copy {
+        position: relative;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        text-align: center;
+        margin-top: 100px; } }
+    @media screen and (max-width: 40em) {
+      #contact #copy {
+        position: relative;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        text-align: center;
+        margin-top: 100px; } }
+  #contact #true {
+    right: 50px; }
+
+#menu-name {
+  position: absolute;
+  right: 140px;
+  line-height: 64px;
+  top: 50px;
+  font-size: 1.5em;
+  font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
 
 #menu-link {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   position: fixed;
   background: #20b9f1 url(../img/menu.svg) no-repeat center center;
   background-size: cover;
