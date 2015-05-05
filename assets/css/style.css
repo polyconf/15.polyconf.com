@@ -250,8 +250,26 @@ body {
       background: #2e4e6b; } }
   .fixed > section {
     padding: 100px 0;
+    /*
+    		@include media($desktop) {
+    
+    			position: fixed;
+    			top: 0;
+    			left: 0;
+    			right: 0;
+    			padding: 0;			
+    
+    		}
+    */
     background: #2e4e6b;
-    z-index: 1000; }
+    z-index: 1000;
+    /*
+    		&.skrollable-before, &.skrollable-after {
+    			@include media($desktop) {
+    				display: none;			
+    			}
+    		}
+    */ }
     @media screen and (min-width: 64em) and (max-width: 75em) {
       .fixed > section {
         min-height: auto !important; } }
@@ -261,31 +279,19 @@ body {
     @media screen and (max-width: 40em) {
       .fixed > section {
         min-height: auto !important; } }
-    @media screen and (min-width: 75em) {
-      .fixed > section {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 0; } }
-    @media screen and (min-width: 75em) {
-      .fixed > section.skrollable-before, .fixed > section.skrollable-after {
-        display: none; } }
     .fixed > section > .text {
-      padding: 0 5%; }
-      @media screen and (min-width: 75em) {
-        .fixed > section > .text {
-          position: absolute;
-          width: 1000px;
-          margin-left: -500px;
-          left: 50%;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-          padding: 0; } }
+      padding: 0 5%;
+      /*
+      			@include media($desktop) {
+      				position: absolute;
+      				width: 1000px;
+      				margin-left: -500px;
+      				left: 50%;
+      				top: 50%;
+      				@include transform(translateY(-50%));
+      				padding: 0;
+      			}
+      */ }
       @media screen and (min-width: 75em) {
         .fixed > section > .text h2 {
           font-weight: 400;
@@ -375,6 +381,7 @@ body {
     background: #f2f2f2; }
 
 #header {
+  height: 100%;
   background: #2e4e6b url(../img/top.png) no-repeat center center !important; }
   @media screen and (min-width: 64em) and (max-width: 75em) {
     #header {

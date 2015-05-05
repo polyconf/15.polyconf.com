@@ -46,6 +46,7 @@ body {
 			min-height: auto !important;	
 		}		
 		
+/*
 		@include media($desktop) {
 
 			position: fixed;
@@ -55,22 +56,26 @@ body {
 			padding: 0;			
 
 		}
+*/
 		
 		background: $dark;
 		z-index: 1000;
 		
 
+/*
 		&.skrollable-before, &.skrollable-after {
 			@include media($desktop) {
 				display: none;			
 			}
 		}
+*/
 
 
 		> .text {
 			
 			padding: 0 5%;
 			
+/*
 			@include media($desktop) {
 				position: absolute;
 				width: 1000px;
@@ -80,6 +85,7 @@ body {
 				@include transform(translateY(-50%));
 				padding: 0;
 			}
+*/
 						
 			h2 {
 				@include media($desktop) {
@@ -151,7 +157,7 @@ body {
 
 .medium.button {
 	text-transform: uppercase;
-	font-family: $header-font-family;
+font-family: $header-font-family;
 	font-weight: 500;
 	font-size: em(24);
 	line-height: 48px;
@@ -202,6 +208,7 @@ body {
 
 #header {
 
+  height: 100%;
 	background: $dark url(../img/top.png) no-repeat center center !important;
 
 	@include media($tablet) {
