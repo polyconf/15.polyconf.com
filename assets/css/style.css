@@ -253,7 +253,7 @@ body {
     /*
     		@include media($desktop) {
     
-    			position: fixed;
+    		position: fixed;
     			top: 0;
     			left: 0;
     			right: 0;
@@ -316,6 +316,19 @@ body {
           font-size: 1.875em;
           text-transform: uppercase;
           margin-bottom: 1em; } }
+      .fixed > section > .text h2 em {
+        width: 30px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 14px;
+        font-size: 0.75em;
+        font-weight: 600;
+        border-radius: 100%;
+        display: inline-block;
+        background: #20b9f1;
+        font-style: normal;
+        color: #2e4e6b; }
       .fixed > section > .text p {
         font-weight: 400;
         font-size: 1.5em; }
@@ -768,20 +781,19 @@ body {
   #speakers .speaker-list .speaker {
     float: left;
     display: block;
-    margin-right: 5%;
-    width: 47.5%;
+    margin-right: 2.9411764706%;
+    width: 17.6470588235%;
     margin-bottom: 50px; }
     #speakers .speaker-list .speaker:last-child {
       margin-right: 0; }
-    #speakers .speaker-list .speaker:nth-child(2n) {
+    #speakers .speaker-list .speaker:nth-child(5n) {
       margin-right: 0; }
-    #speakers .speaker-list .speaker:nth-child(2n+1) {
+    #speakers .speaker-list .speaker:nth-child(5n+1) {
       clear: left; }
     @media screen and (max-width: 40em) {
       #speakers .speaker-list .speaker {
         width: 100%; } }
     #speakers .speaker-list .speaker > div {
-      padding: 20px;
       position: relative;
       display: block; }
       #speakers .speaker-list .speaker > div::after {
@@ -791,85 +803,74 @@ body {
       @media screen and (max-width: 40em) {
         #speakers .speaker-list .speaker > div {
           padding: 0; } }
-      #speakers .speaker-list .speaker > div .img {
-        float: left;
+      @media screen and (max-width: 40em) {
+        #speakers .speaker-list .speaker > div .img {
+          float: none;
+          width: 80%;
+          padding-top: 80%;
+          margin: 30px; } }
+      #speakers .speaker-list .speaker > div .img figure {
+        width: 80%;
+        padding-top: 80%;
+        /* defines aspect ratio */
+        position: relative;
         display: block;
-        margin-right: 10.5263157895%;
-        width: 26.3157894737%; }
-        #speakers .speaker-list .speaker > div .img:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 40em) {
-          #speakers .speaker-list .speaker > div .img {
-            float: none;
-            width: 160px;
-            height: 160px;
-            margin-bottom: 30px; } }
-        #speakers .speaker-list .speaker > div .img figure {
-          width: 100%;
-          padding-top: 100%;
-          /* defines aspect ratio */
-          position: relative;
-          display: block;
-          margin: 0; }
-          #speakers .speaker-list .speaker > div .img figure > a.face {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; }
-          #speakers .speaker-list .speaker > div .img figure .links {
-            position: absolute;
-            bottom: -5px;
-            right: 0px; }
-            #speakers .speaker-list .speaker > div .img figure .links a {
-              width: 32px;
-              height: 32px;
-              display: block;
-              float: left;
-              margin-right: 5px; }
-              #speakers .speaker-list .speaker > div .img figure .links a.twitter {
-                background: #20b9f1 url(../twitter.svg) no-repeat center center;
-                background-size: 100%; }
-              #speakers .speaker-list .speaker > div .img figure .links a.website {
-                background: #6c7173 url(../website.svg) no-repeat center center;
-                background-size: 100%; }
+        margin: 0 auto 30px; }
+        #speakers .speaker-list .speaker > div .img figure > a.face {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 100%; }
+        #speakers .speaker-list .speaker > div .img figure .links {
+          position: absolute;
+          bottom: -5px;
+          right: 0px; }
+          #speakers .speaker-list .speaker > div .img figure .links a {
+            width: 32px;
+            height: 32px;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            border-radius: 100%; }
+            #speakers .speaker-list .speaker > div .img figure .links a.twitter {
+              background: #20b9f1 url(../twitter.svg) no-repeat center center;
+              background-size: 100%; }
+            #speakers .speaker-list .speaker > div .img figure .links a.website {
+              background: #6c7173 url(../website.svg) no-repeat center center;
+              background-size: 100%; }
       #speakers .speaker-list .speaker > div .text {
-        float: left;
-        display: block;
-        margin-right: 10.5263157895%;
-        width: 63.1578947368%; }
-        #speakers .speaker-list .speaker > div .text:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 40em) {
-          #speakers .speaker-list .speaker > div .text {
-            width: 100%; } }
+        text-align: center; }
         #speakers .speaker-list .speaker > div .text h3 {
           color: #2e4e6b;
           line-height: 1.1em;
-          margin: 0 0 10px; }
+          margin: 0 0 10px;
+          font-size: 1.25em; }
         #speakers .speaker-list .speaker > div .text .title {
-          font-size: 1.25em;
+          font-size: 0.875em;
           font-weight: 600;
           margin: 0 0 20px;
           line-height: 1.1em; }
         #speakers .speaker-list .speaker > div .text .description {
           line-height: 1.1em;
           color: #6c7173;
-          margin: 0 0 20px; }
+          margin: 0 0 20px;
+          display: none; }
         #speakers .speaker-list .speaker > div .text .tags li {
-          background: url(../tag.svg) no-repeat right top;
-          background-size: auto 30px;
+          background: #6c7173;
           color: #fff;
           display: inline-block;
-          font-weight: 600;
-          font-size: 0.75em;
+          font-weight: 700;
+          font-size: 0.625em;
           line-height: 20px;
           height: 20px;
-          padding: 0 12px 0 6px;
-          margin-right: 6px;
+          padding: 0 4px;
+          border-radius: 2px;
+          margin-right: 2px;
           white-space: nowrap;
           text-transform: uppercase; }
 
@@ -1561,3 +1562,138 @@ nav#overlay {
       margin: 1em 0; }
     #tickets .clearfix .remarks ul, #tickets .clearfix .remarks p {
       margin: 1em 0; }
+
+.agenda {
+  position: relative;
+  padding-top: 100px; }
+  .agenda #agenda-nav {
+    display: none;
+    top: 0;
+    margin-bottom: 20px;
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    width: 1200px; }
+    .agenda #agenda-nav::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .agenda #agenda-nav.skrollable-between, .agenda #agenda-nav.skrollable-after {
+      position: fixed; }
+    .agenda #agenda-nav li {
+      height: 64px;
+      line-height: 64px;
+      width: 33.3333%;
+      float: left;
+      background: #2e4e6b;
+      text-align: center;
+      cursor: pointer; }
+      .agenda #agenda-nav li label, .agenda #agenda-nav li h3 {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.25em; }
+      .agenda #agenda-nav li label {
+        margin-right: 1ex;
+        color: #20b9f1; }
+  .agenda .day {
+    padding-top: 50px; }
+    .agenda .day h2 {
+      margin: 0 0 30px; }
+    .agenda .day .event-list .event {
+      border: 3px solid #eeeff0;
+      border-bottom: none;
+      position: relative; }
+      .agenda .day .event-list .event:last-child {
+        border-bottom: 3px solid #eeeff0; }
+      .agenda .day .event-list .event .short {
+        padding: 20px 80px 20px 200px;
+        position: relative; }
+        .agenda .day .event-list .event .short .time {
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          font-size: 1.25em;
+          font-weight: 600;
+          color: #6c7173; }
+        .agenda .day .event-list .event .short .name {
+          position: relative; }
+          .agenda .day .event-list .event .short .name .title {
+            font-size: 1.25em;
+            font-weight: 600;
+            display: block; }
+          .agenda .day .event-list .event .short .name .person {
+            font-size: 1.125em;
+            font-weight: 600;
+            display: block;
+            color: #6c7173; }
+      .agenda .day .event-list .event .long {
+        padding: 20px 80px 20px 200px;
+        background: #eeeff0;
+        position: relative; }
+        .agenda .day .event-list .event .long p {
+          margin: 0;
+          line-height: 1.25em; }
+      .agenda .day .event-list .event.with-description .short:before {
+        font-weight: 600;
+        padding: 0 10px;
+        line-height: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: #6c7173;
+        color: #fff;
+        content: "";
+        display: none; }
+      .agenda .day .event-list .event.with-description .long:before {
+        font-weight: 600;
+        padding: 0 10px;
+        line-height: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: #6c7173;
+        color: #fff;
+        content: "";
+        display: none; }
+      .agenda .day .event-list .event.lightning .short .name:before {
+        font-weight: 600;
+        padding: 0 10px;
+        line-height: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        position: absolute;
+        left: -50px;
+        top: 0px;
+        background: #ffcc00;
+        color: #fff;
+        content: "";
+        display: none; }
+      .agenda .day .event-list .event.normal .short .name:before {
+        font-weight: 600;
+        padding: 0 10px;
+        line-height: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        position: absolute;
+        left: -50px;
+        top: 0px;
+        background: #15c129;
+        color: #fff;
+        content: "";
+        display: none; }
