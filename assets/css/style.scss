@@ -1628,6 +1628,147 @@ nav#overlay {
   
 }
 
+#hotels {
+  .row {
+    .hotel {
+      h4 {
+        font-size: 1rem;
+        margin: 1em 0 0;
+      }
+
+      table {
+        font-size: 0.875em;
+
+        td {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+          &.price {
+            text-align: right;
+          }
+        }
+      }
+
+      ul li {
+        display: inline-block;
+        margin-right: 1ex;
+
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+#hotels {
+  .row {
+    max-width: 73.75em;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .hotel {
+      margin: 50px 0;
+
+      @include media($desktop) {
+        float: left;
+        display: block;
+        margin-right: 1.0101010101%;
+        width: 29.2929292929%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(3n+1) {
+          clear: left;
+        }
+
+        &:nth-child(3n+2), &:nth-child(3n+3) {
+          margin-left: 5.0505050505%;
+        }
+      }
+
+      @include media($tablet) {
+        float: left;
+        display: block;
+        margin-right: 1.6949152542%;
+        width: 32.2033898305%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(3n+1) {
+          clear: left;
+        }
+      }
+
+      @include media($mobile) {
+        float: left;
+        display: block;
+        margin-right: 1.6949152542%;
+        width: 49.1525423729%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n+1) {
+          clear: left;
+        }
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin: 1em 0 0;
+      }
+
+      table {
+        font-size: 0.875em;
+
+        td {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+          &.price {
+            text-align: right;
+          }
+        }
+      }
+
+      ul li {
+        display: inline-block;
+        margin-right: 1ex;
+
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 .google-map {
 
   img, picture {
@@ -1775,7 +1916,6 @@ nav#overlay {
   }
   
 }
-
 
 .agenda {
 
@@ -2027,4 +2167,3 @@ nav#overlay {
   }
   
 }
-
