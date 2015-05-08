@@ -1455,6 +1455,78 @@ nav#overlay {
     #terms .row .column {
       width: 100%; } }
 
+#hotels .row {
+    max-width: 73.75em;
+    margin-left: auto;
+    margin-right: auto; }
+#hotels .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+#hotels .row .hotel {
+    margin: 50px 0; }
+@media screen and (min-width: 77.5em) {
+    #hotels .row .hotel {
+        float: left;
+        display: block;
+        margin-right: 1.0101010101%;
+        width: 29.2929292929%; }
+    #hotels .row .hotel:last-child {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(3n) {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(3n+1) {
+        clear: left; }
+    #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
+        margin-left: 5.0505050505%; } }
+@media screen and (min-width: 64em) and (max-width: 77.5em) {
+    #hotels .row .hotel {
+        float: left;
+        display: block;
+        margin-right: 1.6949152542%;
+        width: 32.2033898305%; }
+    #hotels .row .hotel:last-child {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(3n) {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(3n+1) {
+        clear: left; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #hotels .row .hotel {
+        float: left;
+        display: block;
+        margin-right: 1.6949152542%;
+        width: 49.1525423729%; }
+    #hotels .row .hotel:last-child {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(2n) {
+        margin-right: 0; }
+    #hotels .row .hotel:nth-child(2n+1) {
+        clear: left; } }
+
+#hotels .row .hotel h4 {
+    font-size: 1rem;
+    margin: 1em 0 0;
+}
+#hotels .row .hotel table {
+    font-size: 0.875em;
+}
+#hotels .row .hotel table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+#hotels .row .hotel table td.price {
+    text-align: right;
+}
+#hotels .row .hotel ul li {
+    display: inline-block;
+    margin-right: 1ex;
+}
+#hotels .row .hotel ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 .google-map img, .google-map picture {
   max-width: none; }
 
