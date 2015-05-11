@@ -1785,11 +1785,42 @@ nav#overlay {
     
     .batches {
       
-      @include span-columns(8);
+      @include media($desktop) {
+        @include span-columns(8);
+      }
+      
+      @include media($tablet) {
+        @include span-columns(10);
+        @include shift(1)
+      }
+
+      @include media($portrait) {
+        @include span-columns(12);
+      }
+
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      
       
       .batch {
         
+      @include media($desktop) {
         @include span-columns(4 of 8);
+      }
+      
+      @include media($tablet) {
+        @include span-columns(4 of 8);
+      }
+
+      @include media($portrait) {
+        @include span-columns(4 of 8);
+      }
+
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+        
         
         .inside {
           
@@ -1893,7 +1924,18 @@ nav#overlay {
     
     .remarks {
       
-      @include span-columns(4);
+      @include media($desktop) {
+        @include span-columns(4);
+      }
+
+      @include media($tablet) {
+        @include span-columns(12);
+      }
+
+      @include media($portrait) {
+        @include span-columns(12);
+      }
+
       
       h3 {
         
@@ -1917,7 +1959,7 @@ nav#overlay {
   
 }
 
-.agenda {
+#agenda { 
 
   position: relative;
   padding-top: 100px;
