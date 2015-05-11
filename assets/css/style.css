@@ -1606,11 +1606,11 @@ nav#overlay {
       .agenda .day .event-list .event:last-child {
         border-bottom: 3px solid #eeeff0; }
       .agenda .day .event-list .event .short {
-        padding: 20px 80px 20px 200px;
+        padding: 20px 80px 20px 240px;
         position: relative; }
         .agenda .day .event-list .event .short .time {
           position: absolute;
-          left: 20px;
+          left: 80px;
           top: 20px;
           font-size: 1.25em;
           font-weight: 600;
@@ -1626,14 +1626,23 @@ nav#overlay {
             font-weight: 600;
             display: block;
             color: #6c7173; }
+        .agenda .day .event-list .event .short:before {
+          content: "";
+          display: block;
+          width: 60px;
+          background: #ccc;
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          bottom: 0px; }
       .agenda .day .event-list .event .long {
-        padding: 20px 80px 20px 200px;
+        padding: 20px 80px 20px 240px;
         background: #eeeff0;
         position: relative; }
         .agenda .day .event-list .event .long p {
           margin: 0;
           line-height: 1.25em; }
-      .agenda .day .event-list .event.with-description .short:before {
+      .agenda .day .event-list .event.with-description .short:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1649,7 +1658,7 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.with-description .long:before {
+      .agenda .day .event-list .event.with-description .long:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1681,7 +1690,10 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.normal .short .name:before {
+      .agenda .day .event-list .event.normal .short:before {
+        background: #666 url(../icons/normal.svg) no-repeat center 19px;
+        background-size: auto 40px; }
+      .agenda .day .event-list .event.normal .short .name:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1697,3 +1709,12 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
+      .agenda .day .event-list .event.coffee .short:before, .agenda .day .event-list .event.lunch .short:before {
+        background: #20b9f1 url(../icons/coffee.svg) no-repeat center 19px;
+        background-size: auto 40px; }
+      .agenda .day .event-list .event.keynote .short:before {
+        background: #0b8c41 url(../icons/star.svg) no-repeat center 19px;
+        background-size: auto 40px; }
+      .agenda .day .event-list .event.party .short:before {
+        background: #762ca6 url(../icons/party.svg) no-repeat center 19px;
+        background-size: auto 40px; }
