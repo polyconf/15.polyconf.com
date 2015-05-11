@@ -1865,6 +1865,16 @@ nav#overlay {
             
             position: relative;
             
+            figure {
+              margin: 0 0 20px;
+              width: 120px;
+              height: 120px;
+              border-radius: 100%;
+              display: block;
+              background-size: cover;
+              background-position: center center;
+            }
+            
             .title {
               
               font-size: em(20);
