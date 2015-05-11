@@ -1989,12 +1989,12 @@ nav#overlay {
   
         .short {
           
-          padding: 20px 80px 20px 200px;
+          padding: 20px 80px 20px 240px;
           position: relative;
           
           .time {
             position: absolute;
-            left: 20px;
+            left: 80px;
             top: 20px;
             font-size: em(20);
             font-weight: 600;
@@ -2004,6 +2004,16 @@ nav#overlay {
           .name {
             
             position: relative;
+            
+            figure {
+              margin: 0 0 20px;
+              width: 120px;
+              height: 120px;
+              border-radius: 100%;
+              display: block;
+              background-size: cover;
+              background-position: center center;
+            }
             
             .title {
               
@@ -2023,12 +2033,24 @@ nav#overlay {
             }
             
           }
+          
+          &:before {
+            content: "";
+            display: block;
+            width: 60px;
+            background: #ccc;
+            position: absolute;
+            left: -3px;
+            top:  -3px;
+            bottom: 0px;
+          }
+
                   
         }
         
         .long {
           
-          padding: 20px 80px 20px 200px;
+          padding: 20px 80px 20px 240px;
           background: $lightgray;
           position: relative;
           
@@ -2041,9 +2063,10 @@ nav#overlay {
           
         }
   
+  
         &.with-description {
           
-          .short:before {
+          .short:after {
             
             font-weight: 600;
             padding: 0 10px;
@@ -2066,7 +2089,7 @@ nav#overlay {
 
           }
           
-          .long:before {
+          .long:after {
             
             font-weight: 600;
             padding: 0 10px;
@@ -2130,7 +2153,14 @@ nav#overlay {
           
           .short {
             
-            .name:before {
+            &:before {
+              
+              background: #666 url(../icons/normal.svg) no-repeat center 19px;
+              background-size: auto 40px;
+              
+            }
+            
+            .name:after {
               
               font-weight: 600;
               padding: 0 10px;
@@ -2159,6 +2189,44 @@ nav#overlay {
           
         }
   
+        &.coffee, &.lunch {
+          
+          .short {
+            
+            &:before {
+              
+              background: $blue url(../icons/coffee.svg) no-repeat center 19px;
+              background-size: auto 40px;
+              
+            }
+          }
+        }
+
+        &.keynote {
+          
+          .short {
+            
+            &:before {
+              
+              background: $green url(../icons/star.svg) no-repeat center 19px;
+              background-size: auto 40px;
+              
+            }
+          }
+        }
+
+        &.party {
+          
+          .short {
+            
+            &:before {
+              
+              background: #762ca6 url(../icons/party.svg) no-repeat center 19px;
+              background-size: auto 40px;
+              
+            }
+          }
+        }
         
       }
       
