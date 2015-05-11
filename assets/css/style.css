@@ -1455,77 +1455,87 @@ nav#overlay {
     #terms .row .column {
       width: 100%; } }
 
+#hotels .row .hotel h4 {
+  font-size: 1rem;
+  margin: 1em 0 0; }
+#hotels .row .hotel table {
+  font-size: 0.875em; }
+  #hotels .row .hotel table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; }
+    #hotels .row .hotel table td.price {
+      text-align: right; }
+#hotels .row .hotel ul li {
+  display: inline-block;
+  margin-right: 1ex; }
+  #hotels .row .hotel ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline; }
+
 #hotels .row {
-    max-width: 73.75em;
-    margin-left: auto;
-    margin-right: auto; }
-#hotels .row:after {
+  max-width: 73.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  #hotels .row:after {
     content: "";
     display: table;
     clear: both; }
-#hotels .row .hotel {
+  #hotels .row .hotel {
     margin: 50px 0; }
-@media screen and (min-width: 77.5em) {
-    #hotels .row .hotel {
+    @media screen and (min-width: 75em) {
+      #hotels .row .hotel {
         float: left;
         display: block;
         margin-right: 1.0101010101%;
         width: 29.2929292929%; }
-    #hotels .row .hotel:last-child {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n+1) {
-        clear: left; }
-    #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
-        margin-left: 5.0505050505%; } }
-@media screen and (min-width: 64em) and (max-width: 77.5em) {
-    #hotels .row .hotel {
+        #hotels .row .hotel:last-child {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(3n) {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(3n+1) {
+          clear: left; }
+        #hotels .row .hotel:nth-child(3n+2), #hotels .row .hotel:nth-child(3n+3) {
+          margin-left: 5.0505050505%; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #hotels .row .hotel {
         float: left;
         display: block;
         margin-right: 1.6949152542%;
         width: 32.2033898305%; }
-    #hotels .row .hotel:last-child {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(3n+1) {
-        clear: left; } }
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #hotels .row .hotel {
+        #hotels .row .hotel:last-child {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(3n) {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(3n+1) {
+          clear: left; } }
+    @media screen and (max-width: 40em) {
+      #hotels .row .hotel {
         float: left;
         display: block;
         margin-right: 1.6949152542%;
         width: 49.1525423729%; }
-    #hotels .row .hotel:last-child {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(2n) {
-        margin-right: 0; }
-    #hotels .row .hotel:nth-child(2n+1) {
-        clear: left; } }
-
-#hotels .row .hotel h4 {
-    font-size: 1rem;
-    margin: 1em 0 0;
-}
-#hotels .row .hotel table {
-    font-size: 0.875em;
-}
-#hotels .row .hotel table td {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-#hotels .row .hotel table td.price {
-    text-align: right;
-}
-#hotels .row .hotel ul li {
-    display: inline-block;
-    margin-right: 1ex;
-}
-#hotels .row .hotel ul li a {
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: underline;
-}
+        #hotels .row .hotel:last-child {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(2n) {
+          margin-right: 0; }
+        #hotels .row .hotel:nth-child(2n+1) {
+          clear: left; } }
+    #hotels .row .hotel h4 {
+      font-size: 1rem;
+      margin: 1em 0 0; }
+    #hotels .row .hotel table {
+      font-size: 0.875em; }
+      #hotels .row .hotel table td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; }
+        #hotels .row .hotel table td.price {
+          text-align: right; }
+    #hotels .row .hotel ul li {
+      display: inline-block;
+      margin-right: 1ex; }
+      #hotels .row .hotel ul li a {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline; }
 
 .google-map img, .google-map picture {
   max-width: none; }
@@ -1536,109 +1546,177 @@ nav#overlay {
     clear: both;
     content: "";
     display: table; }
-  #tickets .clearfix .batches {
-    float: left;
-    display: block;
-    margin-right: 5%;
-    width: 65%; }
-    #tickets .clearfix .batches:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 75em) {
+    #tickets .clearfix .batches {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 65%; }
+      #tickets .clearfix .batches:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 75em) {
+    #tickets .clearfix .batches {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 82.5%;
+      margin-left: 8.75%; }
+      #tickets .clearfix .batches:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #tickets .clearfix .batches {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 100%; }
+      #tickets .clearfix .batches:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 40em) {
+    #tickets .clearfix .batches {
+      float: left;
+      display: block;
+      margin-right: 16.6666666667%;
+      width: 333.3333333333%; }
+      #tickets .clearfix .batches:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 75em) {
     #tickets .clearfix .batches .batch {
       float: left;
       display: block;
       margin-right: 7.6923076923%;
       width: 46.1538461538%; }
       #tickets .clearfix .batches .batch:last-child {
-        margin-right: 0; }
-      #tickets .clearfix .batches .batch .inside {
-        width: 100%;
-        padding-top: 150%;
-        position: relative;
-        border: rgba(108, 113, 115, 0.25) 4px solid; }
-        #tickets .clearfix .batches .batch .inside h4 {
-          background: #2e4e6b;
-          color: #fff;
-          top: 50px;
-          font-size: 1.25em;
-          font-weight: 600;
-          text-align: center;
-          padding: 5px 10px;
-          text-transform: uppercase;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -webkit-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%); }
-        #tickets .clearfix .batches .batch .inside .price {
-          font-size: 9.375em;
-          line-height: 1em;
-          font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-          position: absolute;
-          top: 140px;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -webkit-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%); }
-          #tickets .clearfix .batches .batch .inside .price small {
-            position: absolute;
-            bottom: -20px;
-            font-size: 0.15em;
-            line-height: 1em;
-            right: 0;
-            font-weight: 600; }
-        #tickets .clearfix .batches .batch .inside .dates {
-          position: absolute;
-          left: 0;
-          right: 0;
-          text-align: center;
-          top: 50%;
-          margin-top: 100px;
-          font-size: 1.25em; }
-        #tickets .clearfix .batches .batch .inside .buy-a-ticket {
-          position: absolute;
-          bottom: 50px;
-          left: 0;
-          right: 0; }
-          #tickets .clearfix .batches .batch .inside .buy-a-ticket .button {
-            background: #20b9f1;
-            white-space: nowrap;
-            color: #fff;
-            font-size: 2.25em;
-            line-height: 1em;
-            font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-            padding: 10px 20px;
-            font-weight: bold;
-            display: inline-block; }
-        #tickets .clearfix .batches .batch .inside > * {
-          position: absolute;
-          text-align: center; }
-      #tickets .clearfix .batches .batch.past *, #tickets .clearfix .batches .batch.future * {
-        background: none !important;
-        color: rgba(108, 113, 115, 0.25) !important; }
-  #tickets .clearfix .remarks {
-    float: left;
-    display: block;
-    margin-right: 5%;
-    width: 30%; }
-    #tickets .clearfix .remarks:last-child {
-      margin-right: 0; }
-    #tickets .clearfix .remarks h3 {
-      color: #20b9f1;
-      font-size: 1.125em;
+        margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 75em) {
+    #tickets .clearfix .batches .batch {
+      float: left;
+      display: block;
+      margin-right: 7.6923076923%;
+      width: 46.1538461538%; }
+      #tickets .clearfix .batches .batch:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #tickets .clearfix .batches .batch {
+      float: left;
+      display: block;
+      margin-right: 7.6923076923%;
+      width: 46.1538461538%; }
+      #tickets .clearfix .batches .batch:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 40em) {
+    #tickets .clearfix .batches .batch {
+      float: left;
+      display: block;
+      margin-right: 16.6666666667%;
+      width: 333.3333333333%; }
+      #tickets .clearfix .batches .batch:last-child {
+        margin-right: 0; } }
+  #tickets .clearfix .batches .batch .inside {
+    width: 100%;
+    padding-top: 150%;
+    position: relative;
+    border: rgba(108, 113, 115, 0.25) 4px solid; }
+    #tickets .clearfix .batches .batch .inside h4 {
+      background: #2e4e6b;
+      color: #fff;
+      top: 50px;
+      font-size: 1.25em;
+      font-weight: 600;
+      text-align: center;
+      padding: 5px 10px;
       text-transform: uppercase;
-      margin: 1em 0; }
-    #tickets .clearfix .remarks ul, #tickets .clearfix .remarks p {
-      margin: 1em 0; }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    #tickets .clearfix .batches .batch .inside .price {
+      font-size: 9.375em;
+      line-height: 1em;
+      font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      #tickets .clearfix .batches .batch .inside .price small {
+        position: absolute;
+        bottom: -20px;
+        font-size: 0.15em;
+        line-height: 1em;
+        right: 0;
+        font-weight: 600; }
+    #tickets .clearfix .batches .batch .inside .dates {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: 50%;
+      margin-top: 100px;
+      font-size: 1.25em; }
+    #tickets .clearfix .batches .batch .inside .buy-a-ticket {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      right: 0; }
+      #tickets .clearfix .batches .batch .inside .buy-a-ticket .button {
+        background: #20b9f1;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 2.25em;
+        line-height: 1em;
+        font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+        padding: 10px 20px;
+        font-weight: bold;
+        display: inline-block; }
+    #tickets .clearfix .batches .batch .inside > * {
+      position: absolute;
+      text-align: center; }
+  #tickets .clearfix .batches .batch.past *, #tickets .clearfix .batches .batch.future * {
+    background: none !important;
+    color: rgba(108, 113, 115, 0.25) !important; }
+  @media screen and (min-width: 75em) {
+    #tickets .clearfix .remarks {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 30%; }
+      #tickets .clearfix .remarks:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 75em) {
+    #tickets .clearfix .remarks {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 100%; }
+      #tickets .clearfix .remarks:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #tickets .clearfix .remarks {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 100%; }
+      #tickets .clearfix .remarks:last-child {
+        margin-right: 0; } }
+  #tickets .clearfix .remarks h3 {
+    color: #20b9f1;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    margin: 1em 0; }
+  #tickets .clearfix .remarks ul, #tickets .clearfix .remarks p {
+    margin: 1em 0; }
 
-.agenda {
+#agenda {
   position: relative;
   padding-top: 100px; }
-  .agenda #agenda-nav {
+  #agenda #agenda-nav {
     display: none;
     top: 0;
     margin-bottom: 20px;
@@ -1646,13 +1724,13 @@ nav#overlay {
     margin-left: -600px;
     position: absolute;
     width: 1200px; }
-    .agenda #agenda-nav::after {
+    #agenda #agenda-nav::after {
       clear: both;
       content: "";
       display: table; }
-    .agenda #agenda-nav.skrollable-between, .agenda #agenda-nav.skrollable-after {
+    #agenda #agenda-nav.skrollable-between, #agenda #agenda-nav.skrollable-after {
       position: fixed; }
-    .agenda #agenda-nav li {
+    #agenda #agenda-nav li {
       height: 64px;
       line-height: 64px;
       width: 33.3333%;
@@ -1660,36 +1738,36 @@ nav#overlay {
       background: #2e4e6b;
       text-align: center;
       cursor: pointer; }
-      .agenda #agenda-nav li label, .agenda #agenda-nav li h3 {
+      #agenda #agenda-nav li label, #agenda #agenda-nav li h3 {
         display: inline-block;
         color: #fff;
         font-size: 1.25em; }
-      .agenda #agenda-nav li label {
+      #agenda #agenda-nav li label {
         margin-right: 1ex;
         color: #20b9f1; }
-  .agenda .day {
+  #agenda .day {
     padding-top: 50px; }
-    .agenda .day h2 {
+    #agenda .day h2 {
       margin: 0 0 30px; }
-    .agenda .day .event-list .event {
+    #agenda .day .event-list .event {
       border: 3px solid #eeeff0;
       border-bottom: none;
       position: relative; }
-      .agenda .day .event-list .event:last-child {
+      #agenda .day .event-list .event:last-child {
         border-bottom: 3px solid #eeeff0; }
-      .agenda .day .event-list .event .short {
+      #agenda .day .event-list .event .short {
         padding: 20px 80px 20px 240px;
         position: relative; }
-        .agenda .day .event-list .event .short .time {
+        #agenda .day .event-list .event .short .time {
           position: absolute;
           left: 80px;
           top: 20px;
           font-size: 1.25em;
           font-weight: 600;
           color: #6c7173; }
-        .agenda .day .event-list .event .short .name {
+        #agenda .day .event-list .event .short .name {
           position: relative; }
-          .agenda .day .event-list .event .short .name figure {
+          #agenda .day .event-list .event .short .name figure {
             margin: 0 0 20px;
             width: 120px;
             height: 120px;
@@ -1697,16 +1775,16 @@ nav#overlay {
             display: block;
             background-size: cover;
             background-position: center center; }
-          .agenda .day .event-list .event .short .name .title {
+          #agenda .day .event-list .event .short .name .title {
             font-size: 1.25em;
             font-weight: 600;
             display: block; }
-          .agenda .day .event-list .event .short .name .person {
+          #agenda .day .event-list .event .short .name .person {
             font-size: 1.125em;
             font-weight: 600;
             display: block;
             color: #6c7173; }
-        .agenda .day .event-list .event .short:before {
+        #agenda .day .event-list .event .short:before {
           content: "";
           display: block;
           width: 60px;
@@ -1715,14 +1793,14 @@ nav#overlay {
           left: -3px;
           top: -3px;
           bottom: 0px; }
-      .agenda .day .event-list .event .long {
+      #agenda .day .event-list .event .long {
         padding: 20px 80px 20px 240px;
         background: #eeeff0;
         position: relative; }
-        .agenda .day .event-list .event .long p {
+        #agenda .day .event-list .event .long p {
           margin: 0;
           line-height: 1.25em; }
-      .agenda .day .event-list .event.with-description .short:after {
+      #agenda .day .event-list .event.with-description .short:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1738,7 +1816,7 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.with-description .long:after {
+      #agenda .day .event-list .event.with-description .long:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1754,7 +1832,7 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.lightning .short .name:before {
+      #agenda .day .event-list .event.lightning .short .name:before {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1770,10 +1848,10 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.normal .short:before {
+      #agenda .day .event-list .event.normal .short:before {
         background: #666 url(../icons/normal.svg) no-repeat center 19px;
         background-size: auto 40px; }
-      .agenda .day .event-list .event.normal .short .name:after {
+      #agenda .day .event-list .event.normal .short .name:after {
         font-weight: 600;
         padding: 0 10px;
         line-height: 30px;
@@ -1789,12 +1867,12 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
-      .agenda .day .event-list .event.coffee .short:before, .agenda .day .event-list .event.lunch .short:before {
+      #agenda .day .event-list .event.coffee .short:before, #agenda .day .event-list .event.lunch .short:before {
         background: #20b9f1 url(../icons/coffee.svg) no-repeat center 19px;
         background-size: auto 40px; }
-      .agenda .day .event-list .event.keynote .short:before {
+      #agenda .day .event-list .event.keynote .short:before {
         background: #0b8c41 url(../icons/star.svg) no-repeat center 19px;
         background-size: auto 40px; }
-      .agenda .day .event-list .event.party .short:before {
+      #agenda .day .event-list .event.party .short:before {
         background: #762ca6 url(../icons/party.svg) no-repeat center 19px;
         background-size: auto 40px; }
