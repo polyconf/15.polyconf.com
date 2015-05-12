@@ -573,6 +573,10 @@ body {
     #header #the-bar .inline-block {
       display: inline-block; }
     @media screen and (max-width: 40em) {
+      #header #the-bar .register-now {
+        margin-right: 0em !important;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 40em) {
       #header #the-bar .become-a-sponsor {
         margin-right: 0em !important;
         margin-bottom: 20px; } }
@@ -620,6 +624,12 @@ body {
           @media screen and (max-width: 40em) {
             #header #the-bar form > div input.submit {
               margin: 0px; } }
+      @media screen and (min-width: 64em) and (max-width: 75em) {
+        #header #the-bar form {
+          margin-top: 2em; } }
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        #header #the-bar form {
+          margin-top: 2em; } }
 
 .static {
   position: relative;
@@ -657,120 +667,148 @@ body {
     font-weight: 400;
     font-size: 1.5em; }
 
-@media screen and (min-width: 75em) {
-  #about {
-    padding-bottom: 300px; } }
-#about .row {
-  display: block; }
-  #about .row::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 75em) {
-    #about .row {
-      padding: 0; } }
-  #about .row .column {
-    text-align: center;
-    float: left;
-    display: block;
-    margin-right: 5%;
-    width: 12.5%; }
-    #about .row .column:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 40em) {
-      #about .row .column {
-        width: 100%; } }
-    @media screen and (min-width: 75em) {
-      #about .row .column:first-child {
-        margin-left: 8.75%; } }
-    #about .row .column figure {
-      margin: 80px auto 40px;
-      width: 90%;
-      position: relative; }
-      @media screen and (max-width: 40em) {
-        #about .row .column figure {
-          width: 150px;
-          margin: 40px auto 0px; } }
-      #about .row .column figure img {
-        display: block;
-        width: 100%; }
-    #about .row .column span {
-      display: block; }
-      #about .row .column span.big {
-        font-size: 2.5em;
-        line-height: 1.1em; }
-      #about .row .column span.small {
-        font-size: 1.25em; }
-#about #submit-proposal {
-  text-align: center;
-  margin-top: 100px; }
-  #about #submit-proposal p {
-    font-size: 1.5em;
-    color: #6c7173;
-    margin-top: 1em; }
-#about section#quote-bar {
-  background: #6c7173;
-  padding: 50px 0; }
-  @media screen and (min-width: 75em) {
-    #about section#quote-bar {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0; } }
+#about {
+  padding-bottom: 300px; }
   @media screen and (max-width: 40em) {
-    #about section#quote-bar {
-      display: none; } }
-  #about section#quote-bar .container {
-    position: relative; }
+    #about {
+      padding-bottom: 50px; } }
+  #about .row {
+    display: block; }
+    #about .row::after {
+      clear: both;
+      content: "";
+      display: table; }
     @media screen and (min-width: 75em) {
-      #about section#quote-bar .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto; }
-        #about section#quote-bar .container::after {
-          clear: both;
-          content: "";
-          display: table; } }
-    @media screen and (min-width: 64em) and (max-width: 75em) {
-      #about section#quote-bar .container {
-        width: 100%;
-        padding: 0 5%; } }
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-      #about section#quote-bar .container {
-        width: 100%;
-        padding: 0 5%; } }
-    @media screen and (max-width: 40em) {
-      #about section#quote-bar .container {
-        width: 100%;
-        padding: 0 5%; } }
-    #about section#quote-bar .container .avatar {
-      width: 100px;
-      height: 100px;
+      #about .row {
+        padding: 0; } }
+    #about .row .column {
+      text-align: center;
       float: left;
-      background-color: #3b3d3e;
-      border-radius: 100%;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important; }
-    #about section#quote-bar .container p {
-      margin: 0;
+      display: block;
+      margin-right: 3.9603960396%;
+      width: 16.8316831683%; }
+      #about .row .column:last-child {
+        margin-right: 0; }
+      #about .row .column:nth-child(5n) {
+        margin-right: 0; }
+      #about .row .column:nth-child(5n+1) {
+        clear: left; }
+      @media screen and (max-width: 40em) {
+        #about .row .column {
+          width: 100%; } }
+      #about .row .column figure {
+        margin: 80px auto 40px;
+        width: 90%;
+        position: relative; }
+        @media screen and (max-width: 40em) {
+          #about .row .column figure {
+            width: 150px;
+            margin: 40px auto 0px; } }
+        #about .row .column figure img {
+          display: block;
+          width: 100%; }
+      #about .row .column span {
+        display: block; }
+        #about .row .column span.big {
+          font-size: 2.5em;
+          line-height: 1.1em; }
+        #about .row .column span.small {
+          font-size: 1.25em; }
+  #about #submit-proposal {
+    text-align: center;
+    margin-top: 100px; }
+    #about #submit-proposal p {
       font-size: 1.5em;
-      line-height: 1.2em;
-      font-weight: 500;
-      font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-      color: #fff;
-      position: absolute;
-      left: 140px;
-      right: 240px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%); }
-    #about section#quote-bar .container #more-quotes {
-      float: right;
-      margin: 30px 0 0; }
+      color: #6c7173;
+      margin-top: 1em; }
+  #about section#quote-bar {
+    background: #6c7173;
+    padding: 50px 0; }
+    @media screen and (min-width: 75em) {
+      #about section#quote-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #about section#quote-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #about section#quote-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
+    @media screen and (max-width: 40em) {
+      #about section#quote-bar {
+        display: none; } }
+    #about section#quote-bar .container {
+      position: relative;
+      height: 100px; }
+      @media screen and (min-width: 75em) {
+        #about section#quote-bar .container {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto; }
+          #about section#quote-bar .container::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 64em) and (max-width: 75em) {
+        #about section#quote-bar .container {
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto; }
+          #about section#quote-bar .container::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        #about section#quote-bar .container {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto; }
+          #about section#quote-bar .container::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      #about section#quote-bar .container .avatar {
+        width: 100px;
+        height: 100px;
+        float: left;
+        background-color: #3b3d3e;
+        border-radius: 100%;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important; }
+      #about section#quote-bar .container p {
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        font-weight: 500;
+        font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+        color: #fff;
+        position: absolute;
+        left: 140px;
+        right: 240px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+          #about section#quote-bar .container p {
+            right: 40px; } }
+      #about section#quote-bar .container #more-quotes {
+        float: right;
+        margin: 30px 0 0; }
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+          #about section#quote-bar .container #more-quotes {
+            display: none; } }
 
 #speakers .speaker-list {
   display: block; }
@@ -779,17 +817,43 @@ body {
     content: "";
     display: table; }
   #speakers .speaker-list .speaker {
-    float: left;
-    display: block;
-    margin-right: 2.9411764706%;
-    width: 17.6470588235%;
     margin-bottom: 50px; }
-    #speakers .speaker-list .speaker:last-child {
-      margin-right: 0; }
-    #speakers .speaker-list .speaker:nth-child(5n) {
-      margin-right: 0; }
-    #speakers .speaker-list .speaker:nth-child(5n+1) {
-      clear: left; }
+    @media screen and (min-width: 75em) {
+      #speakers .speaker-list .speaker {
+        float: left;
+        display: block;
+        margin-right: 2.9411764706%;
+        width: 17.6470588235%; }
+        #speakers .speaker-list .speaker:last-child {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(5n) {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(5n+1) {
+          clear: left; } }
+    @media screen and (min-width: 64em) and (max-width: 75em) {
+      #speakers .speaker-list .speaker {
+        float: left;
+        display: block;
+        margin-right: 2.9411764706%;
+        width: 22.7941176471%; }
+        #speakers .speaker-list .speaker:last-child {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(4n) {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(4n+1) {
+          clear: left; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      #speakers .speaker-list .speaker {
+        float: left;
+        display: block;
+        margin-right: 2.9411764706%;
+        width: 22.7941176471%; }
+        #speakers .speaker-list .speaker:last-child {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(4n) {
+          margin-right: 0; }
+        #speakers .speaker-list .speaker:nth-child(4n+1) {
+          clear: left; } }
     @media screen and (max-width: 40em) {
       #speakers .speaker-list .speaker {
         width: 100%; } }
@@ -807,7 +871,6 @@ body {
         #speakers .speaker-list .speaker > div .img {
           float: none;
           width: 80%;
-          padding-top: 80%;
           margin: 30px; } }
       #speakers .speaker-list .speaker > div .img figure {
         width: 80%;
@@ -1141,6 +1204,17 @@ body {
   font-family: "proxima-nova-soft", "proxima-nova-condensed", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase; }
+  @media screen and (min-width: 64em) and (max-width: 75em) {
+    #menu-name {
+      top: 40px;
+      right: 130px; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #menu-name {
+      top: 30px;
+      right: 120px; } }
+  @media screen and (max-width: 40em) {
+    #menu-name {
+      display: none; } }
 
 #menu-link {
   width: 64px;
@@ -1168,6 +1242,8 @@ body {
       right: 30px; } }
   @media screen and (max-width: 40em) {
     #menu-link {
+      width: 48px;
+      height: 48px;
       top: 20px;
       right: 20px; } }
   #menu-link:hover {
@@ -1272,6 +1348,14 @@ nav#overlay {
         nav#overlay .content ul.buttons li {
           display: inline-block;
           margin: 0 1em; }
+          @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            nav#overlay .content ul.buttons li {
+              display: block;
+              padding: 10px 0; } }
+          @media screen and (max-width: 40em) {
+            nav#overlay .content ul.buttons li {
+              display: block;
+              padding: 10px 0; } }
           nav#overlay .content ul.buttons li a {
             display: inline-block;
             font-size: 1.5em;
@@ -1561,10 +1645,7 @@ nav#overlay {
           clear: left; } }
     @media screen and (max-width: 40em) {
       #hotels .row .hotel {
-        float: left;
-        display: block;
-        margin-right: 1.6949152542%;
-        width: 49.1525423729%; }
+        width: 100%; }
         #hotels .row .hotel:last-child {
           margin-right: 0; }
         #hotels .row .hotel:nth-child(2n) {
@@ -1624,12 +1705,7 @@ nav#overlay {
         margin-right: 0; } }
   @media screen and (max-width: 40em) {
     #tickets .clearfix .batches {
-      float: left;
-      display: block;
-      margin-right: 16.6666666667%;
-      width: 333.3333333333%; }
-      #tickets .clearfix .batches:last-child {
-        margin-right: 0; } }
+      width: 100%; } }
   @media screen and (min-width: 75em) {
     #tickets .clearfix .batches .batch {
       float: left;
@@ -1656,12 +1732,8 @@ nav#overlay {
         margin-right: 0; } }
   @media screen and (max-width: 40em) {
     #tickets .clearfix .batches .batch {
-      float: left;
-      display: block;
-      margin-right: 16.6666666667%;
-      width: 333.3333333333%; }
-      #tickets .clearfix .batches .batch:last-child {
-        margin-right: 0; } }
+      width: 80%;
+      margin: 0 auto 20px; } }
   #tickets .clearfix .batches .batch .inside {
     width: 100%;
     padding-top: 150%;
@@ -1683,6 +1755,9 @@ nav#overlay {
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
+      @media screen and (max-width: 40em) {
+        #tickets .clearfix .batches .batch .inside h4 {
+          top: 20px; } }
     #tickets .clearfix .batches .batch .inside .price {
       font-size: 9.375em;
       line-height: 1em;
@@ -1696,6 +1771,12 @@ nav#overlay {
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
+      @media screen and (max-width: 40em) {
+        #tickets .clearfix .batches .batch .inside .price {
+          font-size: 7.5em; } }
+      @media screen and (max-width: 40em) {
+        #tickets .clearfix .batches .batch .inside .price {
+          top: 100px; } }
       #tickets .clearfix .batches .batch .inside .price small {
         position: absolute;
         bottom: -20px;
@@ -1716,6 +1797,9 @@ nav#overlay {
       bottom: 50px;
       left: 0;
       right: 0; }
+      @media screen and (max-width: 40em) {
+        #tickets .clearfix .batches .batch .inside .buy-a-ticket {
+          bottom: 20px; } }
       #tickets .clearfix .batches .batch .inside .buy-a-ticket .button {
         background: #20b9f1;
         white-space: nowrap;
@@ -1726,6 +1810,9 @@ nav#overlay {
         padding: 10px 20px;
         font-weight: bold;
         display: inline-block; }
+        @media screen and (max-width: 40em) {
+          #tickets .clearfix .batches .batch .inside .buy-a-ticket .button {
+            font-size: 1.875em; } }
     #tickets .clearfix .batches .batch .inside > * {
       position: absolute;
       text-align: center; }
@@ -1809,6 +1896,9 @@ nav#overlay {
       #agenda .day .event-list .event .short {
         padding: 20px 80px 20px 240px;
         position: relative; }
+        @media screen and (max-width: 40em) {
+          #agenda .day .event-list .event .short {
+            padding: 50px 10px 10px 80px; } }
         #agenda .day .event-list .event .short .time {
           position: absolute;
           left: 80px;
@@ -1816,6 +1906,10 @@ nav#overlay {
           font-size: 1.25em;
           font-weight: 600;
           color: #6c7173; }
+          @media screen and (max-width: 40em) {
+            #agenda .day .event-list .event .short .time {
+              font-size: 1.125em;
+              top: 15px; } }
         #agenda .day .event-list .event .short .name {
           position: relative; }
           #agenda .day .event-list .event .short .name figure {
@@ -1830,11 +1924,20 @@ nav#overlay {
             font-size: 1.25em;
             font-weight: 600;
             display: block; }
+            @media screen and (max-width: 40em) {
+              #agenda .day .event-list .event .short .name .title {
+                font-size: 1.125em;
+                line-height: 1.1em;
+                margin-bottom: 1ex; } }
           #agenda .day .event-list .event .short .name .person {
             font-size: 1.125em;
             font-weight: 600;
             display: block;
             color: #6c7173; }
+            @media screen and (max-width: 40em) {
+              #agenda .day .event-list .event .short .name .person {
+                font-size: 1em;
+                line-height: 1.1em; } }
         #agenda .day .event-list .event .short:before {
           content: "";
           display: block;
