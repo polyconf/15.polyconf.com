@@ -1080,12 +1080,11 @@ body {
         overflow: hidden;
         text-align: center;
         border-radius: 100%;
-        border: 2px solid #2e4e6b;
         -webkit-transition: 0.5s all;
         -moz-transition: 0.5s all;
         transition: 0.5s all; }
         #contact ul li a:hover {
-          border: 2px solid white;
+          opacity: 0.8;
           -webkit-transition: 0.5s all;
           -moz-transition: 0.5s all;
           transition: 0.5s all; }
