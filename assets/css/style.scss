@@ -1125,10 +1125,10 @@ font-family: $header-font-family;
 					overflow: hidden;
 					text-align: center;
 					border-radius: 100%;
-					border: 2px solid $dark;
-						@include transition(0.5s all);
-					&:hover {
-						border: 2px solid white;					
+					@include transition(0.5s all);
+					
+          &:hover {
+						opacity:0.8;
 						@include transition(0.5s all);
 					}
 				}
