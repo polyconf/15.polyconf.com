@@ -290,7 +290,6 @@ font-family: $header-font-family;
 				line-height: 50px;
 				height: 50px;
 				padding: 0 20px;
-//				font-family: $header-font-family;
 				font-size: em(20);			
 				text-transform: uppercase;
 				color: #fff;
@@ -1136,8 +1135,8 @@ font-family: $header-font-family;
 				img {
 					vertical-align: middle;
 					display: inline-block;
-					width: 80px;
-					height: 80px;
+					width: 64px;
+					height: 64px;
 				}
 			}
 		}
@@ -1260,8 +1259,8 @@ nav#overlay {
 	z-index: 6000;
 	
 	#close-menu-link {
-		width: 50px;
-		height: 50px;
+		width: 64px;
+		height: 64px;
 		position: fixed;
 	
 		@include media($desktop) {
@@ -1304,7 +1303,7 @@ nav#overlay {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		width: 400px;
+		width: 800px;
 		-webkit-transform: translate(-50%, -50%);		
 		transform: translate(-50%, -50%);		
 		display: block;
@@ -1324,26 +1323,111 @@ nav#overlay {
 		
 		ul {
 			
+			margin: 0;
+			
 			li {
 				display: block;	
 				text-align: center;		
 				a {
 					display: inline-block;
 					color: #fff;
-					padding: 5px 0;
+					padding: 10px 0;
 					text-transform: uppercase;
-					font-size: em(24);
+					font-size: em(30);
+					line-height: 1em;
 					font-weight: 300;
 					text-align: center;
+					
+					span {
+  					text-align: center;
+  					font-size: em(12);
+  					width: 16px;
+  					height: 16px;
+  					background: rgba($dark,0.85);
+  					color: #fff;
+  					display: inline-block;
+  					border-radius: 100%;
+  					vertical-align: middle;
+  					line-height: 16px;
+  					font-weight: 800;
+  					position: relative;
+  					top: -2px;
+  					margin: 0 3px;
+					}
+					
 					&:hover {
-						text-decoration: underline;
+						opacity: 0.8;
 					}
 				}
 								
 			}
 			
+      &.buttons {
+  		
+    		margin-top: 50px;
+    	  text-align: center;
+    	  	
+    		li {
+      		display: inline-block;
+      		margin: 0 1em;
+      		
+      		a {
+        		display: inline-block;
+        		font-size: em(24);
+        		line-height: 44px;
+        		height: 48px;
+        		padding: 0 20px;
+        		border-radius: 5px;
+        		
+        		&.green {
+          		background: $green;
+          		border: 2px solid $green;
+        		}
+        		&.blue {
+          		background: $dark;
+          		border: 2px solid $dark;
+        		}
+        		&.ghost {
+          		background: transparent;
+          		border: 2px solid #fff;
+        		}
+        		
+        		
+      		}
+      		
+    		}
+		  }
+
+      &.social {
+  		
+    		margin-top: 50px;
+    	  text-align: center;
+    	  	
+    		li {
+      		display: inline-block;
+      		margin: 0 1em;
+      		
+      		a {
+            
+            display: inline-block;
+                        
+            img {
+              width: 48px;
+              height: 48px;
+              display: block;
+            }
+        		
+        		
+        		
+      		}
+      		
+    		}
+		  }
+
 			
 		}
+		
+		
 		
 	}
 	

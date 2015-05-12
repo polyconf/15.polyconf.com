@@ -1092,8 +1092,8 @@ body {
       #contact ul li img {
         vertical-align: middle;
         display: inline-block;
-        width: 80px;
-        height: 80px; }
+        width: 64px;
+        height: 64px; }
   #contact #copy, #contact #true {
     position: absolute;
     bottom: 50px;
@@ -1187,8 +1187,8 @@ nav#overlay {
   background: #20b9f1;
   z-index: 6000; }
   nav#overlay #close-menu-link {
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     position: fixed;
     background: #20b9f1 url(../img/close-menu.svg) no-repeat center center;
     background-size: cover;
@@ -1225,7 +1225,7 @@ nav#overlay {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 400px;
+    width: 800px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: block; }
@@ -1236,19 +1236,71 @@ nav#overlay {
       nav#overlay .content figure img {
         width: 100px;
         display: inline; }
-    nav#overlay .content ul li {
-      display: block;
-      text-align: center; }
-      nav#overlay .content ul li a {
-        display: inline-block;
-        color: #fff;
-        padding: 5px 0;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        font-weight: 300;
+    nav#overlay .content ul {
+      margin: 0; }
+      nav#overlay .content ul li {
+        display: block;
         text-align: center; }
-        nav#overlay .content ul li a:hover {
-          text-decoration: underline; }
+        nav#overlay .content ul li a {
+          display: inline-block;
+          color: #fff;
+          padding: 10px 0;
+          text-transform: uppercase;
+          font-size: 1.875em;
+          line-height: 1em;
+          font-weight: 300;
+          text-align: center; }
+          nav#overlay .content ul li a span {
+            text-align: center;
+            font-size: 0.75em;
+            width: 16px;
+            height: 16px;
+            background: rgba(46, 78, 107, 0.85);
+            color: #fff;
+            display: inline-block;
+            border-radius: 100%;
+            vertical-align: middle;
+            line-height: 16px;
+            font-weight: 800;
+            position: relative;
+            top: -2px;
+            margin: 0 3px; }
+          nav#overlay .content ul li a:hover {
+            opacity: 0.8; }
+      nav#overlay .content ul.buttons {
+        margin-top: 50px;
+        text-align: center; }
+        nav#overlay .content ul.buttons li {
+          display: inline-block;
+          margin: 0 1em; }
+          nav#overlay .content ul.buttons li a {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 44px;
+            height: 48px;
+            padding: 0 20px;
+            border-radius: 5px; }
+            nav#overlay .content ul.buttons li a.green {
+              background: #0b8c41;
+              border: 2px solid #0b8c41; }
+            nav#overlay .content ul.buttons li a.blue {
+              background: #2e4e6b;
+              border: 2px solid #2e4e6b; }
+            nav#overlay .content ul.buttons li a.ghost {
+              background: transparent;
+              border: 2px solid #fff; }
+      nav#overlay .content ul.social {
+        margin-top: 50px;
+        text-align: center; }
+        nav#overlay .content ul.social li {
+          display: inline-block;
+          margin: 0 1em; }
+          nav#overlay .content ul.social li a {
+            display: inline-block; }
+            nav#overlay .content ul.social li a img {
+              width: 48px;
+              height: 48px;
+              display: block; }
 
 #partners {
   padding: 0; }
