@@ -290,7 +290,6 @@ font-family: $header-font-family;
 				line-height: 50px;
 				height: 50px;
 				padding: 0 20px;
-//				font-family: $header-font-family;
 				font-size: em(20);			
 				text-transform: uppercase;
 				color: #fff;
@@ -462,6 +461,13 @@ font-family: $header-font-family;
 		.inline-block {
 			display: inline-block;
 		}
+
+		.register-now {
+			@include media($mobile) {
+				margin-right: 0em !important;
+				margin-bottom: 20px;
+			}
+		}
 		
 		.become-a-sponsor {
 			@include media($mobile) {
@@ -523,6 +529,17 @@ font-family: $header-font-family;
 				}
 				
 			}
+			
+			@include media($tablet) {
+				margin-top: 2em;
+			}
+
+			@include media($portrait) {
+				margin-top: 2em;
+			}
+			
+
+			
 		}
 		
 	}
@@ -577,10 +594,11 @@ font-family: $header-font-family;
 
 #about {
 	
-	@include media($desktop) {
-		padding-bottom: 300px;
-	}
-	
+	padding-bottom: 300px;
+
+  @include media($mobile) {
+  	padding-bottom: 50px  
+  }
 	
 	.row {
 		@include row();
@@ -591,18 +609,13 @@ font-family: $header-font-family;
 		
 		.column {
 			text-align: center;
-			@include span-columns(2);
+			@include span-columns(3 of 15);
+			@include omega(5n);
 			
 			@include media($mobile) {
 				@include fill-parent();
 			}
-			
-			&:first-child {
-				@include media($desktop) {
-					@include shift(1);	
-				}
-			}
-			
+						
 			figure {
 				margin: 80px auto 40px;
 				width: 90%;
@@ -655,6 +668,21 @@ font-family: $header-font-family;
 			left: 0;
 			right: 0;			
 		}
+
+		@include media($portrait) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;			
+		}
+
+		@include media($tablet) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;			
+		}
+
 		
 		@include media($mobile) {
 			display: none;
@@ -665,26 +693,20 @@ font-family: $header-font-family;
 	
 	.container {
 		position: relative;
+		height: 100px;
 		
 		@include media($desktop) {
 			@include outer-container(1200px);		
 		}
 	
 		@include media($tablet) {
-			width: 100%;
-			padding: 0 5%;			
+			@include outer-container(900px);		
 		}
 	
 		@include media($portrait) {
-			width: 100%;
-			padding: 0 5%;			
+			@include outer-container(600px);		
 		}
 		
-		@include media($mobile) {
-			width: 100%;
-			padding: 0 5%;			
-		}
-
 		
 		.avatar {
 			width: 100px;
@@ -711,11 +733,17 @@ font-family: $header-font-family;
 			top: 50%;
 			@include transform(translateY(-50%));
 			
+			@include media($portrait) {
+				right: 40px;
+			}
 		}
 		
 		#more-quotes {
 			float: right;
 			margin: 30px 0 0;
+			@include media($portrait) {
+				display: none;
+			}
 		}
 	
 	}
@@ -733,8 +761,22 @@ font-family: $header-font-family;
 			
 			.speaker {
 				
-				@include span-columns(4 of 20);
-				@include omega(5n);
+        @include media($desktop) {
+  				@include span-columns(4 of 20);
+  				@include omega(5n);        	
+        }
+        
+        @include media($tablet) {
+  				@include span-columns(5 of 20);
+  				@include omega(4n);        	
+        }
+
+        @include media($portrait) {
+  				@include span-columns(5 of 20);
+  				@include omega(4n);        	
+        }
+
+
 				margin-bottom: 50px;
 				
 				@include media($mobile) {
@@ -755,7 +797,6 @@ font-family: $header-font-family;
 						@include media($mobile) {
 							float: none;
 							width: 80%;
-              padding-top: 80%;
 							margin: 30px;
 						}
 							
@@ -1126,18 +1167,18 @@ font-family: $header-font-family;
 					overflow: hidden;
 					text-align: center;
 					border-radius: 100%;
-					border: 2px solid $dark;
-						@include transition(0.5s all);
-					&:hover {
-						border: 2px solid white;					
+					@include transition(0.5s all);
+					
+          &:hover {
+						opacity: 0.8;
 						@include transition(0.5s all);
 					}
 				}
 				img {
 					vertical-align: middle;
 					display: inline-block;
-					width: 80px;
-					height: 80px;
+					width: 64px;
+					height: 64px;
 				}
 			}
 		}
@@ -1207,6 +1248,23 @@ font-family: $header-font-family;
 	font-family: $header-font-family;
   font-weight: 500;
   text-transform: uppercase;
+  
+  @include media($tablet) {
+  	top: 40px;
+  	right: 130px;
+  }
+  
+  @include media($portrait) {
+  	top: 30px;
+  	right: 120px;
+  }
+  
+  @include media($mobile) {
+  	display: none;  
+  }
+  
+  
+  
 }
 
 #menu-link {
@@ -1230,6 +1288,8 @@ font-family: $header-font-family;
 	}
 	
 	@include media($mobile) {
+  	width: 48px;
+  	height: 48px; 
 		top: 20px;
 		right: 20px;
 	}
@@ -1260,8 +1320,8 @@ nav#overlay {
 	z-index: 6000;
 	
 	#close-menu-link {
-		width: 50px;
-		height: 50px;
+		width: 64px;
+		height: 64px;
 		position: fixed;
 	
 		@include media($desktop) {
@@ -1304,7 +1364,7 @@ nav#overlay {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		width: 400px;
+		width: 800px;
 		-webkit-transform: translate(-50%, -50%);		
 		transform: translate(-50%, -50%);		
 		display: block;
@@ -1324,26 +1384,122 @@ nav#overlay {
 		
 		ul {
 			
+			margin: 0;
+			
 			li {
 				display: block;	
 				text-align: center;		
 				a {
 					display: inline-block;
 					color: #fff;
-					padding: 5px 0;
+					padding: 10px 0;
 					text-transform: uppercase;
-					font-size: em(24);
+					font-size: em(30);
+					line-height: 1em;
 					font-weight: 300;
 					text-align: center;
+					
+					span {
+  					text-align: center;
+  					font-size: em(12);
+  					width: 16px;
+  					height: 16px;
+  					background: rgba($dark,0.85);
+  					color: #fff;
+  					display: inline-block;
+  					border-radius: 100%;
+  					vertical-align: middle;
+  					line-height: 16px;
+  					font-weight: 800;
+  					position: relative;
+  					top: -2px;
+  					margin: 0 3px;
+					}
+					
 					&:hover {
-						text-decoration: underline;
+						opacity: 0.8;
 					}
 				}
 								
 			}
 			
+      &.buttons {
+  		
+    		margin-top: 50px;
+    	  text-align: center;
+    	  	
+    		li {
+      		display: inline-block;
+      		margin: 0 1em;
+      		
+      		@include media($portrait) {
+      			display: block;
+      			padding: 10px 0;
+      		}
+      		
+      		@include media($mobile) {
+      			display: block;  
+      			padding: 10px 0;
+      		}
+      		
+      		
+      		a {
+        		display: inline-block;
+        		font-size: em(24);
+        		line-height: 44px;
+        		height: 48px;
+        		padding: 0 20px;
+        		border-radius: 5px;
+        		
+        		&.green {
+          		background: $green;
+          		border: 2px solid $green;
+        		}
+        		&.blue {
+          		background: $dark;
+          		border: 2px solid $dark;
+        		}
+        		&.ghost {
+          		background: transparent;
+          		border: 2px solid #fff;
+        		}
+        		
+        		
+      		}
+      		
+    		}
+		  }
+
+      &.social {
+  		
+    		margin-top: 50px;
+    	  text-align: center;
+    	  	
+    		li {
+      		display: inline-block;
+      		margin: 0 1em;
+      		
+      		a {
+            
+            display: inline-block;
+                        
+            img {
+              width: 48px;
+              height: 48px;
+              display: block;
+            }
+        		
+        		
+        		
+      		}
+      		
+    		}
+		  }
+
 			
 		}
+		
+		
 		
 	}
 	
@@ -1720,10 +1876,8 @@ nav#overlay {
       }
 
       @include media($mobile) {
-        float: left;
-        display: block;
-        margin-right: 1.6949152542%;
-        width: 49.1525423729%;
+      
+        @include fill-parent();
 
         &:last-child {
           margin-right: 0;
@@ -1799,7 +1953,7 @@ nav#overlay {
       }
 
       @include media($mobile) {
-        @include span-columns(12);
+        width: 100%;
       }
       
       
@@ -1818,7 +1972,8 @@ nav#overlay {
       }
 
       @include media($mobile) {
-        @include span-columns(12);
+        width: 80%;
+        margin: 0 auto 20px;
       }
         
         
@@ -1844,11 +1999,21 @@ nav#overlay {
             -webkit-transform:translateX(-50%);
             @include transform(translateX(-50%));
             
+            @include media($mobile) {
+            	top: 20px;  
+            }
+            
+            
             
           }
           
           .price {
             font-size: em(150);
+            
+            @include media($mobile) {
+            	font-size: em(120);  
+            }
+            
             line-height: 1em;
             font-family: $header-font-family;
             position: absolute;
@@ -1856,6 +2021,11 @@ nav#overlay {
             left: 50%;
             -webkit-transform:translateX(-50%);
             @include transform(translateX(-50%));
+
+            @include media($mobile) {
+            	top: 100px;  
+            }
+            
 
             small {
               position: absolute;
@@ -1882,6 +2052,12 @@ nav#overlay {
             bottom: 50px;
             left: 0;
             right: 0;
+            
+            @include media($mobile) {
+            	bottom: 20px;  
+            }
+            
+            
             .button {
               background: $blue;
               white-space: nowrap;
@@ -1892,6 +2068,12 @@ nav#overlay {
               padding: 10px 20px;
               font-weight: bold;
               display: inline-block;
+              
+              @include media($mobile) {
+              	font-size: em(30)  
+              }
+              
+              
             }
           }
           
@@ -2034,6 +2216,11 @@ nav#overlay {
           padding: 20px 80px 20px 240px;
           position: relative;
           
+          @include media($mobile) {
+          	padding: 50px 10px 10px 80px;  
+          }
+          
+          
           .time {
             position: absolute;
             left: 80px;
@@ -2041,6 +2228,13 @@ nav#overlay {
             font-size: em(20);
             font-weight: 600;
             color: $gray;
+            
+            @include media($mobile) {
+            	font-size: em(18);  
+            	top: 15px;
+            }
+            
+            
           }
           
           .name {
@@ -2063,6 +2257,13 @@ nav#overlay {
               font-weight: 600;
               display: block;
               
+              @include media($mobile) {
+              	font-size: em(18);  
+              	line-height: 1.1em;
+              	margin-bottom: 1ex
+              }
+              
+              
             }
             
             .person {
@@ -2071,6 +2272,12 @@ nav#overlay {
               font-weight: 600;
               display: block;
               color: $gray;
+              
+              @include media($mobile) {
+              	font-size: em(16);  
+              	line-height: 1.1em;
+              }
+              
               
             }
             
