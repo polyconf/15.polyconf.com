@@ -1490,6 +1490,8 @@ nav#overlay {
         #partners div.sponsors.bronze .sponsor.gamesys img {
           width: initial;
           margin: 0 auto; }
+      #partners div.sponsors.bronze .sponsor.stackbuilders {
+        margin-top: 6%; }
   #partners div.supporters {
     padding: 50px 0; }
     #partners div.supporters ul {
