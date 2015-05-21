@@ -1527,6 +1527,8 @@ nav#overlay {
 		ul {
 			
 			@include row();
+
+            text-align: center;
 			
 			li {
 				
@@ -1541,6 +1543,12 @@ nav#overlay {
 				}				
 				
 			}
+
+            &.sponsor {
+
+                display: inline-block;
+
+            }
 			
 		}
 
@@ -1584,8 +1592,9 @@ nav#overlay {
 		&.gold {
 			
 			.sponsor {
-				
-				@include span-columns (4);
+
+                margin-right: 5%;
+                width: 30%;
 
 				@include media($mobile) {
 					@include fill-parent();
@@ -1604,7 +1613,9 @@ nav#overlay {
 		&.silver {
 			
 			.sponsor {
-				@include span-columns (3 of 15);
+
+                margin-right: 3.9603960396%;
+                width: 16.8316831683%;
 
 				@include media($mobile) {
 					@include fill-parent();
@@ -1618,8 +1629,10 @@ nav#overlay {
 		&.bronze {
 			
 			.sponsor {
-				@include span-columns (3 of 15);
-				@include omega(5n);
+
+                margin-right: 3.9603960396%;
+                width: 16.8316831683%;
+                margin-top: 20px;
 				margin-bottom: 20px;
 
 				@include media($mobile) {
@@ -1627,26 +1640,13 @@ nav#overlay {
 					margin-bottom: 20px;
 				}
 
-                &.twilio {
-                  margin-top: 6.1%;
-                }
-
-                &.squirrel {
-                  margin-top: 7%;
-                }
-
                 &.gamesys {
-                  margin-top: 4%;
 
                   img {
                     width: initial;
                     margin: 0 auto;
                   }
 
-                }
-
-                &.stackbuilders {
-                  margin-top: 6%;
                 }
 			}
 			
@@ -1662,14 +1662,18 @@ nav#overlay {
 	div.supporters {
 		
 		padding: 50px 0;
+        text-align: center;
 	
 		ul {
 			
 			@include row();
 			
 			li {
-				@include span-columns (3 of 18);
-				@include omega(6n);
+
+                display: inline-block;
+                margin-right: 3.2786885246%;
+                width: 13.9344262295%;
+
 			}			
 	
 		}
@@ -1680,6 +1684,7 @@ nav#overlay {
 		
 		@include clearfix();
 		padding: 50px 0;
+        text-align: center;
 		
 		.main-partner {
 			display: block;
@@ -1704,7 +1709,7 @@ nav#overlay {
 		
 		.partner {
 
-			float: left;		
+            display: inline-block;
 			width: 20%;
             min-height: 144px;
 			padding: 0 4%;
@@ -1732,6 +1737,10 @@ nav#overlay {
 
             &.techtrrrs {
               padding-top: 1.7%;
+            }
+
+            &.pyladies-poland {
+              padding-top: 1%;
             }
 			
 		}
