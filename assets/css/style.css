@@ -1490,6 +1490,8 @@ nav#overlay {
         #partners div.sponsors.bronze .sponsor.gamesys img {
           width: initial;
           margin: 0 auto; }
+      #partners div.sponsors.bronze .sponsor.stackbuilders {
+        margin-top: 6%; }
   #partners div.supporters {
     padding: 50px 0; }
     #partners div.supporters ul {
@@ -1532,6 +1534,7 @@ nav#overlay {
     #partners ul.partners .partner {
       float: left;
       width: 20%;
+      min-height: 144px;
       padding: 0 4%; }
       #partners ul.partners .partner img {
         display: block;
@@ -1544,11 +1547,11 @@ nav#overlay {
           max-width: 200px;
           margin: 0 auto; } }
       #partners ul.partners .partner.bitspiration {
-        margin-top: 4.7%; }
+        padding-top: 4.7%; }
       #partners ul.partners .partner.infoq {
-        margin-top: 4%; }
+        padding-top: 4%; }
       #partners ul.partners .partner.techtrrrs {
-        margin-top: 1.7%; }
+        padding-top: 1.7%; }
 
 #terms h2 {
   font-size: 1.5em; }

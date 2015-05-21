@@ -1644,6 +1644,10 @@ nav#overlay {
                   }
 
                 }
+
+                &.stackbuilders {
+                  margin-top: 6%;
+                }
 			}
 			
 		}
@@ -1702,6 +1706,7 @@ nav#overlay {
 
 			float: left;		
 			width: 20%;
+            min-height: 144px;
 			padding: 0 4%;
 						
 			img {
@@ -1718,15 +1723,15 @@ nav#overlay {
 			}
 
             &.bitspiration {
-              margin-top: 4.7%;
+              padding-top: 4.7%;
             }
 
             &.infoq {
-              margin-top: 4%;
+              padding-top: 4%;
             }
 
             &.techtrrrs {
-              margin-top: 1.7%;
+              padding-top: 1.7%;
             }
 			
 		}
