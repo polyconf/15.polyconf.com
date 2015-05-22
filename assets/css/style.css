@@ -1398,11 +1398,14 @@ nav#overlay {
   #partners div.sponsors {
     padding: 50px 0; }
     #partners div.sponsors ul {
-      display: block; }
+      display: block;
+      text-align: center; }
       #partners div.sponsors ul::after {
         clear: both;
         content: "";
         display: table; }
+      #partners div.sponsors ul li.sponsor {
+        display: inline-block; }
       #partners div.sponsors ul li .logo {
         width: 100%; }
         #partners div.sponsors ul li .logo img {
@@ -1442,8 +1445,6 @@ nav#overlay {
             padding: 0;
             text-align: center; } }
     #partners div.sponsors.gold .sponsor {
-      float: left;
-      display: block;
       margin-right: 5%;
       width: 30%; }
       #partners div.sponsors.gold .sponsor:last-child {
@@ -1455,8 +1456,6 @@ nav#overlay {
       #partners div.sponsors.gold .sponsor p {
         text-align: center; }
     #partners div.sponsors.silver .sponsor {
-      float: left;
-      display: block;
       margin-right: 3.9603960396%;
       width: 16.8316831683%; }
       #partners div.sponsors.silver .sponsor:last-child {
@@ -1466,10 +1465,9 @@ nav#overlay {
           width: 100%;
           margin-bottom: 20px; } }
     #partners div.sponsors.bronze .sponsor {
-      float: left;
-      display: block;
       margin-right: 3.9603960396%;
       width: 16.8316831683%;
+      margin-top: 20px;
       margin-bottom: 20px; }
       #partners div.sponsors.bronze .sponsor:last-child {
         margin-right: 0; }
@@ -1481,19 +1479,12 @@ nav#overlay {
         #partners div.sponsors.bronze .sponsor {
           width: 100%;
           margin-bottom: 20px; } }
-      #partners div.sponsors.bronze .sponsor.twilio {
-        margin-top: 6.1%; }
-      #partners div.sponsors.bronze .sponsor.squirrel {
-        margin-top: 7%; }
-      #partners div.sponsors.bronze .sponsor.gamesys {
-        margin-top: 4%; }
         #partners div.sponsors.bronze .sponsor.gamesys img {
           width: initial;
           margin: 0 auto; }
-      #partners div.sponsors.bronze .sponsor.stackbuilders {
-        margin-top: 6%; }
   #partners div.supporters {
-    padding: 50px 0; }
+    padding: 50px 0;
+    text-align: center; }
     #partners div.supporters ul {
       display: block; }
       #partners div.supporters ul::after {
@@ -1501,8 +1492,7 @@ nav#overlay {
         content: "";
         display: table; }
       #partners div.supporters ul li {
-        float: left;
-        display: block;
+        display: inline-block;
         margin-right: 3.2786885246%;
         width: 13.9344262295%; }
         #partners div.supporters ul li:last-child {
@@ -1512,7 +1502,8 @@ nav#overlay {
         #partners div.supporters ul li:nth-child(6n+1) {
           clear: left; }
   #partners ul.partners {
-    padding: 50px 0; }
+    padding: 50px 0;
+    text-align: center; }
     #partners ul.partners::after {
       clear: both;
       content: "";
@@ -1532,7 +1523,7 @@ nav#overlay {
         width: 100%;
         height: auto; }
     #partners ul.partners .partner {
-      float: left;
+      display: inline-block;
       width: 20%;
       min-height: 144px;
       padding: 0 4%; }
@@ -1552,6 +1543,8 @@ nav#overlay {
         padding-top: 4%; }
       #partners ul.partners .partner.techtrrrs {
         padding-top: 1.7%; }
+      #partners ul.partners .partner.pyladies-poland {
+        padding-top: 1%; }
 
 #terms h2 {
   font-size: 1.5em; }
