@@ -1985,6 +1985,9 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
+      #agenda .day .event-list .event.workshops .short:before {
+        background: #666 url(../icons/coffee.svg) no-repeat center 19px;
+        background-size: auto 40px; }
       #agenda .day .event-list .event.coffee .short:before, #agenda .day .event-list .event.lunch .short:before {
         background: #20b9f1 url(../icons/coffee.svg) no-repeat center 19px;
         background-size: auto 40px; }
@@ -2001,8 +2004,6 @@ nav#overlay {
   position: relative; }
   #workshops .workshop:last-of-type {
     border-bottom: none; }
-  #workshops .workshop:first-of-type {
-    padding-top: 0; }
   #workshops .workshop h2 {
     position: relative; }
     #workshops .workshop h2 .author {
