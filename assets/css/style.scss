@@ -2498,3 +2498,91 @@ nav#overlay {
   }
   
 }
+
+
+#workshops {
+  
+  .workshop {
+    
+    padding: 50px 0px 50px 200px;
+    border-bottom: 2px solid $lightgray;
+    position: relative;    
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+
+    h2 {
+      
+      position: relative;
+      
+      .author {
+        
+        display: block;
+        text-transform: capitalize;  
+        font-size: 0.7em;
+        font-weight: 500;
+        
+      }
+  
+      figure {
+        width: 150px;
+        height: 150px;
+        background: #ccc;
+        position: absolute;
+        left: -200px;
+        bottom: -80px;
+        border-radius: 100%;
+        margin: 0;
+        
+      }
+
+      
+    }
+    
+    .row {
+      
+      @include row();
+      
+      .about {
+        
+        @include span-columns(7);
+        
+      }
+
+      .bio {
+        
+        @include span-columns(5);
+        
+      }
+      
+      h3 {
+        
+        font-weight: 500;
+        font-size: em(24);  
+        margin: 0 0 1em;
+        
+      }
+      
+      h4 {
+        
+        font-size: em(18);  
+        margin: 1em 0 0.5em;
+        font-weight: 500;
+        
+        
+      }
+      
+      
+    }
+    
+    
+  }
+  
+  
+}
