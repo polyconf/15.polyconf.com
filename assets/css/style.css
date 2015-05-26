@@ -1404,13 +1404,13 @@ nav#overlay {
         clear: both;
         content: "";
         display: table; }
-      #partners div.sponsors ul li.sponsor {
-        display: inline-block; }
       #partners div.sponsors ul li .logo {
         width: 100%; }
         #partners div.sponsors ul li .logo img {
           width: 100%;
           display: block; }
+      #partners div.sponsors ul.sponsor {
+        display: inline-block; }
     #partners div.sponsors.platinum .sponsor {
       display: block; }
       #partners div.sponsors.platinum .sponsor::after {
@@ -1447,8 +1447,6 @@ nav#overlay {
     #partners div.sponsors.gold .sponsor {
       margin-right: 5%;
       width: 30%; }
-      #partners div.sponsors.gold .sponsor:last-child {
-        margin-right: 0; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.gold .sponsor {
           width: 100%;
@@ -1458,8 +1456,6 @@ nav#overlay {
     #partners div.sponsors.silver .sponsor {
       margin-right: 3.9603960396%;
       width: 16.8316831683%; }
-      #partners div.sponsors.silver .sponsor:last-child {
-        margin-right: 0; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.silver .sponsor {
           width: 100%;
@@ -1469,19 +1465,13 @@ nav#overlay {
       width: 16.8316831683%;
       margin-top: 20px;
       margin-bottom: 20px; }
-      #partners div.sponsors.bronze .sponsor:last-child {
-        margin-right: 0; }
-      #partners div.sponsors.bronze .sponsor:nth-child(5n) {
-        margin-right: 0; }
-      #partners div.sponsors.bronze .sponsor:nth-child(5n+1) {
-        clear: left; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.bronze .sponsor {
           width: 100%;
           margin-bottom: 20px; } }
-        #partners div.sponsors.bronze .sponsor.gamesys img {
-          width: initial;
-          margin: 0 auto; }
+      #partners div.sponsors.bronze .sponsor.gamesys img {
+        width: initial;
+        margin: 0 auto; }
   #partners div.supporters {
     padding: 50px 0;
     text-align: center; }
@@ -1495,12 +1485,6 @@ nav#overlay {
         display: inline-block;
         margin-right: 3.2786885246%;
         width: 13.9344262295%; }
-        #partners div.supporters ul li:last-child {
-          margin-right: 0; }
-        #partners div.supporters ul li:nth-child(6n) {
-          margin-right: 0; }
-        #partners div.supporters ul li:nth-child(6n+1) {
-          clear: left; }
   #partners ul.partners {
     padding: 50px 0;
     text-align: center; }
@@ -2026,3 +2010,56 @@ nav#overlay {
       #agenda .day .event-list .event.party .short:before {
         background: #762ca6 url(../icons/party.svg) no-repeat center 19px;
         background-size: auto 40px; }
+
+#workshops .workshop {
+  padding: 50px 0px 50px 200px;
+  border-bottom: 2px solid #eeeff0;
+  position: relative; }
+  #workshops .workshop:last-of-type {
+    border-bottom: none; }
+  #workshops .workshop:first-of-type {
+    padding-top: 0; }
+  #workshops .workshop h2 {
+    position: relative; }
+    #workshops .workshop h2 .author {
+      display: block;
+      text-transform: capitalize;
+      font-size: 0.7em;
+      font-weight: 500; }
+    #workshops .workshop h2 figure {
+      width: 150px;
+      height: 150px;
+      background: #ccc;
+      position: absolute;
+      left: -200px;
+      bottom: -80px;
+      border-radius: 100%;
+      margin: 0; }
+  #workshops .workshop .row {
+    display: block; }
+    #workshops .workshop .row::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #workshops .workshop .row .about {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 56.25%; }
+      #workshops .workshop .row .about:last-child {
+        margin-right: 0; }
+    #workshops .workshop .row .bio {
+      float: left;
+      display: block;
+      margin-right: 5%;
+      width: 38.75%; }
+      #workshops .workshop .row .bio:last-child {
+        margin-right: 0; }
+    #workshops .workshop .row h3 {
+      font-weight: 500;
+      font-size: 1.5em;
+      margin: 0 0 1em; }
+    #workshops .workshop .row h4 {
+      font-size: 1.125em;
+      margin: 1em 0 0.5em;
+      font-weight: 500; }
