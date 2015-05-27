@@ -1404,11 +1404,18 @@ nav#overlay {
         clear: both;
         content: "";
         display: table; }
-      #partners div.sponsors ul li .logo {
-        width: 100%; }
-        #partners div.sponsors ul li .logo img {
+      #partners div.sponsors ul li {
+        float: left;
+        height: 200px;
+        line-height: 200px; }
+        #partners div.sponsors ul li .logo {
           width: 100%;
-          display: block; }
+          text-align: center;
+          vertical-align: middle; }
+          #partners div.sponsors ul li .logo img {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle; }
       #partners div.sponsors ul.sponsor {
         display: inline-block; }
     #partners div.sponsors.platinum .sponsor {
@@ -1446,23 +1453,28 @@ nav#overlay {
             text-align: center; } }
     #partners div.sponsors.gold .sponsor {
       margin-right: 5%;
-      width: 30%; }
+      width: 30%;
+      height: auto;
+      line-height: normal; }
+      #partners div.sponsors.gold .sponsor.one {
+        margin-left: 35%; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.gold .sponsor {
           width: 100%;
           margin-bottom: 20px; } }
       #partners div.sponsors.gold .sponsor p {
-        text-align: center; }
+        text-align: left;
+        line-height: 1.1em; }
     #partners div.sponsors.silver .sponsor {
-      margin-right: 3.9603960396%;
+      margin: 3.9603960396%;
       width: 16.8316831683%; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.silver .sponsor {
           width: 100%;
           margin-bottom: 20px; } }
     #partners div.sponsors.bronze .sponsor {
-      margin-right: 3.9603960396%;
-      width: 16.8316831683%;
+      margin: 1%;
+      width: 18%;
       margin-top: 20px;
       margin-bottom: 20px; }
       @media screen and (max-width: 40em) {
@@ -1985,6 +1997,9 @@ nav#overlay {
         color: #fff;
         content: "";
         display: none; }
+      #agenda .day .event-list .event.workshops .short:before {
+        background: #666 url(../icons/coffee.svg) no-repeat center 19px;
+        background-size: auto 40px; }
       #agenda .day .event-list .event.coffee .short:before, #agenda .day .event-list .event.lunch .short:before {
         background: #20b9f1 url(../icons/coffee.svg) no-repeat center 19px;
         background-size: auto 40px; }
@@ -2001,8 +2016,6 @@ nav#overlay {
   position: relative; }
   #workshops .workshop:last-of-type {
     border-bottom: none; }
-  #workshops .workshop:first-of-type {
-    padding-top: 0; }
   #workshops .workshop h2 {
     position: relative; }
     #workshops .workshop h2 .author {

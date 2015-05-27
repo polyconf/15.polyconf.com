@@ -1527,17 +1527,23 @@ nav#overlay {
 		ul {
 			
 			@include row();
-
-            text-align: center;
+      text-align: center;
 			
 			li {
+  			
+  		  float: left;
+  		  height: 200px;
+  		  line-height: 200px;
 				
 				.logo {
 					width: 100%;
+					text-align: center;
+					vertical-align: middle;
 					
 					img {
 						width: 100%;
-						display: block;
+						display: inline-block;
+            vertical-align: middle;
 					}
 					
 				}				
@@ -1593,8 +1599,14 @@ nav#overlay {
 			
 			.sponsor {
 
-                margin-right: 5%;
-                width: 30%;
+        margin-right: 5%;
+        width: 30%;
+        height: auto;
+        line-height: normal;
+
+        &.one {
+          margin-left: 35%;
+        }
 
 				@include media($mobile) {
 					@include fill-parent();
@@ -1603,7 +1615,8 @@ nav#overlay {
 
 
 				p {
-					text-align: center;					
+					text-align: left;					
+					line-height: 1.1em;
 				}
 				
 			}
@@ -1614,8 +1627,8 @@ nav#overlay {
 			
 			.sponsor {
 
-                margin-right: 3.9603960396%;
-                width: 16.8316831683%;
+        margin: 3.9603960396%;
+        width: 16.8316831683%;
 
 				@include media($mobile) {
 					@include fill-parent();
@@ -1630,9 +1643,9 @@ nav#overlay {
 			
 			.sponsor {
 
-                margin-right: 3.9603960396%;
-                width: 16.8316831683%;
-                margin-top: 20px;
+        margin: 1%;
+        width: 18%;
+        margin-top: 20px;
 				margin-bottom: 20px;
 
 				@include media($mobile) {
@@ -2424,6 +2437,20 @@ nav#overlay {
           }
           
         }
+
+        &.workshops {
+          
+          .short {
+            
+            &:before {
+              
+              background: #666 url(../icons/coffee.svg) no-repeat center 19px;
+              background-size: auto 40px;
+              
+            }
+          }
+        }
+
   
         &.coffee, &.lunch {
           
@@ -2484,11 +2511,6 @@ nav#overlay {
     &:last-of-type {
       border-bottom: none;
     }
-
-    &:first-of-type {
-      padding-top: 0;
-    }
-
 
     h2 {
       
