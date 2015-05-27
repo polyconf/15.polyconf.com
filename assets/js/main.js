@@ -47,6 +47,19 @@ $(document).ready(function(){
 
 */
 
+  $(".event").each(function(){
+    
+    var event = $(this);
+    event.find(".long").hide();
+    
+    event.find(".more-button").click(function(){
+      
+      event.find(".long").slideToggle();
+      
+    })   
+    
+  })
+
 	  var s = skrollr.init({
 			forceHeight: false
 		});
