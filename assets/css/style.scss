@@ -1608,6 +1608,18 @@ nav#overlay {
           margin-left: 35%;
         }
 
+        &.fyber {
+          margin-top: 7%;
+        }
+
+        &.two-col:first-of-type {
+          margin-left: 20%;
+
+          @include media($mobile) {
+            margin-left: 0;
+          }
+        }
+
 				@include media($mobile) {
 					@include fill-parent();
 					margin-bottom: 20px;
