@@ -1458,6 +1458,13 @@ nav#overlay {
       line-height: normal; }
       #partners div.sponsors.gold .sponsor.one {
         margin-left: 35%; }
+      #partners div.sponsors.gold .sponsor.fyber {
+        margin-top: 7%; }
+      #partners div.sponsors.gold .sponsor.two-col:first-of-type {
+        margin-left: 20%; }
+      @media screen and (max-width: 40em) {
+        #partners div.sponsors.gold .sponsor.two-col:first-of-type {
+          margin-left: 0; } }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.gold .sponsor {
           width: 100%;
