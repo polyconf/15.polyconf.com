@@ -1452,16 +1452,15 @@ nav#overlay {
             padding: 0;
             text-align: center; } }
     #partners div.sponsors.gold .sponsor {
-      margin-right: 5%;
-      width: 30%;
+      width: 33%;
       height: auto;
-      line-height: normal; }
-      #partners div.sponsors.gold .sponsor.one {
-        margin-left: 35%; }
-      #partners div.sponsors.gold .sponsor.fyber {
-        margin-top: 7%; }
-      #partners div.sponsors.gold .sponsor.two-col:first-of-type {
-        margin-left: 20%; }
+      line-height: normal;
+      padding: 30px; }
+      #partners div.sponsors.gold .sponsor .logo {
+        height: 250px;
+        line-height: 250px; }
+        #partners div.sponsors.gold .sponsor .logo img {
+          display: inline-block; }
       @media screen and (max-width: 40em) {
         #partners div.sponsors.gold .sponsor.two-col:first-of-type {
           margin-left: 0; } }
@@ -1548,7 +1547,7 @@ nav#overlay {
         padding-top: 1.7%; }
       #partners ul.partners .partner.pyladies-poland {
         padding-top: 1%; }
-      #partners ul.partners .partner.devmeetings{
+      #partners ul.partners .partner.devmeetings {
         padding-top: 5.7%; }
 
 #terms h2 {
