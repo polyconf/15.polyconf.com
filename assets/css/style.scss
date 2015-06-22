@@ -1599,22 +1599,24 @@ nav#overlay {
 			
 			.sponsor {
 
-        margin-right: 5%;
-        width: 30%;
+        width: 33%;
         height: auto;
         line-height: normal;
 
-        &.one {
-          margin-left: 35%;
+        padding: 30px;
+
+        .logo {
+          
+          height: 250px;
+          line-height: 250px;
+          
+          img {
+            display: inline-block;
+          }
+          
         }
 
-        &.fyber {
-          margin-top: 7%;
-        }
-
-        &.two-col:first-of-type {
-          margin-left: 20%;
-
+        &.two-col:first-of-type { 
           @include media($mobile) {
             margin-left: 0;
           }
