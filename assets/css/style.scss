@@ -1530,8 +1530,8 @@ nav#overlay {
       text-align: center;
 			
 			li {
-  			
-  		  float: left;
+
+          display: inline-block;
   		  height: 200px;
   		  line-height: 200px;
 				
@@ -1602,6 +1602,7 @@ nav#overlay {
         width: 33%;
         height: auto;
         line-height: normal;
+        float: left;
 
         padding: 30px;
 

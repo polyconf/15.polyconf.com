@@ -1405,7 +1405,7 @@ nav#overlay {
         content: "";
         display: table; }
       #partners div.sponsors ul li {
-        float: left;
+        display: inline-block;
         height: 200px;
         line-height: 200px; }
         #partners div.sponsors ul li .logo {
@@ -1452,6 +1452,7 @@ nav#overlay {
             padding: 0;
             text-align: center; } }
     #partners div.sponsors.gold .sponsor {
+      float: left;
       width: 33%;
       height: auto;
       line-height: normal;
