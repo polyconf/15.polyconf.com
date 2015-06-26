@@ -393,6 +393,32 @@ body {
   .button.white:hover {
     background: #f2f2f2; }
 
+#jobs-bar {
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px; }
+  #jobs-bar a {
+    display: block;
+    height: 28px;
+    line-height: 30px;
+    background: #0b8c41;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all; }
+    #jobs-bar a:hover {
+      background: #097436;
+      -webkit-transition: 0.5s all;
+      -moz-transition: 0.5s all;
+      transition: 0.5s all; }
+
 #header {
   height: 100%;
   background: #2e4e6b; }
@@ -1452,10 +1478,10 @@ nav#overlay {
             padding: 0;
             text-align: center; } }
     #partners div.sponsors.gold .sponsor {
-      float: left;
       width: 33%;
       height: auto;
       line-height: normal;
+      float: left;
       padding: 30px; }
       #partners div.sponsors.gold .sponsor .logo {
         height: 250px;
