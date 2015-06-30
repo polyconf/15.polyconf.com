@@ -420,8 +420,9 @@ body {
       transition: 0.5s all; }
 
 #header {
-  height: 100%;
-  background: #2e4e6b; }
+  height: 90%;
+  background: #2e4e6b;
+  position: relative; }
   @media screen and (min-width: 64em) and (max-width: 75em) {
     #header {
       background-position: center -120px !important; } }
@@ -1518,7 +1519,7 @@ nav#overlay {
         width: initial;
         margin: 0 auto; }
       #partners div.sponsors.bronze .sponsor.intellection img {
-        width: 50%;  }
+        width: 50%; }
   #partners div.supporters {
     padding: 50px 0;
     text-align: center; }
@@ -1599,19 +1600,25 @@ nav#overlay {
       float: left;
       display: block;
       margin-right: 5%;
-      width: 47.5%;
-      @incldue omega(2n); }
+      width: 47.5%; }
       #terms .row .column:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      #terms .row .column:nth-child(2n) {
+        margin-right: 0; }
+      #terms .row .column:nth-child(2n+1) {
+        clear: left; } }
   @media screen and (min-width: 64em) and (max-width: 75em) {
     #terms .row .column {
       float: left;
       display: block;
       margin-right: 5%;
-      width: 47.5%;
-      @incldue omega(2n); }
+      width: 47.5%; }
       #terms .row .column:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      #terms .row .column:nth-child(2n) {
+        margin-right: 0; }
+      #terms .row .column:nth-child(2n+1) {
+        clear: left; } }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     #terms .row .column {
       width: 100%; } }
@@ -2097,3 +2104,46 @@ nav#overlay {
       font-size: 1.125em;
       margin: 1em 0 0.5em;
       font-weight: 500; }
+
+#promo {
+  height: 600px; }
+  #promo::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #promo section {
+    width: 100%;
+    height: 600px;
+    float: left; }
+    #promo section#run {
+      background: url(../img/run.jpg) no-repeat center center;
+      background-size: cover;
+      position: relative; }
+      #promo section#run a {
+        position: absolute;
+        color: #fff;
+        font-size: 1.875em;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 5px;
+        left: 50%;
+        top: 50%;
+        text-transform: uppercase;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        overflow: hidden; }
+        #promo section#run a::after {
+          clear: both;
+          content: "";
+          display: table; }
+        #promo section#run a span {
+          display: inline-block;
+          padding: 10px 20px;
+          background: rgba(46, 78, 107, 0.95);
+          float: left;
+          line-height: 40px; }
+          #promo section#run a span.date {
+            background: rgba(32, 185, 241, 0.95); }
