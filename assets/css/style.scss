@@ -2632,3 +2632,59 @@ nav#overlay {
   
   
 }
+
+#promo {
+  
+  height: 600px;
+  @include clearfix();
+  
+  section {
+    
+    width: 100%;
+    height: 600px;
+    float: left;  
+    
+    &#run {
+      
+      background: url(../img/run.jpg) no-repeat center center;
+      background-size: cover;
+      position: relative;
+      
+      a {
+        position: absolute;
+        color: #fff;
+        font-size: em(30px);
+        font-weight: 600;
+        text-align: center;
+        border-radius: 5px;
+        left: 50%;
+        top: 50%;
+        text-transform: uppercase;
+        @include transform(translate(-50%,-50%));
+        overflow: hidden;
+        @include clearfix();
+        
+        span {
+          display: inline-block;
+          padding: 10px 20px;
+          background: rgba($dark,0.95);
+          float: left;
+          line-height: 40px;
+          
+          &.date {
+            background: rgba($blue,0.95);
+          }
+          
+          &.more {
+//            font-size: 0.75em;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+}
