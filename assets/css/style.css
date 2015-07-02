@@ -1987,6 +1987,9 @@ nav#overlay {
         padding: 20px 80px 20px 240px;
         background: #eeeff0;
         position: relative; }
+        @media screen and (max-width: 40em) {
+          #agenda .day .event-list .event .long {
+            padding: 20px; } }
         #agenda .day .event-list .event .long p {
           margin: 0;
           line-height: 1.25em; }
@@ -2005,7 +2008,9 @@ nav#overlay {
           color: #fff;
           line-height: 1em;
           text-transform: uppercase;
-          border-radius: 2px; }
+          border-radius: 2px;
+          position: relative;
+          z-index: 100000; }
       #agenda .day .event-list .event.lightning .short .name:before {
         font-weight: 600;
         padding: 0 10px;
