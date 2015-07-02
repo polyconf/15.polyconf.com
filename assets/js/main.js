@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 
 	// MENU OVERLAY
 
@@ -47,24 +46,24 @@ $(document).ready(function(){
 
 */
 
-  $(".event").each(function(){
-    
-    var event = $(this);
-    event.find(".long").hide();
-    
-    event.find(".more-button").click(function(){
-      
-      event.find(".long").slideToggle();
-      
-    })   
-    
-  })
-
 	  var s = skrollr.init({
 			forceHeight: false
 		});
 
 	}
+
+  $(".event").each(function(){
+    
+    var event = $(this);
+    event.find(".long").hide();
+    
+    event.find(".more-button").on('click', function(){
+
+      event.find(".long").slideToggle();
+      
+    })   
+    
+  })
 
 
   $(".agenda .event .long").hide();
