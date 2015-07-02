@@ -52,10 +52,8 @@ $(document).ready(function(){
     var event = $(this);
     event.find(".long").hide();
     
-    event.find(".more-button").click(function(){
-      
+    event.find(".more-button").on("click tap",function(){
       event.find(".long").slideToggle();
-      
     })   
     
   })
