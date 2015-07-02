@@ -2010,7 +2010,8 @@ nav#overlay {
           text-transform: uppercase;
           border-radius: 2px;
           position: relative;
-          z-index: 100000; }
+          z-index: 100000;
+          cursor: pointer; }
       #agenda .day .event-list .event.lightning .short .name:before {
         font-weight: 600;
         padding: 0 10px;

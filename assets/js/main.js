@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$("header").css("min-height",$(window).height()-50);
 
 
-	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+
 
 /*
 		$(".fixed").each(function(i,e){
@@ -52,13 +52,17 @@ $(document).ready(function(){
     var event = $(this);
     event.find(".long").hide();
     
-    event.find(".more-button").on("click tap",function(){
+    event.find(".more-button").on("click",function(e){
+      console.log(e);
+      e.preventDefault();
       event.find(".long").slideToggle();
     })   
     
   })
 
-	  var s = skrollr.init({
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+
+    var s = skrollr.init({
 			forceHeight: false
 		});
 
