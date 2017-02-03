@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="PolyConf is a three-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development."/>
+  <meta name="author" content="PolyConf HQ || Designed by true.pl"/>
+
+    <!-- Open Graph data -->
+  <meta property="og:title" content="PolyConf 15 A conference for polyglot programmers" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://polyconf.com/" />
+  <meta property="og:description" content="PolyConf is a three-day, single track, multi-disciplinary conference on advanced technologies for programmers interested in polyglot approach to software development." />
+  <meta property="og:image" content="http://polyconf.com/fb.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="PolyConf" />
+  <meta property="og:locale" content="en_US" />
+
+  <script src="//use.typekit.net/nxq5wzz.js"></script>
+  <script>try {
+    Typekit.load();
+  } catch (e) {
+  }</script>
+
+  <link rel='stylesheet' href='assets/css/style.css'>
+  <link href="assets/favicon.ico" rel="shortcut icon">
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var mapCanvas = document.getElementById('venue-map');
+      var coordinates = {
+        lat: 52.416228,
+        lng: 16.925608
+      };
+      var mapOptions = {
+        center: new google.maps.LatLng(coordinates.lat, coordinates.lng),
+        zoom: 16,
+        panControl: true,
+        zoomControl: true,
+        zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.LARGE,
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        },
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(coordinates.lat, coordinates.lng),
+        map: map,
+        title: 'PolyConf 2015'
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+
+  <title>PolyConf 2015</title>
+</head>
+
+<body>
+
+<div id="jobs-bar">
+  <a href="http://jobs.polyconf.com">Check Poly Conf Jobs</a>
+</div>
+
+<div id="wrapper">
+
+  <header id="header" class="fixed">
+    
+    <span id="menu-name">Menu</span>
+
+    <section class="content">
+
+      <figure id="logo"><img src="assets/logo.svg" alt="Poly Conf 2015"/></figure>
+
+      <div id="date-place">
+        <div id="conf-place">POZnan*, Poland</div>
+        <div id="conf-date">July 2-4, 2015</div>
+      </div>
+
+      <div id="the-bar">
+
+        <div class="register-now inline-block" style="margin-right: 2em">
+          <a href="#tickets" class="medium green button"><label>Register now</label></a>
+        </div>
+        <div class="become-a-sponsor inline-block" style="margin-right: 2em">
+          <a href="http://sponsor.polyconf.com/" class="medium blue button"><label>Become a sponsor</label></a>
+        </div>
+        <div class="newsletter inline-block">
+          <span>Join our newsletter for updates</span>
+
+          <form
+              action="http://polyconf.us2.list-manage.com/subscribe/post?u=294dfa55a7b056bcc82ffae2d&amp;id=409201e872"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+              data-abide>
+            <div id="newsletter-form" class="inline-block">
+              <input type="text" name="EMAIL" placeholder="Enter email" class="text"/>
+              <input type="submit" href="#" value="Subscribe" class="small button submit"/>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+
+    </section>
+
+  </header>
+  
+  <article id="promo">
+    
+    <section id="run">
+      
+      <a href="https://www.facebook.com/events/837548549661348/" class="info"><span class="name">Poly Conf 5k Run</span><span class="date">Thursday &middot; 2 Jul 2015 &middot; 7:00AM</span><span class="more">Learn more</span></a>
+      
+    </section>
+        
+  </article>
+
+  <article id="about" class="static">
+
+    <div class="container">
+
+      <h2 class="text-center">Welcome to PolyConf</h2>
+
+      <p class="intro text-center"> PolyConf is a three-day, single track, multi-disciplinary conference on advanced
+        technologies<br>
+        for programmers interested in polyglot approach to software development. </p>
+
+      <div class="row">
+
+        <div class="column" id="number-of-days">
+
+          <figure><img src="assets/img/calendar.svg" alt="Laptop"/></figure>
+          <span class="big">3</span>
+          <span class="small">days</span>
+
+        </div>
+
+        <div class="column" id="number-of-talks">
+
+          <figure><img src="assets/img/talk.svg" alt="Laptop"/></figure>
+          <span class="big">30</span>
+          <span class="small">talks</span>
+
+        </div>
+
+        <div class="column" id="number-of-workshops">
+
+          <figure><img src="assets/img/display.svg" alt="Laptop"/></figure>
+          <span class="big">4</span>
+          <span class="small">workshops</span>
+
+        </div>
+
+        <div class="column" id="number-of-attendees">
+
+          <figure><img src="assets/img/badge.svg" alt="Badge"/></figure>
+          <span class="big">300</span>
+          <span class="small">attendees</span>
+
+        </div>
+
+        <div class="column" id="number-of-parties">
+
+          <figure><img src="assets/img/beer.svg" alt="Party"/></figure>
+          <span class="big">3</span>
+          <span class="small">parties</span>
+
+      </div>
+
+      <section id="quote-bar">
+        <div class="container">
+
+          <a href="https://twitter.com/asolovyov/status/528334618777624577" class="avatar"
+             style="background-image:url('https://pbs.twimg.com/profile_images/378800000541660208/0b86a9e6a1f5d84ba08064e95a67c7c7_400x400.jpeg')">
+            &nbsp;</a>
+
+          <p>#polyconf was a best conference I've attended for a long, long time. Definitely plan to get back next year.
+            :)<br/>
+            <small>@asolovyov</small>
+          </p>
+          <a href="#quotes" id="more-quotes" class="small white button">More quotes</a>
+
+        </div>
+      </section>
+
+    </div>
+
+  </article>
+
+  <article id="speakers-intro" class="fixed">
+
+    <section class="content">
+
+      <div class="text">
+
+        <h2>Speakers <!--<em>+</em> Agenda--></h2>
+
+        <p>
+          PolyConf is not focused on any particular language or area of technology.<br class="hide-on-mobile"/>
+          Our mission is to promote polyglot approach to software development<br class="hide-on-mobile"/>
+          and foster cross-pollination between various technologies<br class="hide-on-mobile"/>
+          and their communities.
+        </p>
+
+      </div>
+
+    </section>
+
+  </article>
+
+  <article id="speakers" class="static">
+
+    <div class="container">
+
+      <ul class="speaker-list">
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/jessica_kerr.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/jessitron">&nbsp;</a>
+                    <a class="website" href="http://jessitron.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Jessica Kerr</h3>
+
+              <p class="title">Developer at Monsanto</p>
+
+              <p class="description">Jessica Kerr writes Clojure and Scala. Her fascinations include property-based
+                testing and the sociological underpinnings of software. She codes remotely for Monsanto, blogs, and
+                teaches two daughters how to keep the spirit of the rule while breaking it. Her home in St. Louis,
+                Missouri has five computers and no pets, unless ladybug larvae count as pets.</p>
+              <ul class="tags">
+                <li class="js">Java</li>
+                <li class="cljs">Clojure</li>
+                <li class="sc">Scala</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/bodil_stokke.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/bodil">&nbsp;</a>
+                    <a class="website" href="http://bodil.org/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Bodil Stokke</h3>
+
+              <p class="title">Functional Programming Hipster</p>
+
+              <p class="description">Bodil is a a bishop of the Greater London diocese of the Church of Emacs, and a
+                compulsive conference speaker in the fields of functional programming and internets technologies, and is
+                a co-organiser of multiple developer conferences in Scandinavia and the UK, mostly because she’s still
+                learning how to stop. Her favourite pony is Pinkie Pie.</p>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+                <li class="cljs">Clojure</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/leah_hanson.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/astrieanna">&nbsp;</a>
+                    <a class="website" href="http://blog.leahhanson.us">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Leah Hanson</h3>
+
+              <p class="title">Software Engineer at Google</p>
+
+              <p class="description">
+                Leah is currently a software engineer at Google. She spent the Spring of 2013 at <a
+                  href="http://hackerschool.com">Hacker School</a>, where she started learning <a
+                  href="http://julialang.org">Julia</a> and wrote the <a
+                  href="https://github.com/JuliaWeb/Websockets.jl">Websockets.jl package</a>. Since then, she has spoken
+                about Julia at several conferences, including Strange Loop, Strata NYC, and YOW!.</p>
+              <ul class="tags">
+                <li class="julia">Julia</li>
+                <li class="c">C/C++</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/daniel_holden.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/anorangeduck">&nbsp;</a>
+                    <a class="website" href="http://theorangeduck.com/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Daniel Holden</h3>
+
+              <p class="title">Author of Cello programming library</p>
+
+              <p class="description">Daniel Holden is a PhD student at Edinburgh University doing research into machine
+                learning, and data driven approaches to character animation. He is a prolific C hacker with a flair for
+                creative and interesting projects, that have gathered considerable attention in the open source
+                community. As well as hacking on C, he enjoys writing short stories, constructing digital art, and game
+                development. </p>
+              <ul class="tags">
+                <li class="py">Python</li>
+                <li class="c">C/C++</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/christine_corbett.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/corbett">&nbsp;</a>
+                    <a class="website" href="http://christinecorbettmoran.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Christine Corbett Moran</h3>
+
+              <p class="title">Postdoctoral Researcher at Caltech</p>
+
+              <p class="description">PhD in Theoretical Astrophysics at the University of Zurich. A postdoc in
+                Theoretical Physics at Caltech. I do research in computational astrophysics, high performance computing,
+                and big data visualization.
+
+                Prior to that I've worked at SpaceX, BBN Technologies, MIT CSAIL, MIT Media Lab, Lucent Technologies
+                (Bell Labs Site), FAST Search and Transfer, UP Diliman, MIT, JHU, and MIT MEET as a software engineer,
+                research scientist, or lecturer/professor.
+
+                Physics and Computer Science (double major) and Mathematics and Philosophy (double minor) at MIT and
+                obtained a Master's degree in Astrophysics from UZH.
+
+                In my free time, I do a lot of open source and mobile application development oriented around technical
+                activism, gender based violence and social justice. I am the co-lead of the iOS team at Open
+                WhisperSystems, and technical lead on the Circle of 6 and Encyclopedia apps. </p>
+              <ul class="tags">
+                <li class="java">Java</li>
+                <li class="py">Python</li>
+                <li class="c">C/C++</li>
+                <li class="c">Objective C</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/stefan_karpinski.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/StefanKarpinski">&nbsp;</a>
+                    <a class="website" href="http://karpinski.org/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Stefan Karpinski</h3>
+
+              <p class="title">Julia co-creator</p>
+
+              <p class="description">Stefan Karpinski is a co-creator of the Julia programming language – a
+                next-generation language for numerical and scientific computing. He is also a co-founder of Julia
+                Computing LLC (which provides professional consulting, training and support for Julia), and has
+                previously worked as a data scientist, research scientist, and software engineer at Etsy, Citrix Online,
+                and Akamai.</p>
+              <ul class="tags">
+                <li class="c">C/C++</li>
+                <li class="julia">Julia</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/amir_chaudhry.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/amirmc">&nbsp;</a>
+                    <a class="website" href="http://amirchaudhry.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Amir Chaudhry</h3>
+
+              <p class="title">PM at Cambridge Computer Laboratory</p>
+
+              <p class="description">Amir is Programme Manager in the <a
+                  href="http://www.cl.cam.ac.uk/projects/ocamllabs/">OCaml Labs</a> group at the Cambridge Computer
+                Laboratory, where he's is responsible for co-ordinating efforts towards the OCaml Platform. Amir's also
+                Community Manager for the rapidly growing <a href="http://mirage.io">MirageOS</a> project, where he's
+                overseen two major releases and spread knowledge about unikernels and building safer systems. Amir's
+                industrial experience extends from early-stage startups to blue chip multi-nationals and ranges from
+                product management to finance.</p>
+              <ul class="tags">
+                <li class="ocaml">OCaml</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/robert_virding.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/rvirding">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Robert Virding</h3>
+
+              <p class="title">Co-Inventor of Erlang, Language Expert</p>
+
+              <p class="description">Robert was an early members of the Ericsson Computer Science Lab, and co-inventor
+                of the Erlang language. He took part in the original system design and contributed much of the original
+                libraries, as well as to the current compiler. While at the lab he also did a lot of work on the
+                implementation of logic and functional languages and on garbage collection. He has also worked as an
+                entrepreneur and was one of the co-founders of one of the first Erlang startups (Bluetail). He now works
+                for Erlang Solutions Ltd. and enjoys implementing languages.</p>
+              <ul class="tags">
+                <li class="erl">Erlang</li>
+                <li class="lua">Lua</li>
+                <li class="c">C/C++</li>
+                <li class="lisp">Lisp</li>
+                <li class="prl">Prolog</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/william_byrd.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/webyrd">&nbsp;</a>
+                    <a class="website" href="http://webyrd.net/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>William Byrd</h3>
+
+              <p class="title">Postdoctoral Researcher, University of Utah</p>
+
+              <p class="description">William E. Byrd is a Postdoctoral Researcher in the U Combinator research group at
+                the University of Utah. He is co-author of The Reasoned Schemer, and co-designer of several declarative
+                languages: miniKanren (logic programming), Harlan (GPU programming), and Kanor (cluster programming).
+                His StarCraft 2 handle is 'Rojex' (character code 715).</p>
+              <ul class="tags">
+                <li class="erl">Racket</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/sam_tobin_hochstadt.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/samth">&nbsp;</a>
+                    <a class="website" href="http://samth.github.io">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Sam Tobin-Hochstadt</h3>
+
+              <p class="title">Professor at Indiana University</p>
+
+              <p class="description">Sam is an Assistant Professor in the School of Informatics and Computing at Indiana
+                University. He has worked on dynamic languages, type systems, module systems, and metaprogramming,
+                including creating the Typed Racket system and popularizing the phrase “scripts to programs.” He is a
+                member of the ECMA TC39 working group responsible for standardizing JavaScript, where he co-designed the
+                module system for ES2015, the next version of JavaScript. </p>
+              <ul class="tags">
+                <li class="erl">Racket</li>
+                <li class="js">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/joe_nash.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/jna_sh">&nbsp;</a>
+                    <a class="website" href="http://braintreepayments.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Joe Nash</h3>
+
+              <p class="title">Developer Advocate at Braintree</p>
+
+              <p class="description">Joe is a Developer Advocate at Braintree Payments, a PayPal Company. Having learnt the dark arts of FP at the University of Nottingham, Joe is fanatical about the benefits of functional techniques and type theory, and applying them to software development. He believes in the educational benefits of hackathons and hack culture, and supports student hackathons as part of the European team at Major League Hacking.</p>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+                <li class="clj">Clojure</li>
+                <li class="hs">Haskell</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/przemyslaw_kaminski.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/CoolGenie">&nbsp;</a>
+                    <a class="website" href="http://www.mini.pw.edu.pl/~pkamins/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Przemysław Kamiński</h3>
+
+              <p class="title">Software Developer</p>
+
+              <p class="description">Web developer. Programming languages explorer. Mathematician. Creating the world of clouds at Mirantis.</p>
+              <ul class="tags">
+                <li class="py">Python</li>
+                <li class="js">JavaScript</li>
+                <li class="hs">Haskell</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/wojciech_ogrodowczyk.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/sharnik">&nbsp;</a>
+                    <a class="website" href="http://haikuco.de">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Wojciech Ogrodowczyk</h3>
+
+              <p class="title">Software Engineer at 3scale</p>
+
+              <p class="description">API/IPA juggler at @3scale. Climbing, photography and two wheel enthusiast. Glasses
+                make me seem thinner.</p>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+                <li class="rb">Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/yan_cui.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/theburningmonk">&nbsp;</a>
+                    <a class="website" href="http://theburningmonk.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Yan Cui</h3>
+
+              <p class="title">Functional programmer in gaming</p>
+
+              <p class="description">Yan works as a server side developer at Gamesys where he develops scalable backend
+                services for Gamesys's social games on mobile and Facebook. He's a co-author of <a
+                    href="http://amzn.to/1zC36xQ">F# Deep Dives</a> by Manning and a regular speaker on topics such as
+                Aspect-Oriented Programming, F# and NoSQL. He also keeps an active blog at http://theburningmonk.com</p>
+              <ul class="tags">
+                <li class="js">Erlang</li>
+                <li class="fs">F#</li>
+                <li class="cs">C#</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/alex_petrov.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/ifesdjeen">&nbsp;</a>
+                    <a class="website" href="http://coffeenco.de">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Alex Petrov</h3>
+
+              <p class="title">Functional Guy at codecentric AG</p>
+
+              <p class="description">Zefops, Gymops, Skateops. C / Clojure / Haskell / Java hacker, meetup organiser,
+                @ClojureWerkz core team. Data analysis &amp; visualization nerd.</p>
+              <ul class="tags">
+                <li class="java">Java</li>
+                <li class="fs">Clojure</li>
+                <li class="hs">Haskell</li>
+                <li class="cpp">C/C++</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/nikita_prokopov.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/nikitonsky">&nbsp;</a>
+                    <a class="website" href="http://tonsky.me">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Nikita Prokopov</h3>
+
+              <p class="title">Independent Contractor</p>
+
+              <p class="description">For the past ten years Nikita Prokopov has been building web interfaces, backends
+                and distributed systems in Clojure, Erlang, Python, Java. Long-time blogger, UX enthusiast and Clojure
+                evangelist from Novosibirsk, Russia.</p>
+              <ul class="tags">
+                <li class="clj">Clojure</li>
+                <li class="cljs">ClojureScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/alissa_bonas.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="https://twitter.com/mikeyteva">&nbsp;</a>
+                    <a class="website" href="http://ghost-justablog.rhcloud.com/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Alissa Bonas</h3>
+
+              <p class="title">Software Engineer at Red Hat</p>
+
+              <p class="description">I am a software engineer at Red Hat and a contributor to several open source
+                projects, developing mostly in Java and Ruby. I also have a great interest in usability topics (UX),
+                give talks about open source at various events and enjoy being a coach in Rails Girls trainings.</p>
+              <ul class="tags">
+                <li class="java">Java</li>
+                <li class="rb">Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/phil_nash.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/philnash">&nbsp;</a>
+                    <a class="website" href="http://philna.sh">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Phil Nash</h3>
+
+              <p class="title">Developer Evangelist at Twilio</p>
+
+              <p class="description">Phil is a developer evangelist for Twilio serving developer communities in London
+                and all over Europe. He is a lover of all things front end, a Ruby developer and, more recently, an
+                amateur brewer. APIs old and new, browsers and REST, fuel his passion for development. You should have
+                seen how delighted he was the first time he played with the WebAudio API! Phil loves test coverage,
+                great beer, hackathons, and libraries with puns in their names. Get all four together for maximum
+                points.</p>
+              <ul class="tags">
+                <li class="js">JavaScript</li>
+                <li class="rb">Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/jose_valim.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/josevalim">&nbsp;</a>
+                    <a class="website" href="http://plataformatec.com.br/">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>José Valim</h3>
+
+              <p class="title">Director of R&amp;D at Plataformatec</p>
+
+              <p class="description">José Valim is the creator of the Elixir programming language and member of the
+                Rails Core Team. He is the Director of R&D at Plataformatec, a consultancy firm based in Brazil, and an
+                active member of the Open Source community.</p>
+              <ul class="tags">
+                <li class="exs">Elixir</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/honza_kral.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/honzakral">&nbsp;</a>
+                    <a class="website" href="http://elastic.co">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Honza Král</h3>
+
+              <p class="title">Python at Elastic.co</p>
+
+              <p class="description">Honza is a Python programmer and Django core developer – since he is scared of the
+                bright and shiny world of browsers, designers, and users he prefers to stay buried deep in the
+                infrastructure code and just provides others with tools to do the actual site-building. Since 2008 Honza
+                has been building content web sites for fun and profit. During this time he discovered Elasticsearch
+                which lead to him joining the company behind it in 2013 to work on the Python drivers."</p>
+              <ul class="tags">
+                <li class="py">Python</li>
+                <li class="sh">Shell</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/pierre-yves_ritschard.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/pyr">&nbsp;</a>
+                    <a class="website" href="http://spootnik.org">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Pierre-Yves Ritschard</h3>
+
+              <p class="title">CTO at exoscale</p>
+
+              <p class="description">Pierre-Yves is CTO at exoscale where he is responsible for architecture and
+                strategic technology choices, relying on experience in the architecture of very large corporate system
+                as well as technical product design in several startups. Pierre-Yves is an active member of the
+                open-source community with key contributions to OpenBSD, collectd and riemann amongst others.</p>
+              <ul class="tags">
+                <li class="clj">Clojure</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/felix_karolina.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/wwwhimsydoodle">&nbsp;</a>
+                    <a class="website" href="http://whimsicaldoodles.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Felix Hawkins &amp; Karolina Ferenz</h3>
+
+              <p class="title">Developer and Designer</p>
+
+              <p class="description">We are independent contractors in development and design respectively. With 20
+                years of experience between the two of us in realms such as fashion, retail, logistics, media,
+                advertising and publishing we have seen the good, the bad and the ugly when it comes to developers and
+                designers working together.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="pl">Perl</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/erik_michaels-ober.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/sferik">&nbsp;</a>
+                    <a class="website" href="https://soundcloud.com/erik">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Erik Michaels-Ober</h3>
+
+              <p class="title">Developer Evangelist at SoundCloud</p>
+
+              <p class="description">Erik has been reading and writing Ruby since 2006. In 2014, he was given a Ruby
+                Hero Award for his contributions to various open-source projects, including RailsAdmin, Thor,
+                RubyGems.org, and the Twitter gem. He was a 2010 Ruby Summer of Code mentor, 2011 Google Summer of Code
+                mentor, and 2013, 2014, and 2015 Rails Girls Summer of Code coach.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="js">JavaScript</li>
+                <li class="cr">Crystal</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/brendon_mclean.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/brendon9x">&nbsp;</a>
+                    <a class="website" href="http://intellection.io">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Brendon McLean</h3>
+
+              <p class="title">CTO at Intellection</p>
+
+              <p class="description">Brendon studied engineering because his career guidance councillor told him there
+                were no jobs in software. He's been writing software ever since. He narrowly escaped a verbose career in
+                enterprise Java when he was offered the role of heading up development at Intellection, a start-up in
+                market research analytics. He jumped at the opportunity and helped build their data analytics platform
+                for market research in Ruby.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="js">JavaScript</li>
+                <li class="py">Python</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/silvia_moura_pina.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="">&nbsp;</a>
+                    <a class="website" href="">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Silvia Moura Pina</h3>
+
+              <p class="title">Software Engineer at Zalando</p>
+
+              <p class="description">Silvia Moura Pina joined Zalando in January 2015 and is a software engineer on the Brand Solutions-Brand Analytics team, which works on the core analytics-related functions important to Zalando's brand partners. She uses Google BigQuery for a lot of her work, and is taking her first steps with the Scala programming language. She has a masters degree in Information Systems and Computer Engineering from the Instituto Superior Tecnico (University of Lisbon), and did her dissertation in the field of data mining while working there as a researcher. She's a co-director of Berlin's new Women Who Code chapter and a member of the Portuguese Engineers' Guild.</p>
+              <ul class="tags">
+                <li class="rb">Scala</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/jivago_alves.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/jivagoalves">&nbsp;</a>
+                    <a class="website" href="https://github.com/jivagoalves">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Jivago Alves</h3>
+
+              <p class="title">Developer at Stack Builders</p>
+
+              <p class="description">I'm a developer at Stack Builders living in Lisbon. I've been in software
+                development for over eight years. I'm a polyglot programmer comfortable with Ruby and Clojure although
+                nowadays I'm falling in love with Haskell and Elm. I care about code design, testing and development
+                practices that help to produce reliable and easy-to-change systems.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="clj">Clojure</li>
+                <li class="elm">Elm</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/adam_byrtek.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="#">&nbsp;</a>
+                    <a class="website" href="http://adambyrtek.net">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Adam Byrtek</h3>
+
+              <p class="title">CTO at Squirrel</p>
+
+              <p class="description">Adam led the development team at Code Sprinters, a software house he co-founded.
+                Subsequently, he became a software engineer at Google working on high-profile infrastructure projects.
+                After taking a gap year to compete in the Clipper Round the World Yacht Race, he moved to London to
+                build the development at Squirrel, an early-stage Techstars FinTech startup.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="clj">Clojure</li>
+                <li class="py">Python</li>
+                <li class="js">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/paul_chavard.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/tchak13">&nbsp;</a>
+                    <a class="website" href="http://capitainetrain.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Paul Chavard</h3>
+
+              <p class="title">Software Engineer at Capitaine Train</p>
+
+              <p class="description">Writing code at @capitainetrain. @EmberJS contributor. @EmberJSParis organizer.
+                Cranberry lover. Wing-Chun practitioner. Runner. Reader. Aspiring Teacher.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="cljs">ClojureScript</li>
+                <li class="js">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/bhuvaneswary_vijayan.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="">&nbsp;</a>
+                    <a class="website" href="">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Bhuvaneswary Vijayan</h3>
+
+              <p class="title">People Lead at Zalando</p>
+
+              <p class="description">As a people lead at Zalando, Bhuvaneswary Vijayan guides members of the company's technology team on their personal Tours of Mastery: individualized tracks incorporating skills acquisition and other professional development opportunities. Prior to becoming a People Lead, she built testing strategies for the company's many multidisciplinary projects. Bhuvana joined Zalando from Google, where she was a product specialist for test engineering; she has also worked at Nik Software, Aztecsoft and HP.</p>
+              <ul class="tags">
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/charles_pletcher.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/brophocles">&nbsp;</a>
+                    <a class="website" href="http://brophocles.com">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Charles Pletcher</h3>
+
+              <p class="title">Engineer at Assembly</p>
+
+              <p class="description">I’m a software engineer at Assembly, where I work on the core platform and
+                community built products. I'm interested in the intersections of engineering and literary theory, and
+                I'm deeply dedicated to issues of diversity and inclusion, and have prioritized these issues in my work
+                and through initiatives like Open Tech School and Mission Hacks.</p>
+              <ul class="tags">
+                <li class="rb">Ruby</li>
+                <li class="clj">Clojure</li>
+                <li class="js">JavaScript</li>
+                <li class="go">Go</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="inside">
+            <div class="img">
+              <figure>
+                <a class="face" style="background-image: url(assets/speakers/marek_matczak.jpg)">&nbsp;</a>
+                  <span class="links">
+                    <a class="twitter" href="http://twitter.com/#">&nbsp;</a>
+                    <a class="website" href="https://github.com/mmatczak">&nbsp;</a>
+                  </span>
+              </figure>
+            </div>
+            <div class="text">
+              <h3>Marek Matczak</h3>
+
+              <p class="title">Architect and Developer at Capgemini</p>
+
+              <p class="description">Software architect working for Capgemini Software Solutions Center in Wrocław, Poland. Marek specializes in web applications and Java/JavaScript-related technologies. Currently he supports various projects as a technical lead and a solution architect. He likes programming which allows him to stay close to code development issues. He graduated from Poznań University of Technology in 2003 and started his career at Capgemini in 2004.</p>
+              <ul class="tags">
+                <li class="java">Java</li>
+                <li class="js">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="agenda" id="agenda">
+        
+        <ul id="agenda-nav">
+          <li><a href="#"><label>Day #1</label><h3>July 2nd</h3></a></li>
+          <li><a href="#"><label>Day #2</label><h3>July 3rd</h3></a></li>
+          <li><a href="#"><label>Day #3</label><h3>July 4th</h3></a></li>
+        </ul>
+        
+        <div class="day" id="day-1">
+          
+          <h2>Day #1 July 2nd</h2>
+          
+          <ul class="event-list">
+  
+                <li class="event registration">
+                  <div class="short">
+                    <div class="time">8:30 - 9:00</div>
+                    <div class="name">
+                      <span class="title">Mini Registration</span>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="event with-description workshops">
+                  <div class="short">
+                    <div class="time">9:00 - 12:30</div>
+                    <div class="name">
+                      <span class="title">Workshops</span>
+                      <span class="person">Introduction to Haskell</span>
+                      <span class="person">Write a Relational Scheme Interpreter in miniKanren</span>
+                      <span class="person">Mobile development in the smart way with ionicframework</span>
+                      <span class="person">Why should you learn to program Commodore 64 this year?</span>
+                      <span class="person">Building modern web apps with AngularJS</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>TBA</p>
+                  </div>
+                </li>
+                
+                <li class="event lunch">
+                  <div class="short">
+                    <div class="time">12:30 - 13:45</div>
+                    <div class="name">
+                      <span class="title">Lunch / Registration </span>
+                    </div>
+                  </div>
+                </li>                
+  
+                <li class="event registration">
+                  <div class="short">
+                    <div class="time">13:45 - 14:00</div>
+                    <div class="name">
+                      <span class="title">Opening Word</span>
+                      <span class="person">Zaiste</span>
+                    </div>
+                  </div>
+                </li>
+  
+  
+                <li class="event with-description normal">
+                  <div class="short">
+                    <div class="time">14:00 - 14:30</div>
+                    <div class="name">
+                      <span class="title">The LISP in the Machine: A Clojure experience report from Braintree</span>
+                      <span class="person">Joe Nash</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>This talk will present an experience report on the use of Clojure at Braintree. Primarily a Ruby shop, this talk will discuss why Braintree chose to use Clojure in the development of a real-time data pipeline, what we have learnt in doing so, and how those lessons are shaping future projects at Braintree.</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+  
+  
+                <li class="event with-description normal">
+                  <div class="short">
+                    <div class="time">14:40 - 15:10</div>
+                    <div class="name">
+                      <span class="title">Beyond Ruby: easy ways to go polyglot</span>
+                      <span class="person">Wojciech Ogrodowczyk</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>What do Clojure, Java, Scala, and Ruby all have in common? They can run on the JVM. Today going polyglot is easier then ever!</p>
+                    <p> In this talk we're going to learn why it's important to use the best programming language for the job and how to start doing so. By using the polyglot approach, your projects will be more flexible to change, simpler to test, easier to deploy, and understandable to developers with any programming background. Simple actions you can take to increase the versatility of your programming toolbox and finally get paid for writing code in your latest beloved language."</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+  
+                <li class="event with-description normal">
+                  <div class="short">
+                    <div class="time">15:20 - 15:50</div>
+                    <div class="name">
+                      <span class="title">Data exchange formats</span>
+                      <span class="person">Przemysław Kamiński</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>JSON or XML? Or maybe something else? I will explore the lesser-known areas of data echange formats including ASN.1, Google's Protocol Buffers, Apache Thrift and others.</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+  
+  
+                <li class="event with-description normal">
+                  <div class="short">
+                    <div class="time">16:00 - 16:30</div>
+                    <div class="name">
+                      <span class="title">Polyglot persistence</span>
+                      <span class="person">Honza Král</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>It's not only programming languages that have their polyglots, databases too. In this talk I would like to explore the options we have when developing applications, considerations we should make and share several key points from my past where I made the correct or incorrect choice.</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+
+                <li class="event with-description normal">
+                  <div class="short">
+                    <div class="time">16:40 - 17:10</div>
+                    <div class="name">
+                      <span class="title">AngularJS: All you can learn of in 30 minutes</span>
+                      <span class="person">Marek Matczak</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>In fact, the talk will depend on the audience... After a short survey we will decide what AngularJS topic to address. Whether it be live-coding an application from scratch, showing JavaScript tools supporting development (Gulp/Bower/Karma) or demystifying directives, you will not get bored :)</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+  
+                
+
+                <li class="event coffee">
+                  <div class="short">
+                    <div class="time">17:10 - 17:40</div>
+                    <div class="name">
+                      <span class="title">Coffee Break</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>TBA</p>
+                  </div>
+                </li>
+  
+                <li class="event keynote">
+                  <div class="short">
+                    <div class="time">17:40 - 18:10</div>
+                    <div class="name">
+                      <figure class="face" style="background-image: url(assets/speakers/christine_corbett.jpg)">&nbsp;</figure>
+                      <span class="title">Polyglot in High Performance Computing</span>
+                      <span class="person">Christine Corbett Moran</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>The Cactus framework is a modular environment for parallel high performance computing. It allows development in the high performance language of choice: C, C++, F77, F90, and even OpenCL/CUDA, all while making use of existing components (called "thorns") and other standard high performance computing technology in a language independent manner. In this talk I introduce the Cactus framework with some examples of its use in computational general relativity to simulate black holes, neutron stars and more. </p>
+                  </div>
+                </li>
+
+                <li class="event keynote">
+                  <div class="short">
+                    <div class="time">18:20 - 18:50</div>
+                    <div class="name">
+                      <figure class="face" style="background-image: url(assets/speakers/william_byrd.jpg)">&nbsp;</figure>
+                      <span class="title">The Promise of Relational Programming</span>
+                      <span class="person">William Byrd</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>Programmers often write procedures or methods that model mathematical functions.  These functions clearly distinguish between input arguments and output values.  In contrast, relational programming treats programs as mathematical relations, eliminating the distinction between input and output.  miniKanren is an embedded domain specific language for constraint logic programming, designed for writing interpreters, type inferencers, theorem provers, and other interesting programs as relations.  We will explore the extremely interesting and surprising behavior of these relational programs, and consider how this approach to programming might be made more practical in the future.</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="close-button">Close</span>
+                    <a href="" class="more-button">More</a>
+                  </div>
+                </li>
+                <li class="event party">
+                  <div class="short">
+                    <div class="time">21:00</div>
+                    <div class="name">
+                      <span class="title">Warming party</span>
+                    </div>
+                  </div>
+                  <div class="long">
+                    <p>TBA</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+        <div class="day" id="day-2">
+          <h2>Day #2 July 3rd</h2>
+          
+          <ul class="event-list">
+            <li class="event normal">
+              <div class="short">
+                <div class="time">9:00 - 9:30</div>
+                <div class="name">
+                  <span class="title">How Ruby and Java meet on the same JVM</span>
+                  <span class="person">Alissa Bonas</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>What if you have some code already written in Ruby, and some other code written in Java, and they needed to run together and communicate with each other? JRuby makes that happen by enabling Ruby applications to run on a JVM. In this talk I will explain how you can make your Ruby on Rails application run on a JVM,  what are the pros and cons of that, and the various techniques to make your Ruby and Java code talk to each other.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">9:40 - 10:10</div>
+                <div class="name">
+                  <span class="title">Cello - Hacking C for Fun and Learning</span>
+                  <span class="person">Daniel Holden</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>In this talk I dig into the depths of my programming library Cello - a fun experiment to see what C looks like when pushed to it's limits. I'll cover how Cello works internally, some of the cuter tricks used to make it look and feel so different, what is in store for future versions of Cello, and why it is important to push languages to their boundaries.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">10:20 - 10:50</div>
+                <div class="name">
+                  <span class="title">Inside Websockets</span>
+                  <span class="person">Leah Hanson</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>WebSockets are a modern protocol designed by Google for real-time data exchange between a web-browser client and a server. We're going to talk about some details of how the protocol works, looking for insights about protocol design.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event coffee">
+              <div class="short">
+                <div class="time">10:50 - 11:20</div>
+                <div class="name">
+                  <span class="title">Coffee Break</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">11:20 - 11:50</div>
+                <div class="name">
+                  <span class="title">Rocking the Time Series boat with C, Haskell and ClojureScript</span>
+                  <span class="person">Alex Petrov</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Time Series have an amazing potential for Querying, Parallelisation and Query Composition, because of the nature of the Data itself, this is exactly why general-purpose stores won't ever be the best fit for Time Series data.</p>
+                <p>Continuum, a Time Series store was built keeping the key features of Time Series data in mind. State-of-art Algebraic structures, can be used to build flexible and composite Query API, Compact data structures can be used to save up space and reduce deserialisation effort while reading data from DB.</p>
+                <p>An adventure of building a Modern Time Series database in C + Haskell, with ClojureScript front-end, that brings the visibility of everything going on in your system on a whole new level.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">12:00 - 12:30</div>
+                <div class="name">
+                  <span class="title">Distributed systems the easy way with Clojure and Mesos</span>
+                  <span class="person">Pierre-Yves Ritschard</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Most complex distributed systems happen by accident, as an evolution of a design initially thought simple. Not everyone wants to be involved in getting the semantics of a distributed system right. In this talk, we'll explore how a clever mix of Clojure, and Apache Mesos can help simplify and decouple the inner workings of distributed systems.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event lunch">
+              <div class="short">
+                <div class="time">12:30 - 13:30</div>
+                <div class="name">
+                  <span class="title">Lunch</span>
+                </div>
+              </div>
+            </li>                
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">13:30 - 14:00</div>
+                <div class="name">
+                  <span class="title">Building Web Apps in Elm</span>
+                  <span class="person">Jivago Alves</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>As developers, we have been building rich web-based applications (or trying to) for some time and still can't avoid the complexity behind modeling the state of the world around us. In this talk we'll discuss a functional approach that radically simplify things using reactive web components backed by Elm, a functional reactive language that compiles to HTML, CSS and JavaScript. We choose Elm to bring us simplicity from FP principles and ultimately to bring its powerful type system to JavaScript on the browser.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">14:10 - 14:40</div>
+                <div class="name">
+                  <span class="title">WebHooks: The API Strikes Back</span>
+                  <span class="person">Phil Nash</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>These days many APIs are more than just simple REST services. Through WebHooks, APIs are talking back, giving us more information and prompting further action from our applications. But what is the best way to react to these demanding APIs?</p>
+                <p>We'll look at some services that use Webhooks, exploring reasons to use WebHooks and the emerging best practices. Then we'll look at the other side, implementing WebHook endpoints. Does consuming WebHooks make our application an API? What are the easiest ways to develop and test with WebHooks? We'll cover security, performance and standards all wrapped up with some live coded examples.</p>
+                <p>By the end we'll know how to handle anything an API can throw back at us.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+
+            
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">14:50 - 15:20</div>
+                <div class="name">
+                  <span class="title">An Introduction to Crystal</span>
+                  <span class="person">Erik Michaels-Ober</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Crystal is a new programming language with an intriguing mix of features. It has a Ruby-like syntax paired with a static type system. Built on LLVM, it allow users to directly call C code and compiles to efficient native code. This allows for performance that rivals C++ in a modern language that out-performs Go and Rust at tasks like parsing JSON. This makes it particularly well-suited for building web services and command-line interfaces.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description lightning">
+              <div class="short">
+                <div class="time">15:30 - 16:00</div>
+                <div class="name">
+                  <span class="title">Lightning Talks</span>
+                  <span class="person">TBA</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">16:10 - 16:40</div>
+                <div class="name">
+                  <span class="title">Things you almost missed in programming languages</span>
+                  <span class="person">Yan Cui</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>There seems to be a new programming language every week, and for us busy developers we just don't have the time to keep up with them. But have you wondered what we might haved missed out on whilst we're busy working in our language of choice?</p>
+                <p>Having spent time with numerous programming languages the past few years I have learnt something new from each. In this talk, I'll take you on a whirlwind tour of the interesting concepts and ideas I have encountered, from F#'s type providers and Rust's borrowed pointers, to Elm's signals and Erlang's bit syntax to name a few.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">16:50 - 17:20</div>
+                <div class="name">
+                  <span class="title">Contracts as Types</span>
+                  <span class="person">Jessica Kerr</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Moving from Scala to Clojure, I was horrified and crippled by the lack of declared types. In desperation I cling to Prismatic Schema, which lets me describe parameters and return values, which are optionally enforced: contracts that look like types. In some ways this is even better than static types. Can I convolute these contracts into parameterized types? Let's explore these surprises.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event coffee">
+              <div class="short">
+                <div class="time">17:20 - 17:50</div>
+                <div class="name">
+                  <span class="title">Coffee Break</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+            </li>
+
+            <li class="event keynote">
+              <div class="short">
+                <div class="time">17:50 - 18:20</div>
+                <div class="name">
+                  <figure class="face" style="background-image: url(assets/speakers/bodil_stokke.jpg)">&nbsp;</figure>
+                  <span class="title">Post-FRP Frontend Programming</span>
+                  <span class="person">Bodil Stokke</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Functional Reactive Programming was a thing that happened in the 90s. We’ve been rehashing these ideas, usually not even getting them right, for the past 20 years, and very little has happened to advance the state of the art. Very little, but that’s still something. We’re going to explore some of the advances we’ve made recently, with a particular focus on PureScript and the Halogen library, introducing concepts such as signal functions to improve the composability and type safety of UI components.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event keynote">
+              <div class="short">
+                <div class="time">18:30 - 19:00</div>
+                <div class="name">
+                  <figure class="face" style="background-image: url(assets/speakers/sam_tobin_hochstadt.jpg)">&nbsp;</figure>
+                  <span class="title">Racket and Typed Racket: the power of extensibility</span>
+                  <span class="person">Sam Tobin-Hochstadt</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Typed Racket is a gradual type system for Racket, built entirely as a library. In this talk, I'll present why I wanted to build a gradual type system for Racket, and also how Racket made this possible. The story will cover macros, type checkers, compilers, and runtime systems, and demonstrate why we call Racket a "programmable programming language".</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event party">
+              <div class="short">
+                <div class="time">21:00</div>
+                <div class="name">
+                  <span class="title">Huge Party</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="day" id="day-3">
+          <h2>Day #3 July 4nd</h2>
+          
+          <ul class="event-list">
+          <li class="event with-description normal">
+              <div class="short">
+                <div class="time">9:00 - 9:30</div>
+                <div class="name">
+                  <span class="title">Phoenix: a web framework for the new web</span>
+                  <span class="person">José Valim</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Web developers have typically been presented with a choice between performance or a productive development environment. With Phoenix, developers can have both while enjoying a wonderful set of abstractions for working with the new web, making streaming data to browsers, native mobile application or embedded clients a breeze. Finally, we will see how Phoenix leverages the Elixir language and the Erlang VM for writing maintainable and scalable code.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">9:40 - 10:10</div>
+                <div class="name">
+                  <span class="title">Simply Devign</span>
+                  <span class="person">Felix Hawkins & Karolina Ferenz</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Designers and developers sometimes disagree about what would be best. By examining the differences and the similarities both can realise that they share much more than they think. Best practices in both realms are frequently identical and the goal is always the same: to communicate effectively, whether to a computer or a person. Join us on our mission to engage the design world, far more, in the world of open source and code.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">10:20 - 10:50</div>
+                <div class="name">
+                  <span class="title">The Polyglot Platform: How Zalando Manages Language Diversity</span>
+                  <span class="person">Bhuvaneswary Vijayan & Silvia Moura Pina</span>
+                </div>
+              </div>
+              <div class="long">Nearly 800 people create the technology engine behind Zalando, Europe's leading online fashion platform. As you might expect from a company with 15 million customers in 15 different countries, our tech systems are complex, sophisticated, and polyglot. Under the hood, you'll find Java, Scala, Python, Clojure, and several other languages. In this talk, we will tell you how our tech team manages this complexity and diversity. We'll discuss our approach to development--we call it Radical Agility--and explain how this concept supports our transformation to be diverse and platform-centric. We will present some challenges and issues that we are currently facing as we try to implement Radical Agility's three pillars of Autonomy, Mastery and Purpose. Along with an understanding of Radical Agility, we want to show you how it influences and facilitates polyglotism in Zalando's world.</div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event coffee">
+              <div class="short">
+                <div class="time">10:50 - 11:20</div>
+                <div class="name">
+                  <span class="title">Coffee Break</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">11:20 - 11:50</div>
+                <div class="name">
+                  <span class="title">Functional Ember</span>
+                  <span class="person">Paul Chavard</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Ember is an object oriented framework used to write ambitious web applications. It is also an example of extremely well decoupled framework. Taking advantage of that, in this talk I am going to show how to use it with a more functional approach. We will be using immutable data structures and transducers but also go “full monty” and write an Ember.Service using ClojureScript. All this while preserving the benefits of great tooling.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">12:00 - 12:30</div>
+                <div class="name">
+                  <span class="title">Polyglot Micro-services with a Dash of Wittgenstein</span>
+                  <span class="person">Charles Pletcher</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Much of the initial consternation when joining a team comes from a perceived expertise (or lack thereof) in the team’s chosen technologies. At Assembly, where disparate communities build projects together, we see this problem amplified by several orders of magnitude.</p>
+
+                <p>I want to talk about Assembly’s approach to micro-services not only as an architectural decision but also as a way to foster greater inclusion and collaboration by choosing the right tool (that is, language/framework) for each job. The task, I think, is one of translation that can be summed up in Wittgenstein’s famous aphorism, “The limits of my language mean the limits of my world” (Tractatus 5.6) — we need, in other words, to look at how our data is carried over from one place to another and to focus on the limits that our data crosses over.</p>
+
+                <p>I’ll show a couple of examples of cross-paradigm pollination and look at the ways that the Assembly community (in addition to the core Assembly platform) has benefited from running, say, Clojure and Go — or, more abstractly, Ruby and Wittgenstein — side by side.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event lunch">
+              <div class="short">
+                <div class="time">12:30 - 13:45</div>
+                <div class="name">
+                  <span class="title">Lunch</span>
+                </div>
+              </div>
+            </li>                
+
+            <li class="event animation">
+              <div class="short">
+                <div class="time">13:45 - 14:00</div>
+                <div class="name">
+                  <span class="title">Animation</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">14:00 - 14:30</div>
+                <div class="name">
+                  <span class="title">MISO: The toolstack for distributed personal clouds</span>
+                  <span class="person">Amir Chaudhry</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>The MISO stack allows developers to create distributed, resilient applications that work *for* the user. We've re-evaluated the old assumptions and taken a clean-slate approach so we can have all the benefits of hindsight but none of the baggage. The stack is comprised of MirageOS (unikernels), Irmin (distributed datastore), Signpost (identity & connectivity) and built using OCaml. I'll demonstrate how MISO enables us to build personal cloud infrastructure with some example applications of how users can regain control of their digital destiny.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">14:40 - 15:10</div>
+                <div class="name">
+                  <span class="title">Programming Web UI with Database in a Browser</span>
+                  <span class="person">Nikita Prokopov</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Many modern rich web applications are so complex they deserve their own well-thought-out, dedicated approach to manage state, comparable in its power to the ones we have on a server. In this talk we’ll see why having something like a DB can help manage client-side state and will take a look at couple of new architectural possibilities this approach enables. Examples will be based on DataScript, a client-side Datalog engine written in ClojureScript.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description lightning">
+              <div class="short">
+                <div class="time">15:20 - 15:50</div>
+                <div class="name">
+                  <span class="title">Lightning Talks</span>
+                  <span class="person">TBA</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">16:00 - 16:30</div>
+                <div class="name">
+                  <span class="title">Getting Ruby to speak Python with a LISP</span>
+                  <span class="person">Brendon McLean</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Our product started in Ruby, but started to get envious of the data science ecosystem in Python.  This talk is our answer to the question: How can you bring the power of the data science libraries in Python into Ruby?  And can we do better than RPC?  Our solution demonstrates using s-expressions to communicate between languages and the power that brings.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+  
+            <li class="event with-description normal">
+              <div class="short">
+                <div class="time">16:40 - 17:10</div>
+                <div class="name">
+                  <span class="title">The Power of Immutability</span>
+                  <span class="person">Adam Byrtek</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Immutability is an extremely powerful but not widely recognised concept in computer science. We'll talk about the applications of immutability in several seemingly unrelated areas like programming languages, data structures, version control, and deployment.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event coffee">
+              <div class="short">
+                <div class="time">17:10 - 17:40</div>
+                <div class="name">
+                  <span class="title">Coffee Break</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+            </li>
+  
+            <li class="event keynote">
+              <div class="short">
+                <div class="time">17:40 - 18:10</div>
+                <div class="name">
+                  <figure class="face" style="background-image: url(assets/speakers/stefan_karpinski.jpg)">&nbsp;</figure>
+                  <span class="title">Julia: a fast dynamic language for technical computing</span>
+                  <span class="person">Stefan Karpinski</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event keynote">
+              <div class="short">
+                <div class="time">18:20 - 18:50</div>
+                <div class="name">
+                  <figure class="face" style="background-image: url(assets/speakers/robert_virding.jpg)">&nbsp;</figure>
+                  <span class="title">Erlang in multi-lingual systems</span>
+                  <span class="person">Robert Virding</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>Erlang is often used together with other languages/systems when building products. In this talk I will discuss a number of ways in which this can be done and their relative merits.</p>
+              </div>
+              <div class="buttons">
+                <span class="close-button">Close</span>
+                <span class="more-button">More</span>
+              </div>
+            </li>
+
+            <li class="event party">
+              <div class="short">
+                <div class="time">21:00</div>
+                <div class="name">
+                  <span class="title">Closing Party</span>
+                </div>
+              </div>
+              <div class="long">
+                <p>TBA</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="workshops-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Workshops</h2>
+        <p></p>
+      </div>
+    </section>
+  </article>
+
+  <article id="workshops" class="static">
+    <div class="container">
+      <div class="workshop">
+        <h2>Introduction to Haskell <span class="author">Matthias Fischmann</span><figure class="face" style="background-image: url(assets/speakers/matthias_fischmann.jpg)">&nbsp;</figure></h2>
+        
+        <div class="row">
+          <div class="about">
+            <h3>About workshop</h3>
+            <p>Haskell is an elegant and fascinating language that has made purely functional programming practical.  In this tutorial, you will learn about the programming concepts that people like it for, such as pattern matching, type inference, partial evaluation, bounded polymorphic functions, and many more if time permits.  I will structure this workshop around examples that I type into an editor and run in an interactive interpreter.</p>
+
+            <p>This is an all-new release of the tutorial Alexander Ulrich and I gave at <a href="http://bobkonf.de/2015/fischmann.html">bobkonf.de/2015</a>.</p>
+
+            <h4>Prerequisites</h4>
+            <ul>
+              <li><strong>Knowledge</strong>: Some experience with writing software will make things easier for you (no matter what language), but you don't need to know anything about functional programming or Haskell.</li>
+              <li><strong>Equipment</strong>: If you want to make most of the experience, bring a laptop with the <a href="http://www.haskell.org/platform">haskell platform</a> pre-installed and get yourself acquainted with an editor (I will use emacs on Linux; vi works just as well for this workshop; on Windows there is notepad, but also numerous alternatives).</li>
+            </ul>
+          </div>
+          <div class="bio">
+            <h3>About Matthias</h3>
+            <p>Matthias has implemented his thesis at the Max Planck Institute for Computer Science in Haskell 15 years ago, and has been a user and proponent of functional programming ever since. He works as a software consultant for <a href="http://well-typed.com/">well-typed.com</a> and is CEO at <a href="http://zerobuzz.net/">zerobuzz.net</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop">
+        <h2>Write a Relational Scheme Interpreter in miniKanren<span class="author">William Byrd</span><figure class="face" style="background-image: url(assets/speakers/william_byrd.jpg)">&nbsp;</figure></h2>
+        
+        <div class="row">
+          <div class="about">
+            <h3>About workshop</h3>
+            <p>This workshop will cover the fundamentals of programming in miniKanren, an embedded domain specific language for constraint logic programming.  We will begin with an overview of the miniKanren language, and will write a few simple miniKanren relations that "run backward."  We will then write a more sophisticated miniKanren program: an environment-passing Scheme interpreter, written as a relation.  We will extend the interpreter in various ways, and explore how the interpreter can be used for program synthesis.</p>
+          </div>
+          <div class="bio">
+            <h3>About William</h3>
+            <p>William E. Byrd is a Postdoctoral Researcher in the U Combinator research group at the University of Utah. He is co-author of The Reasoned Schemer, and co-designer of several declarative languages: miniKanren (logic programming), Harlan (GPU programming), and Kanor (cluster programming). His StarCraft 2 handle is 'Rojex' (character code 715).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop">
+        <h2>Mobile development in the smart way with ionicframework<span class="author">Łukasz Olejarczuk</span><figure class="face" style="background-image: url(assets/speakers/lukasz_olejarczuk.jpg)">&nbsp;</figure></h2>
+
+        <div class="row">
+          <div class="about">
+            <h3>About workshop</h3>
+            <p>In this workshop you will be provided with answers to the following questions: How to create hybrid mobile applications? What can hybrid mobile applications do? The Workshop will be using <a href="http://devmeetings.pl/en">devmeetings</a> convention and platform for better and more rapid development. "</p>
+          </div>
+          <div class="bio">
+            <h3>About Łukasz</h3>
+            <p>Łukasz is a technology evangelist and software developer at Bank Zachodni WBK where he is creating a wide variety of state-of-the-art applications. Now he is strongly focused on mobile hybrid applications in the enterprise world. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop">
+        <h2>Why should you learn to program Commodore 64 this year?<span class="author">Michał Taszycki</span><figure class="face" style="background-image: url(assets/speakers/michal_taszycki.jpg)">&nbsp;</figure></h2>
+
+        <div class="row">
+          <div class="about">
+            <h3>About workshop</h3>
+            <p>I know that you already are a skilled software developer, designer or architect. You can craft beautiful and clean object oriented code. You can test and maintain it well and I manage complex abstractions of underlying domain models.</p>
+            <p>I want to show you something entirely different...</p>
+            <p>Remember Commodore 64? The highest selling computer model of all time?</p>
+            <p>Sadly it's not produced anymore for more than 20 years. But did you know that more than **50 new games** get released every year for this machine?</p>
+            <p>What if I told you that learning to program this ancient machine will make you a better developer?</p>
+            <p>Unique set of programming constraints, interesting hardware and a large community of enthusiasts make programming C64 a refreshing experience. It is not something that you will use directly in your day job. But learning 6510/6502 assembly will expand your perspective, especially if you've never had a chance to touch low level code.</p>
+            <p>It's also really fun :)</p>
+          </div>
+          <div class="bio">
+            <h3>About Michał</h3>
+            <p>Michal is a señor software developer at <a href="http://gunpowderlabs.com">Gunpowder Labs</a>, where he works on creating great web and mobile apps for external clients. He strives to improve as a programmer and enjoys sharing the knowledge during Code Retreats and the Programming Workout project. He is also passionate about programming ancient computers and teaching others how to do it at <a href="http://64bites.com">64bites.com</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop">
+        <h2>Building modern web apps with AngularJS <span class="author">Tomasz Szewcow</span><figure class="face" style="background-image: url(assets/speakers/tomasz_szewcow.jpg)">&nbsp;</figure></h2>
+
+        <div class="row">
+          <div class="about">
+            <h3>About workshop</h3>
+            <p>Are you scared of JavaScript? Do you write (copy) your code (from the internet), but you don’t know why it’s (not) working? Would you like to learn how to build modern web applications? This workshop is for you!</p>
+            <p>We start with a crash JavaScript course focusing on those elements which are relevant to AngularJS. After that we implement an AngularJS application from scratch showing AngularJS basics: two-way binding, modules, and dependency injection. Eventually we demystify directives and show how to test the elements we have implemented before.</p>
+          </div>
+          <div class="bio">
+            <h3>About Tomasz</h3>
+            <p>Tomasz is a Software Developer at Capgemini with 2 years of professional experience in developing AngularJS applications. In his everyday work he solves many development issues - luckily modern front-end frameworks and tools help him with this. He is happy with the growing importance of web applications and with the strong trend towards JavaScript frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <article id="tickets-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Tickets</h2>
+      </div>
+    </section>
+  </article>
+
+  <article id="tickets" class="static">
+    <div class="container">
+      <div class="clearfix">
+        <ul class="batches">
+          <li class="future batch">
+            <div class="inside">
+              <h4>Early Bird</h4>
+              <div class="price">139<small>EUR NET*</small></div>
+              <p class="dates text-center"></p>
+              <div class="buy-a-ticket text-center">
+                <a href="http://www.amiando.com/polyconf15.html" class="button">SOLD OUT</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="current batch">
+            <div class="inside">
+              <h4>Regular</h4>
+              <div class="price">192<small>EUR NET*</small></div>
+              <p class="dates text-center">available</p>
+              <div class="buy-a-ticket text-center">
+                <a href="http://www.amiando.com/polyconf15.html" class="button alert">BUY NOW</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="remarks">
+          <p>* Price does not include 23% Polish VAT and ticketing fees.</p>
+
+          <h3>Ticket includes the following things:</h3>
+          <ul>
+            <li>Entry to the conference on July 2nd, 3rd and 4th.</li>
+            <li>Entry to the parties on each day of the conference.</li>
+            <li>Access to satellite events and many opportunities to connect with people.</li>
+            <li>Drinks &amp; Refreshments</li>
+          </ul>
+
+          <h3>VAT</h3>
+          <p>VAT (Value Added Tax) is an indirect tax applicable to the sale of goods and services. This tax is paid by the customer. VAT is calculated based on the location of where the service or training is provided (in this instance, Poland), and not the location of the person purchasing goods or services. For this reason all purchases made on PolyConf site are inclusive of VAT, which means no person is exempt.<br/> If you visiting from outside of Poland, you may be eligible for a refund of VAT paid for the conference.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="venue-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Venue</h2>
+
+        <p> PolyConf will happen at The Faculty of Law and Administration<br class="hide-on-mobile"/> of Adam Mickiewicz University in the heart of the city of POZnan, Poland.<br class="hide-on-mobile"/> The center has an auditorium that can host 400 and additional workshop rooms.</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="venue" class="static">
+    <div id="venue-map-container">
+      <div id="venue-map" class="google-map"></div>
+    </div>
+
+    <ul id="venue-gallery">
+      <li class="photo"><span><figure style="background-image:url(assets/venue/7.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/venue/8.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/venue/9.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/venue/1.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/venue/2.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/venue/3.jpg)"></figure></span></li>
+    </ul>
+  </article>
+
+  <article id="hotels" class="static">
+    <h2 class="text-center">Hotels</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="hotel">
+          <h3>Puro Hotel</h3>
+          <p class="address">Stawna 12 61-759 Poznań Poland</p>
+          <h4>Moderate</h4>
+          <ul class="links">
+            <li><a href="http://en.purohotel.pl/poznan">Website</a></li>
+            <li><a href="http://upperweb.profitroom.pl/pl/booking/details/wrap/purohotelpoznan/42471">Book hotel (Special Limited Offer)</a></li>
+          </ul>
+        </div>
+
+        <div class="hotel">
+          <h3>Hotel Stare Miasto</h3>
+          <p class="address">ul. Rybaki 36, 61-884 Poznań Poland</p>
+          <h4>Expensive</h4>
+          <ul class="links">
+            <li><a href="http://www.hotelstaremiasto.pl/index.php/lan/en/a/1/b/">Website</a></li>
+            <li><a href="http://www.hotelstaremiasto.pl/index.php/lan/en/a/6/b/2/ins/tak?spam=337&dod=2015-07-02&ok=next&ddo=2015-07-04">Book hotel</a></li>
+          </ul>
+        </div>
+
+        <div class="hotel">
+          <h3>Hotel Ikar</h3>
+
+          <p class="address">ul. Kościuszki 118, 61-717 Poznań Poland</p>
+          <h4>Moderate</h4>
+          <ul class="links">
+            <li><a href="http://hotelewam.co.uk/621-hotel-ikar-poznan.html">Website</a></li>
+            <li><a href="http://upperweb.profitroom.pl/en/booking/city/wrap/hotelikar?Occupancy=1&GoogleTrackerID=UA-61483302-1&_ga=1.101686020.423600807.1430755852&checkin=2015-07-02&checkout=2015-07-04&UrlReferrer=http%3A%2F%2Fhotelewam.co.uk%2F621-hotel-ikar-poznan.html">Book hotel</a></li>
+          </ul>
+        </div>
+
+        <div class="hotel">
+          <h3>Verry Berry</h3>
+
+          <p class="address">Al. Marcinkowskiego 11 61-827 Poznań</p>
+          <h4>Cheap</h4>
+          <ul class="links">
+            <li><a href="http://www.very-berry.pl/en/">Website</a></li>
+            <li><a href="http://www.very-berry.pl/en/hostel-poznan/rezerwacja-online">Book hotel</a></li>
+          </ul>
+        </div>
+
+        <div class="hotel">
+          <h3>Hill Hostel</h3>
+
+          <p class="address">ul. Zamkowa 1/2, Poznań Poland</p>
+          <h4>Cheap</h4>
+          <ul class="links">
+            <li><a href="http://hillhostel.pl/zapraszamy/">Website</a></li>
+            <li><a href="http://hillhostel.pl/hostel-cheap-accommodation-rezerwacje/">Book hotel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<!--
+  <article id="codestarter" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Young people</h2>
+
+        <p> We believe that all kids should have the opportunity to create something incredible,<br class="hide-on-mobile"/> to one day become the future of tech. And it all starts with having their own computer.</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="young" class="static">
+    <div class="container">
+      <h2 class="text-center">CodeStarter Campaign</h2>
+      <p class="intro text-center">« If a kid is going to learn to code, they need a computer. »</p>
+      <p class="text-center">% of each ticket will be donated to CodeStarter - they will ship a new laptop to a child waiting to enroll in a programming class. </p>
+      <h2 class="text-center" style="margin-top: 2em">Workshops for youngsters</h2>
+      <p class="text-center"><span class="tba">TBA</span></p>
+    </div>
+
+    <ul class="photos">
+      <li class="photo"><span><figure style="background-image:url(assets/codestarter/1.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/codestarter/2.jpg)"></figure></span></li>
+      <li class="photo"><span><figure style="background-image:url(assets/codestarter/3.jpg)"></figure></span></li>
+    </ul>
+  </article>
+-->
+
+  <article id="partners-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Sponsors &amp; Partners</h2>
+        <p>The conference wouldn't be possible without the help of our supporters.</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="partners" class="static">
+    <!--
+    <h3 class="sponsor-header">Platinum sponsor</h3>
+    <div class="container">
+      <div class="platinum sponsors">
+        <ul>
+          <li class="platinum sponsor">
+            <div class="logo"><img src="assets/logo-placeholder.svg" /></div>
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    -->
+
+
+    <h3 class="sponsor-header">Gold sponsors</h3>
+    <div class="container">
+      <div class="gold sponsors">
+        <ul>
+          <li class="gold sponsor">
+            <div class="logo"><a href="https://www.mirantis.com/"><img src="assets/sponsors/mirantis.svg"></a></div>
+            <div class="description">
+              <p>Mirantis is the world’s leading OpenStack company. Mirantis delivers all the software, services, training and support needed for running OpenStack Cloud.<br> Among the top three companies worldwide in contributing open source software to OpenStack, Mirantis has helped build and deploy some of the largest OpenStack clouds at companies such as Cisco, Comcast, Ericsson, NASA, PayPal, Symantec, Samsung, WebEx.<br> OpenStack is to cloud computing what Linux was to open source and operating systems. It unlocks distributed applications, accelerates innovation, and makes programmable infrastructure frictionless to access and vendor-neutral. It transforms virtualization from an efficiency tactic to a whole new compute paradigm.</p>
+            </div>
+          </li>
+          <li class="gold sponsor fyber">
+            <div class="logo"><a href="http://www.fyber.com/"><img src="assets/sponsors/fyber.png"></a></div>
+            <div class="description">
+              <p>Fyber is a leading mobile advertising technology company that empowers app developers to execute smart ad monetization strategies across all connected devices through a unified mobile Supply-Side Platform. Serving approximately 320+ million monthly active users, Fyber works with thousands of the world's leading app developers, publishers and advertisers.</p>
+            </div>
+          </li>
+          <li class="gold sponsor">
+            <div class="logo"><a href="http://zalando.de/"><img src="assets/sponsors/zalando.svg"></a></div>
+            <div class="description">
+              <p>Zalando is Europe’s leading online fashion platform, with more than 15 million customers in 15 countries. Our department has built most of our platform in-house, using open source and cutting-edge technologies such as Scala, Cassandra, Clojure, and React.js. We work in small, agile, autonomous teams and follow principles that enable us to produce the most delightful shopping experiences possible.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sponsor-header">Silver sponsors</h3>
+    <div class="container">
+      <div class="silver sponsors">
+        <ul>
+          <li class="silver sponsor">
+            <div class="logo">
+              <a href="http://www.pl.capgemini-sdm.com/">
+                <img src="assets/sponsors/capgemini.png" />
+              </a>
+            </div>
+          </li>
+          <li class="silver sponsor">
+            <div class="logo">
+              <a href="https://netguru.co/">
+                <img src="assets/sponsors/netguru.jpg" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sponsor-header">Bronze sponsors</h3>
+
+    <div class="container">
+      <div class="bronze sponsors">
+        <ul>
+          <li class="bronze sponsor">
+            <div class="logo"><a href="https://www-ssl.intel.com/content/www/us/en/homepage.html"><img src="assets/sponsors/intel2.png"/></a></div>
+          </li>
+          <li class="bronze sponsor twilio">
+            <div class="logo"><a href="https://www.twilio.com/"><img src="assets/sponsors/twilio.png"/></a></div>
+          </li>
+          <li class="bronze sponsor squirrel">
+            <div class="logo"><a href="http://squirrel.me/"><img src="assets/sponsors/squirrel.png"/></a></div>
+          </li>
+          <li class="bronze sponsor gamesys">
+            <div class="logo"><a href="http://www.gamesyscorporate.com/"><img src="assets/sponsors/gamesys_logo.png"/></a></div>
+          </li>
+          <li class="bronze sponsor stackbuilders">
+            <div class="logo"><a href="http://www.stackbuilders.com/"><img src="assets/sponsors/stack_builders.png"/></a></div>
+          </li>
+          <li class="bronze sponsor braintree">
+            <div class="logo"><a href="https://www.braintreepayments.com/"><img src="assets/sponsors/braintree.jpg"/></a></div>
+          </li>
+          <li class="bronze sponsor capitainetrain">
+            <div class="logo"><a href="https://www.capitainetrain.com/"><img src="assets/sponsors/capitaine_train.svg"/></a></div>
+          </li>
+          <li class="bronze sponsor intellection">
+            <div class="logo"><a href="http://www.intellection.io/"><img src="assets/sponsors/intellection.png" style="width:95%"/></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sponsor-header">Supporters</h3>
+
+    <div class="container">
+      <div class="supporters">
+        <ul>
+          <li class="supporter">
+            <div class="logo"><a href="https://www.elastic.co/"><img src="assets/supporters/elastic.png"/></a></div>
+          </li>
+
+          <li class="supporter">
+            <div class="logo"><a href="http://www.pragprog.com/reviewers"><img src="assets/supporters/pragprog.png"/></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sponsor-header">Partners</h3>
+    <div class="container">
+      <div class="partners">
+        <ul class="partners">
+          <li class="main-partner"><a href="https://amu.edu.pl/"><img src="assets/partners/uam.svg"/></a></li>
+          <li class="partner"><a href="http://akai.org.pl/"><img src="assets/partners/akai.svg"/></a></li>
+          <li class="partner"><a href="http://www.jug.poznan.pl/"><img src="assets/partners/jugpoznan.gif"/></a></li>
+          <li class="partner"><a href="http://jug.zgora.pl/"><img src="assets/partners/jugzgora.png"/></a></li>
+          <li class="partner"><a href="http://torun.jug.pl/"><img src="assets/partners/jugTorun.png"/></a></li>
+          <li class="partner"><a href="http://berlin.pyladies.com/"><img src="assets/partners/pyladies_berlin.png"/></a></li>
+          <li class="partner pyladies-poland"><a href="http://pyladies.pl/"><img src="assets/partners/pyladies_poland.png"/></a></li>
+          <li class="partner"><a href="http://railsgirlsberlin.de/"><img src="assets/partners/railsgirls.svg"/></a></li>
+          <li class="partner bitspiration"><a href="http://bitspiration.com/"><img src="assets/partners/bitspiration.png"/></a></li>
+          <li class="partner infoq"><a href="http://www.infoq.com/"><img src="assets/partners/infoq.png"/></a></li>
+          <li class="partner techtrrrs"><a href="https://www.techtrrrs.at/"><img src="assets/partners/techtrrrs.png"/></a></li>
+          <li class="partner"><a href="http://devtalk.pl/"><img src="assets/partners/devtalk.jpeg"/></a></li>
+          <li class="partner infoq"><a href="https://skillsmatter.com/conferences/7206-polyconf"><img src="assets/partners/skills_matter_large.png"/></a></li>
+          <li class="partner"><a href="http://ionicpoland.github.io/#/"><img src="assets/partners/ionic-poland-icon.png"/></a></li>
+          <li class="partner infoq"><a href="http://di.com.pl/2-edycja-polyconf15-juz-od-2-do-4-lipca-w-poznaniu-52313"><img src="assets/partners/logo_di24_kostka.svg"/></a></li>
+          <li class="partner devmeetings"><a href="http://devmeetings.pl/pl"><img src="assets/partners/devmeetings.png"/></a></li>
+          <li class="partner techtrrrs"><a href="https://www.facebook.com/CafeMisjaCKFara"><img src="assets/partners/cafemisja2.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+
+  <article id="quotes-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Testimonials</h2>
+        <p>What people say about last edition of Poly Conf.</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="quotes" class="static">
+    <div class="container">
+      <ul class="quotes">
+        <li class="quote">
+          <div>
+            <div class="text">Polyconf was the best conference I have ever been to. </div>
+            <div class="person">
+              <figure class="avatar" style="background-image:url('https://pbs.twimg.com/profile_images/553517399400398848/19ApvW_M_400x400.jpeg')"></figure>
+              <p class="name">@damnpepe</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="quote">
+          <div>
+            <div class="text">Back home from PolyConf, with mind expanded in several dimensions and a long list of things to look at more deeply. Great experience!</div>
+            <div class="person">
+              <figure class="avatar" style="background-image:url('https://pbs.twimg.com/profile_images/2612989171/3t6855gh38v2v9du5kiv_400x400.jpeg')"></figure>
+              <p class="name">@dmajda</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="quote">
+          <div>
+            <div class="text">PolyConf was awesome! I'm leaving Poznań greatly inspired. Big thanks to organizers, speakers and attendees for this great event.</div>
+            <div class="person">
+              <figure class="avatar"
+              style="background-image:url('https://pbs.twimg.com/profile_images/354117123/avatar_400x400.jpg')"></figure>
+              <p class="name">@bartoszblimke</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="quote">
+          <div>
+            <div class="text">Back home from PolyConf - it was a really great event, I enjoyed it a lot. Also, Poznan is a beautiful city. See y'all next year!</div>
+            <div class="person">
+              <figure class="avatar" style="background-image:url('https://pbs.twimg.com/profile_images/508411634394468352/V3tLNOTf_400x400.png')"></figure>
+              <p class="name">@michalvalasek</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article id="terms-intro" class="fixed">
+    <section class="content">
+      <div class="text">
+        <h2>Terms and Conditions</h2>
+      </div>
+    </section>
+  </article>
+
+  <article id="terms" class="static">
+    <div class="container" id="terms-and-conditions">
+      <div class="row">
+        <div class="column">
+          <h2>Tickets</h2>
+          <p class="text-small">Cancellations received before May 31 2015 are entitled to a full refund. Cancellations received after May 31, 2015 are non-refundable.</p>
+
+          <p class="text-small">Early Bird tickets are non-refundable.</p>
+        </div>
+
+        <div class="column">
+          <h2>Video/Audio Recording</h2>
+
+          <p class="text-small">All presentations and associated materials are the speakers’ intellectual property. Recording for commercial purposes requires permission from both the organizer and the speaker.</p>
+
+          <p class="text-small">By attending the conference, attendees have agreed to allow the organizer to use images, audio, and video recorded content on site for educational and promotional purposes.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h2>Responsibility</h2>
+
+          <p class="text-small">The participant acknowledges that he/she may not engage in damage claims against the Conference Organizers should the holding of the Conference be hindered or prevented by unexpected political or economic events, natural disaster, the non-appearance of speakers, or other reasons that might necessitate a program change.</p>
+
+          <p class="text-small">Organizers may cancel the event at any time and tickets will be refunded in full without any additional fees.</p>
+        </div>
+
+        <div id="code-of-conduct" class="column">
+          <h2>Code of conduct</h2>
+
+          <p class="text-small">PolyConf is dedicated to providing a harassment-free conference experience for everyone. We invite you to help us make PolyConf a place that is welcoming and respectful to all participants, so everyone can focus on the conference itself, and the great networking and community richness that can happen when we get together in person. We will do whatever we believe is necessary to ensure that PolyConf is a safe and productive environment for everyone.</p>
+
+          <p class="text-small">Please bring any concerns to the immediate attention of the event staff, or contact our Event Coordinator, Kasia Popek at kasia@polyconf.com. We thank our attendees for their help in keeping the event welcoming, respectful, and friendly to all participants.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="contact" class="fixed">
+    <section class="content">
+      <div class="text">
+        <p>You can contact us at <a href="mailto:hello@polyconf.com">hello@polyconf.com</a></p>
+
+        <ul class="social">
+          <li><a href="http://twitter.com/polyconfhq" class="twitter"><img src="assets/img/t-white.svg"/></a></li>
+          <li><a href="http://facebook.com/polyconf" class="facebook"><img src="assets/img/f-white.svg"/></a></li>
+          <li><a href="http://lanyrd.com/2015/polyconfhq/" class="lanyrd"><img src="assets/img/l-white.svg"/></a></li>
+          <li><a href="https://www.youtube.com/user/polyconf" class="youtube"><img src="assets/img/y-white.svg"/></a>
+          </li>
+        </ul>
+      </div>
+      <span id="copy" data-anchor-target="#contact" data-200-top="bottom: -50px" data-100-top="bottom: 50px">© Copyright PolyConf, 2015</span>
+    </section>
+  </article>
+
+</div>
+
+<span id="menu-link">&nbsp;</span>
+
+<nav id="overlay">
+  <span id="close-menu-link">&nbsp;</span>
+
+  <div class="content">
+    <ul>
+      <li><a href="#about">About PolyConf</a></li>
+      <li><a href="#speakers">Speakers <span>+</span> Agenda</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#venue">Venue <span>+</span> Hotels</a></li>
+<!--       <li><a href="#codestarter">Young people</a></li> -->
+      <li><a href="#partners">Sponsors <span>+</span> Partners</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="http://blog.polyconf.com">Blog</a></li>
+    </ul>
+    <ul class="buttons">
+      <li><a href="#tickets-intro" class="green button">Register now</a></li>
+      <li class="become"><a href="http://sponsor.polyconf.com" class="blue button">Become a Sponsor</a></li>
+      <li><a href="http://14.polyconf.com" class="ghost button">Previous edition</a></li>
+    </ul>
+    <ul class="social">
+      <li><a href="http://twitter.com/polyconfhq" class="twitter"><img src="assets/img/t-white.svg"/></a></li>
+      <li><a href="http://facebook.com/polyconf" class="facebook"><img src="assets/img/f-white.svg"/></a></li>
+      <li><a href="http://lanyrd.com/2015/polyconfhq/" class="lanyrd"><img src="assets/img/l-white.svg"/></a></li>
+      <li><a href="https://www.youtube.com/user/polyconf" class="youtube"><img src="assets/img/y-white.svg"/></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8394595-2']);
+  _gaq.push(['_setDomainName', 'polyconf.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+</html>
